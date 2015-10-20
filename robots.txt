@@ -1,0 +1,3 @@
+Sitemap: http://www.jffhmt.avestia.com/sitemap.xml
+
+User-agent: *

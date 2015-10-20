@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JFFHMT - Natural Convection and Entropy Generation in a Porous Enclosure with Sinusoidal Temperature Variation on the Side Walls</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="../css/style.css" />
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-55498545-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Include Most Visited Articles JS Code -->
+ <script type="text/javascript" src="mostvisited.js"></script> 
+
+<!-- Include SHARE THIS js sources -->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="header">
+
+    <div class="container">
+
+      <div class="row">
+
+         <header id="header">
+          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
+          <div class="threemenu col-sm-5">
+            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
+          </div>
+          <div class="searching col-sm-3">
+<div class="sharethis">Share this page:<br/>
+<span class='st_email'></span>
+<span class='st_facebook'></span>
+<span class='st_twitter'></span>
+<span class='st_googleplus'></span>
+<span class='st_linkedin'></span>
+</div>
+            
+         <div class="search_wrapper">
+         <form class="search" action="../results" method="get">
+              <fieldset>
+                <span class="text">
+                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
+                </span>
+
+              </fieldset>
+            </form>
+            
+            </div>
+          </div>
+          <div class="col-lg-12">
+
+          <div class="avada-row">
+
+            <nav id="nav" class="nav-holder">
+
+              <div role="navigation" class="navbar navbar-default">
+
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+                  
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<span class="navbar-brand" href="#">Menu</span>
+                  </div>
+
+                  <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">			
+            			<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
+                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
+                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
+                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
+                        <li><a href="../board/">Editorial Board</a></li><br>
+                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
+                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
+                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
+                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
+                        <li><a href="../contact/">Contact Us</a></li>
+
+
+
+
+                    </ul>
+
+                  </div>
+
+                  <!--/.nav-collapse -->
+
+                </div>
+
+                <!--/.container-fluid -->
+
+              </div>
+
+            </nav>
+
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+
+        </header>
+
+      </div>
+
+    </div>
+<div class="clearfix"></div>
+  </div>
+
+  <div class="slider">
+
+  <div class="container">
+
+  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/header.png" alt="img"></div></div>
+
+  </div>
+
+  </div>
+
+  <div class="container">
+  <div class="clearfix"></div>
+  <div class="row">
+
+  <div class="col-lg-12 text"><div align=center>
+<div class="table">
+
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
+         <tr>
+                <td>Volume 1 - Year 2014 - Pages 23-29</td>
+                <td align="right"><a href="PDF/004.pdf">View PDF (Full-text)</a></td>
+        </tr>
+         <tr>
+                <td>DOI: 10.11159/jffhmt.2014.004</td>
+                <td align="right"><a href="#references">Linked References</a></td>
+        </tr>
+		<tr>
+		<td colspan="2">ISSN: 2368-6111</td>
+		</tr>
+     </table>
+     
+</div>
+</div>
+
+<br>
+
+<p align="center" style="font-size:22pt;">Natural Convection and Entropy Generation in a Porous Enclosure with Sinusoidal Temperature Variation on the Side Walls</p>
+
+<p align="center">
+	<strong>Iman Zahmatkesh</strong>
+    	<Br>Department of Mechanical Engineering, Mashhad Branch, Islamic Azad University, Mashhad, Iran
+		<br>zahmatkesh5310@mshdiau.ac.ir
+
+<p align="justify"><i><strong>Abstract- </strong> This paper reports an analysis of
+natural convection and entropy generation inside a square porous enclosure with
+sinusoidal temperature variation on the side walls. The natural convection heat
+transfer is calculated by solving numerically the mass, momentum, and energy
+conservation equations. Moreover, the generation of entropy is discussed in
+terms of heat transfer irreversibility and fluid friction irreversibility. As
+thermal boundary conditions, the two horizontal walls are maintained adiabatic.
+Meanwhile, both symmetric and anti-symmetric sinusoidal temperature
+distributions are applied to the side walls and the corresponding results are
+compared. It is found that, although the case with anti-symmetric temperature
+boundary conditions achieves higher heat transfer, it suffers from high entropy
+generation rate.</i></p>
+
+<p align="left"><i><strong>Keywords:</strong></i> Porous
+medium, Natural convection, Entropy generation, Enclosure, Non&#8209;uniform
+temperature distribution.</p>
+
+<p>&nbsp;</p>
+<p align="justify">  &copy; Copyright 2014 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+<p>&nbsp;</p>
+
+<p>
+
+Date Received: 2013-08-01 <br />
+
+Date Accepted: 2014-09-28  <br />
+
+Date Published: 2014-10-10</span></i></p>
+
+
+<h4>Nomenclature</h4>
+
+<div class="widetable">
+<table style="border:0">
+ <tr>
+  <td style="padding:5px"><img src="004_files/image001.png"></td>
+  <td style="padding:5px">constant pressure specific heat, [J/kg.K]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image002.png"></td>
+  <td style="padding:5px">Eckert number, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image003.png"></td>
+  <td style="padding:5px">fluid friction irreversibility, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image004.png"></td>
+  <td style="padding:5px">>gravitational acceleration, [m/s<sup>2</sup>]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image005.png"></td>
+  <td style="padding:5px">heat transfer irreversibility, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image006.png"></td>
+  <td style="padding:5px">permeability, [m<sup>2</sup>]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image007.png"></td>
+  <td style="padding:5px">enclosure height, [m]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image008.png"></td>
+  <td style="padding:5px">local dimensionless entropy generation rate, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image009.png"></td>
+  <td style="padding:5px">global dimensionless entropy generation rate, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image010.png"></td>
+  <td style="padding:5px">local Nusselt number, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image011.png"></td>
+  <td style="padding:5px">average Nusselt number, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image012.png"></td>
+  <td style="padding:5px">pressure, [Pa]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image013.png"></td>
+  <td style="padding:5px">Darcy-modified Rayleigh Number, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image014.png"></td>
+  <td style="padding:5px">temperature, [K]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image015.png"></td>
+  <td style="padding:5px">reference temperature, [K]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image016.png"></td>
+  <td style="padding:5px">temperature difference, [K]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image017.png"></td>
+  <td style="padding:5px">velocity components in x and y directions, [m/s]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image018.png"></td>
+  <td style="padding:5px">Cartesian coordinates, [m]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image019.png"></td>
+  <td style="padding:5px">dimensionless coordinates, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px" colspan="2"><i>Greek symbols</i></td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image020.png"></td>
+  <td style="padding:5px">effective thermal diffusivity, [m<sup>2</sup>/s]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image021.png"></td>
+  <td style="padding:5px">volumetric expansion coefficient, [K<sup>-1</sup>]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image022.png"></td>
+  <td style="padding:5px">kinematic viscosity, [m<sup>2</sup>/s]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image023.png"></td>
+  <td style="padding:5px">density, [kg/m<sup>3</sup>]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image024.png"></td>
+  <td style="padding:5px">stream function, [m<sup>2</sup>/s]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image025.png"></td>
+  <td style="padding:5px">dimensionless stream function, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image026.png"></td>
+  <td style="padding:5px">dimensionless temperature, [-]</td>
+ </tr>
+ <tr>
+  <td style="padding:5px"><img src="004_files/image027.png"></td>
+  <td style="padding:5px">dimensionless temperature difference, (=<img src="004_files/image028.png">), [-]</td>
+ </tr>
+</table>
+</div>
+<br>
+
+
+
+
+<img src="../images/line.png" width="100%;" height="1" />
+<h2>1. Introduction</h2> 
+
+
+<p align="justify" style="text-indent:19.85pt;">As a
+consequence of diverse applications of porous media in the construction of
+industrial devices ranging from electrical heaters [1] to solar collectors [2],
+considerable interest has been drawn to study flow as well as thermal fields
+inside these materials. One of the issues in this field goes back to the
+development of natural convective flows inside enclosures filled with a
+fluid-saturated porous medium. This problem occurs in numerous practical
+applications such as thermal insulation technology, ground water hydrology,
+petroleum reservoir modeling, and storage of radioactive nuclear waste
+materials. Consequently, it is not surprising to see considerable interest on
+the analysis of natural convection inside porous enclosures. Nevertheless,
+previous works have mainly been concentrated on enclosures with constant wall
+temperatures and those with non&#8209;uniform temperature boundary conditions
+have received less attention in spite of their significance. </p>
+
+<p align="justify" style="text-indent:19.85pt;">In an
+enclosure with constant wall temperatures, finite discontinuities
+in temperature distribution appear at the edges. The discontinuities can be
+removed if one chooses non-uniform temperature distributions along the walls.
+Moreover, by employing non-uniform heating/cooling, the establishment of flow
+and thermal fields as well heat transfer characteristics inside the enclosure
+can be controlled. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Saeid [3] has
+analyzed natural convection inside a porous enclosure with partially&#8209;heated
+bottom wall, cooled top wall, and adiabatic vertical walls. He demonstrated
+that, average Nusselt number enhances with the length of heat source and with
+the amplitude of temperature variation. Basak et al. [4] have investigated a
+porous enclosure with uniformly/non-uniformly heated bottom wall, adiabatic top
+wall, and constant temperature on the cold vertical walls. Concerning their
+results, they concluded that, non-uniform heating of the bottom wall provides
+higher heat transfer rates at the central region of the bottom wall whereas the
+corresponding average Nusselt number is lower. Later, they observed similar
+trend in an enclosure with uniformly/non-uniformly heated bottom and left
+walls, adiabatic top wall, and constant temperature right wall [5].
+Sathiyamoorthy et al. [6] have simulated a porous enclosure wherein the bottom
+wall was heated uniformly, the left wall was linearly heated, the right wall
+was heated linearly or cooled, and the top wall was thermally insulated. Oztop
+[7] has discussed natural convection in a partially-cooled inclined porous
+enclosure with one side wall at constant hot temperature, one adjacent wall
+being partially-cooled, and the remaining ones adiabatic. Varol et al. [8] have
+studied an enclosure with a sinusoidal temperature profile on the bottom wall
+wherein other walls were thermally insulated. They demonstrated that, heat
+transfer rate increases with increase in the amplitude of the sinusoidal
+temperature function and decreases with increasing aspect ratio of the
+enclosure. More recently, Yedder and Erchiqui [9] have investigated a tall
+porous enclosure with uniformly heated bottom wall, adiabatic top wall, and
+temperature profile on the cold vertical walls. </p>
+
+<p align="justify" style="text-indent:19.85pt;">All of the
+aforesaid studies are the First-Law (of thermodynamics) analyses of non&#8209;uniformly
+heated/cooled porous enclosures. Currently, Second-Law based discussions are
+using to study entropy generation. This can clarify the significance of
+irreversibility related to heat transfer, fluid friction, and other non-ideal
+processes within thermal systems and enables us to find thermal boundary
+conditions whereby minimum irreversibility is produced. Consequently, attention
+needs to be paid to the problem of entropy generation in porous enclosures with
+non-uniform wall temperatures. In spite of that, to the author's knowledge, the
+subject has not been investigated extensively. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Zahmatkesh
+[10] has analyzed the importance of thermal boundary conditions of the
+heated/cooled walls in heat transfer as well as entropy generation inside of a
+porous enclosure with heated bottom wall, cooled vertical walls, and adiabatic
+top wall. For this purpose, he undertook both heating and cooling uniformly and
+non-uniformly and compared the correspond results. Zahmatkesh [10] demonstrated
+that, uniform
+heating/cooling achieves the highest heat transfer rates whereas
+non-uniform cooling suffers from the lowest. In spite of that, he found that,
+entropy generation is likely to be the highest for uniform heating/cooling and
+the lowest for non-uniform heating. A further analysis of this subject has been
+recently reported by Basak et al. [11]. More recently,
+Zahmatkesh has discussed entropy generation during natural convection in
+rectangular porous enclosures with three adiabatic walls [12] as well as
+oblique enclosures [13]. </p>
+
+<p align="justify" style="text-indent:19.85pt;">To continue
+this effort, the present study investigates the development of flow, heat
+transfer, and entropy generation inside a square porous enclosure that is
+depicted in Fig. 1. </p>
+
+<figure>
+<img src="004_files/image029.jpg" class="img"/>
+
+<figcaption>
+Figure 1. Physical model of the 2D porous enclosure</figcaption>
+</figure>
+<br>
+
+
+<p align="justify">Here, the horizontal
+walls are maintained adiabatic while symmetric/anti-symmetric sinusoidal
+temperature distributions are applied to the side walls. The governing
+equations are solved numerically. Thereafter, the generation of entropy is
+discussed in terms of heat transfer irreversibility as well as fluid friction
+irreversibility.</p>
+
+<h2>2. Mathematical Formulation</h2>
+
+<p align="justify" style="text-indent:19.85pt;">In this
+study, a 2D laminar flow model is utilized. The fluid is concerned
+incompressible and Newtonian. Meanwhile, all physical properties are assumed to
+be constant except the density in the buoyancy term for which the
+Oberbeck-Boussinesq approximation is invoked. Another important assumption is
+that the local thermal equilibrium is valid, i.e., the temperature of the fluid
+phase is equal to the temperature of the solid phase everywhere in the porous
+enclosure. During the current analysis, the contribution of thermal radiation
+is neglected and the Darcy's model is utilized for flow prediction. Under these
+assumptions, the equations of continuity, momentum, and energy are reduced to
+the following dimensionless form in terms of stream function (<img width=18 height=16
+src="004_files/image025.png">) and temperature (<img width=16 height=18 src="004_files/image026.png">)
+[14]</p>
+
+<div class="eqn">
+<img src="004_files/image030.png" class="img">
+</div>
+<div class="eqn-number">(1)</div>
+<br>
+
+<div class="eqn">
+<img src="004_files/image031.png" class="img">
+</div>
+<div class="eqn-number">(2)</div>
+<br>
+
+<p align="justify">Here, the dimensionless
+variables are defined as follows.</p>
+
+<div class="eqn">
+<img src="004_files/image032.png" class="img">
+</div>
+<div class="eqn-number">(3)</div>
+<br>
+
+<p align="justify">The corresponding
+boundary conditions are</p>
+
+<div class="eqn">
+<img src="004_files/image037.png" class="img"> and <img src="004_files/image038.png" class="img">: <img src="004_files/image039.png" class="img"> and <img src="004_files/image040.png" class="img">,
+</div>
+<div class="eqn-number">(4a)</div>
+<br>
+<div class="eqn">
+<img src="004_files/image041.png" class="img"> and <img src="004_files/image038.png" class="img">: <img src="004_files/image039.png" class="img"> and <img src="004_files/image042.png" class="img">,
+</div>
+<div class="eqn-number">(4b)</div>
+<br>
+<div class="eqn">
+<img src="004_files/image043.png" class="img"> and <img src="004_files/image044.png" class="img">: <img src="004_files/image039.png" class="img"> and <img src="004_files/image045.png" class="img">,
+</div>
+<div class="eqn-number">(4c)</div>
+<br>
+<div class="eqn">
+<img src="004_files/image043.png" class="img"> and <img src="004_files/image046.png" class="img">: <img src="004_files/image039.png" class="img"> and <img src="004_files/image045.png" class="img">,
+</div>
+<div class="eqn-number">(4d)</div>
+<br>
+
+
+<p align="justify">Here, the use of <img width=98 height=20
+src="004_files/image047.png"> for the right wall yields symmetric
+sinusoidal temperature distributions on the side walls. Nevertheless,
+anti-symmetric sinusoidal thermal boundary conditions will be resulted if one
+takes <img width=98 height=20
+src="004_files/image048.png"> therein.</p>
+
+
+<h2>3. Entropy Generation</h2>
+
+<p align="justify" style="text-indent:19.85pt;">For a porous
+media that follows the Darcy's law, the dimensionless rate of entropy
+generation can be expressed as [15]</p>
+
+<div class="eqn">
+<img src="004_files/image049.png" class="img"><img src="004_files/image050.png" class="img">,
+</div>
+<div class="eqn-number">(5)</div>
+<br>
+
+<p align="justify">with <img
+width=22 height=18 src="004_files/image002.png"> being the Eckert
+number, <img width=22 height=16
+src="004_files/image051.png"> being the Prandtl number, and <img width=12 height=13
+src="004_files/image027.png"> being the dimensionless temperature
+difference (i.e., <img width=48
+height=22 src="004_files/image052.png">). Here, the first term of Eq.
+(5) is due to the transfer of heat and is referred to as Heat Transfer
+Irreversibility (<img width=31
+height=16 src="004_files/image005.png">) while the second term
+represents the contribution of Fluid Friction Irreversibility (<img width=29 height=16
+src="004_files/image003.png">). Thereby</p>
+
+<div class="eqn">
+<img src="004_files/image053.png" class="img">.
+</div>
+<div class="eqn-number">(6)</div>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">The global
+entropy generation rate is obtained through integration of the local
+distribution of entropy generation rate as</p>
+
+<div class="eqn">
+<img src="004_files/image054.png" class="img">.
+</div>
+<div class="eqn-number">(7)</div>
+<br>
+
+
+<h2>4. Solution Procedure</h2>
+
+<p align="justify" style="text-indent:19.85pt;">The
+dimensionless coupled partial differential equations in conjunction with the
+aforesaid boundary conditions are solved using a control-volume based
+computational procedure [16]. For this purpose, a <img width=61 height=18 src="004_files/image055.png">non-uniform
+grid is utilized, based on a grid refinement study. The algebraic equations are
+solved by a line-by-line iterative procedure. The method sweeps the domain of
+integration along the x and y axes and uses Tri-Diagonal Matrix Algorithm
+(TDMA) iteration to solve the system of equations. The convergence criterion
+employed is the following condition</p>
+
+<div class="eqn">
+<img src="004_files/image056.png" class="img">.
+</div>
+<div class="eqn-number">(8)</div>
+<br>
+
+<p align="justify">where <img width=13 height=20
+src="004_files/image057.png"> stands for either <img width=16 height=18 src="004_files/image026.png"> or
+<img width=18 height=16
+src="004_files/image025.png"> and <img width=13 height=15 src="004_files/image058.png"> denotes
+the iteration. </p>
+
+<p align="justify" style="text-indent:19.85pt;">As the
+numerical values of <img width=18
+height=16 src="004_files/image025.png"> and <img width=16 height=18
+src="004_files/image026.png"> become available from the converged
+solution, the magnitudes of the local and the average Nusselt numbers at the
+non&#8209;adiabatic walls are calculated from the following expressions.</p>
+
+<div class="eqn">
+<img src="004_files/image059.png" class="img"> and <img src="004_files/image060.png" class="img">
+</div>
+<div class="eqn-number">(9)</div>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">It is
+noteworthy that, during the current computations, the following parameters are
+maintained constant. </p>
+
+<div class="eqn">
+<img src="004_files/image061.png" class="img">, <img src="004_files/image062.png" class="img">, <img src="004_files/image063.png" class="img">K, <img src="004_files/image064.png" class="img">K.
+</div>
+<div class="eqn-number">(10)</div>
+<br>
+
+<h2>5. Simulation Results</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Two types of
+analysis are presented in this section. The first one presents a validation for
+the mathematical model as well as the employed solution procedure. The second
+analysis, however, shows the contribution of this study that is associated with
+heat transfer process and entropy generation characteristics in the natural
+convective flow inside a porous enclosure with symmetric/anti-symmetric
+sinusoidal
+temperature variations on the side walls.</p>
+
+
+
+<h4>5.1. Numerical Validation</h4>
+
+<p align="justify" style="text-indent:19.85pt;">The present
+numerical implementation is validated by reproducing a porous enclosure with
+uniformly heated/cooled side walls and insulated horizontal walls. Accordingly,
+numerical values of the average Nusselt number in the side walls are compared
+with previously published works in Table&nbsp;1. </p>
+
+<div class="widetable">
+<table>
+<caption>Table 1.  Comparison of the current average Nusselt number with
+previously published works</caption>
+<thead>
+ <tr align="center">
+  <td style="padding:5px; border:1px solid black">Authors</td>
+  <td style="padding:5px; border:1px solid black"><img width=24 height=22 src="004_files/image011.png"></td>
+ </tr>
+</thead>
+<tbody>
+ <tr align="center">
+  <td style="padding:5px; border:1px solid black">Saeid and Pop [17]</td>
+  <td style="padding:5px; border:1px solid black">3.002</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px solid black">Misirlioglu et al. [18]</td>
+  <td style="padding:5px; border:1px solid black">3.05</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px solid black">Badruddin et al. [19]</td>
+  <td style="padding:5px; border:1px solid black">3.2005</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px solid black">Present simulation</td>
+  <td style="padding:5px; border:1px solid black">3.068</td>
+ </tr>
+</tbody>
+</table>
+</div>
+<br>
+
+
+<p align="justify">As can be observed,
+current results bear a strong resemblance to the previously published works.
+Moreover, contour plots of stream function and temperature are almost the same
+as those reported in open literature. They are not, however, presented here for
+the sake of brevity. This provides confidence to the developed code for further
+studies. Consequently, in what follows, it will be utilized to analyze the
+development of flow and thermal fields as well as entropy generation
+characteristics in the buoyancy-driven flow inside the porous
+enclosure depicted in Fig.&nbsp;1.</p>
+
+<h4>5.2. Flow and Thermal Fields</h4>
+
+<p align="justify" style="text-indent:19.85pt;">In what concerns
+the dimensionless distributions of stream function and temperature, simulation
+results for the two cases with symmetric and anti-symmetric temperature
+boundary conditions on the side walls are presented in Figs. 2 and 3. </p>
+
+
+<figure>
+<img src="004_files/image065.jpg" class="img"/><br>a) Stream function, <img width=18 height=16 src="004_files/image066.png"><br>
+<img src="004_files/image067.jpg" class="img"/><br>b) Temperature, <img width=18 height=16 src="004_files/image068.png">
+
+<figcaption>
+Figure 2. Distributions of streamlines and isothermal lines for the
+symmetric temperature BC's</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="004_files/image069.jpg" class="img"/><br>a) Stream function, <img width=18 height=16 src="004_files/image070.png"><br>
+<img src="004_files/image071.jpg" class="img"/><br>b) Temperature, <img width=18 height=16 src="004_files/image068.png">
+
+<figcaption>
+Figure 3. Distributions of streamlines and isothermal lines for the
+anti-symmetric temperature BC's</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Dependence of
+flow and thermal fields on the wall condition is obvious. It can be witnessed
+that, when anti-symmetric sinusoidal temperature distributions are applied to
+the side walls, the flow is characterized by two circulation cells generated in
+opposite directions inside the enclosure. Notice also that, under the symmetric
+temperature boundary conditions, four circulation cells appear there. Moreover,
+the figures demonstrates that if one applied symmetric temperature
+distributions to the side walls, the contour plots of stream function and
+temperature becomes more symmetric about <img width=47 height=18 src="004_files/image072.png"> plane.
+Meanwhile, comparing the magnitudes of stream function in the two cases
+indicates that the case with anti-symmetric boundary conditions results in more
+intense streamlines.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Distributions
+of magnitudes of the local Nusselt number along the right and left walls for
+the current cases are depicted in Figs.&nbsp;4 and 5, respectively. </p>
+
+<figure>
+<img src="004_files/image073.png" class="img"/>
+
+<figcaption>
+Figure 4. Distributions of <img
+width=28 height=24 src="004_files/image074.png"> along the right wall</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="004_files/image075.png" class="img"/>
+
+<figcaption>
+Figure 5. Distributions of <img
+width=28 height=24 src="004_files/image074.png"> along the left wall</figcaption>
+</figure>
+<br>
+
+<p align="justify">Remarkable variations
+can be observed in the values of the local Nusselt number. This is not
+surprising since we have applied sinusoidal temperature distributions to the
+side walls. It can also be witnessed that, the discrepancies that appear
+between the results of the two cases is much lower at the left wall. This
+occurs since the current cases have identical wall conditions on the left side.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Figure 6
+plots the distributions of dimensionless temperature along the adiabatic walls.
+Again, results of the symmetric temperature boundary
+conditions are distinct from those of the anti-symmetric case. Notice
+also that, when symmetric temperature distributions are applied, the
+temperature varies more uniformly along the top and bottom walls. </p>
+
+<figure>
+<img src="004_files/image076.png" class="img"/>
+
+<figcaption>
+Figure 6. Distributions of
+dimensionless temperature along the adiabatic walls</figcaption>
+</figure>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">The overall
+effects of the two cases upon heat transfer rates are compared in Table 2
+wherein the numerical values of the average Nusselt number at the side walls
+are presented. As expected from the local distributions of the Nusselt number
+(i.e., Figs. 4 and 5), the case with anti-symmetric temperature
+boundary conditions achieves higher heat transfer rate.</p>
+
+
+<div class="widetable">
+<table>
+<caption>Table 2. Effect of temperature boundary conditions on heat
+transfer and entropy generation</caption>
+<thead>
+ <tr align="center">
+  <td style="padding:5px; border:1px solid black">Case</td>
+  <td style="padding:5px; border:1px solid black"><img width=28
+  height=31 src="004_files/image077.png"></td>
+  <td style="padding:5px; border:1px solid black"><img width=41
+  height=24 src="004_files/image078.png"></td>
+ </tr>
+</thead>
+<tbody>
+ <tr align="center">
+  <td style="padding:5px; border:1px solid black">Symmetric BC's</td>
+  <td style="padding:5px; border:1px solid black">4.035</td>
+  <td style="padding:5px; border:1px solid black">9.713</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px solid black">Anti-Symmetric BC's</td>
+  <td style="padding:5px; border:1px solid black">5.830</td>
+  <td style="padding:5px; border:1px solid black">13.031</td>
+ </tr>
+</tbody>
+</table>
+</div>
+<br>
+
+<h4>5.3. Entropy
+generation characteristics</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Contour plots
+of fluid friction irreversibility and heat transfer irreversibility for the
+current cases are displayed in Figs. 7 and 8. </p>
+
+<figure>
+<img src="004_files/image079.jpg" class="img"/><br>a) Fluid friction irreversibility, <i>FFI</i><br>
+<img src="004_files/image080.jpg" class="img"/><br>b) Heat transfer irreversibility, <i>HTI</i>
+
+<figcaption>
+Figure 7. Distributions of <i>FFI</i> and <i>HTI</i> for the symmetric temperature BC's</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="004_files/image081.jpg" class="img"/><br>a) Fluid friction irreversibility, <i>FFI</i><br>
+<img src="004_files/image082.jpg" class="img"/><br>b) Heat transfer irreversibility, <i>HTI</i>
+
+<figcaption>
+Figure 8. Distributions of <i>FFI</i> and <i>HTI</i> for the anti-symmetric temperature BC's</figcaption>
+</figure>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">It is clear
+that, the side walls act as strong concentrators of <i>FFI</i> and <i>HTI</i>.
+This occurs due to higher values of near wall velocity components and
+temperature gradients there. Notice also that, a significant portion of the
+enclosure acts as an ideal region for entropy production wherein both fluid
+friction irreversibility and heat transfer irreversibility are zero or
+negligible. </p>
+
+<p align="justify" style="text-indent:19.85pt;">The aforesaid
+variations of fluid friction irreversibility and heat transfer irreversibility
+make the distribution of local entropy generation rate inside the enclosure as
+depicted in Fig 9. Dependence of entropy generation on the wall condition is
+obvious. To demonstrate this effect further, numerical values of the global
+entropy generation rate for the two cases are illustrated in Table&nbsp;2. It
+can be witnessed that, although the case with anti-symmetric temperature boundary
+conditions achieves higher heat transfer, it suffers from high entropy
+generation rate.</p>
+
+<figure>
+<img src="004_files/image083.jpg" class="img"/><br>a) Symmetric temperature BC's<br>
+<img src="004_files/image084.jpg" class="img"/><br>b) Anti-symmetric temperature BC's
+
+<figcaption>
+Figure 9. Distributions of local entropy generation rate</figcaption>
+</figure>
+<br>
+
+
+<h2>6. Conclusion</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Heat transfer
+process and entropy generation characteristics inside a square porous enclosure
+with symmetric and anti-symmetric sinusoidal temperature variations on the side
+walls were simulated and discussed in this study. Results are presented in
+terms of streamlines, isothermal lines, and iso-entropy generation lines, as
+well as distributions of fluid friction irreversibility and heat transfer
+irreversibility. Moreover, variation of the average Nusselt number along the
+side walls and temperature distribution along the adiabatic walls are analyzed.
+Based on the presented results, it was concluded that, although the case with
+anti-symmetric temperature boundary conditions achieves higher heat transfer,
+it suffers from high entropy generation rate.</p>
+
+<h2>Acknowledgment</h2>
+
+<p align="justify" style="text-indent:19.85pt;">The author
+would like to thank the Islamic Azad University for financially supporting this
+research. </p>
+
+
+<img src="../images/line.png" width="100&#37;" height="1" />
+<H2><a name="references">References</a></H2>
+
+<p>[1] Zahmatkesh, I., and Yaghoubi, M., Studies on Thermal Performance of Electrical
+Heaters by Using Porous Materials, International Communications in Heat and
+Mass Transfer, Vol. 33, 2006, pp. 259, 267. <a href="http://dx.doi.org/10.1016/j.icheatmasstransfer.2005.10.006" target="_blank">View Article</a></p>
+
+<p>[2] Chen, W.,
+and Liu, W., Numerical Analysis of Heat Transfer in a Composite Wall Solar-Collector
+System with a Porous Absorber, Applied Energy, Vol. 78, 2004, pp. 137, 149. <a href="http://dx.doi.org/10.1016/j.apenergy.2003.07.003" target="_blank">View Article</a></p>
+
+<p>[3] Saeid, N.
+H., Natural Convection in Porous Cavity with Sinusoidal Bottom Wall Temperature
+Variation, International Communications in Heat and Mass Transfer, Vol. 32,
+2005, pp. 454, 463. <a href="http://dx.doi.org/10.1016/j.icheatmasstransfer.2004.02.018" target="_blank">View Article</a></p>
+
+<p>[4] Basak,
+T., Roy, S., Paul, T., and Pop, I., Natural Convection in a Square Cavity
+Filled with a Porous Medium: Effects of Various Thermal Boundary Conditions,
+International Journal of Heat and Mass Transfer, Vol. 49, 2006, pp. 1430, 1441. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2005.09.018" target="_blank">View Article</a></p>
+
+<p>[5] Basak,
+T., Roy, S., and Takhar, H. S., Effects of Nonuniformly Heated Wall(s) on a
+Natural-Convection Flow in a Square Cavity Field with a Porous Medium,
+Numerical Heat Transfer, Part A, Vol. 51, 2007, pp. 959, 978. <a href="http://dx.doi.org/10.1080/10407790601128600" target="_blank">View Article</a></p>
+
+<p>[6]
+Sathiyamoorthy, M., Basak, T., Roy, S., and Pop, I., Steady Natural Convection
+Flow in a Square Cavity Filled with a Porous Medium for Linearly Side Wall(s),
+International Journal of Heat and Mass Transfer, Vol. 50, 2007, pp. 1892,
+1901.<a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2006.10.010" target="_blank">View Article</a></p>
+
+<p>[7] Oztop, H.
+F., Natural Convection in Partially Cooled and Inclined Porous Rectangular
+Enclosures, International Journal of Thermal Sciences, Vol. 46, 2007, pp. 149,
+156. <a href="http://dx.doi.org/10.1016/j.ijthermalsci.2006.04.009" target="_blank">View Article</a></p>
+
+<p>[8] Varol,
+Y., Oztop, H. F., and Pop, I., Numerical Analysis of Natural Convection for a
+Porous Rectangular Enclosure with Sinusoidally Varying Temperature Profile on
+the Bottom Wall, International Communications in Heat and Mass Transfer, Vol.
+35, 2008, pp. 56, 64. <a href="http://dx.doi.org/10.1016/j.icheatmasstransfer.2007.05.015" target="_blank">View Article</a></p>
+
+<p>[9] Yedder,
+R. B., and Erchiqui, F., Convective Flow and Heat Transfer in a Tall Porous
+Cavity Side-Cooled with Temperature Profile, International Journal of Heat and
+Mass Transfer, Vol. 52, 2009, pp. 5712, 5718. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2009.08.016" target="_blank">View Article</a></p>
+
+<p>[10]
+Zahmatkesh, I., On the Importance of Thermal Boundary Conditions in Heat
+Transfer and Entropy Generation for Natural Convection inside a Porous Enclosure,
+International Journal of Thermal Sciences, Vol. 47, 2008, pp. 339, 346. <a href="http://dx.doi.org/10.1016/j.ijthermalsci.2007.02.008" target="_blank">View Article</a></p>
+
+<p>[11] Basak,
+T., Kaluri, R. S., and Balakrishnan, A.R., Effect of Thermal Boundary
+Conditions on Entropy Generation during Natural Convection, Numerical Heat
+Transfer, Part A, Vol. 59, 2011, pp. 372, 402. <a href="http://dx.doi.org/10.1080/10407782.2011.549075" target="_blank">View Article</a></p>
+
+<p>[12]
+Zahmatkesh, I., Second-Law Analysis of Buoyancy-Driven Flow inside a
+Rectangular Porous Enclosure with Three Adiabatic Walls, Majlesi Journal of
+Energy Management, Vol. 2, 2013. <a href="http://www.em.majlesi.info/index/index.php/em/article/view/58/pdf" target="_blank">View Article</a></p>
+
+<p>[13]
+Zahmatkesh, I., Influence of Thermal Radiation on Free Convection inside a
+Porous Enclosure, Emirates Journal for Engineering Research, Vol. 12, 2007, pp.
+47, 52. <a href="http://www.researchgate.net/publication/255581215_INFLUENCE_OF_THERMAL_RADIATION_ON_FREE_CONVECTION_INSIDE_A_POROUS_ENCLOSURE" target="_blank">View Article</a></p>
+
+<p>[14]
+Zahmatkesh, I., Dependence of Buoyancy-Driven Flow inside an Oblique Porous
+Cavity on its Orientation, Emirates Journal for Engineering Research, Vol. 18,
+2013, pp. 53, 61. <a href="http://www.eng.uaeu.ac.ae/en/research/journal/issues/v18/pdf_iss2_18/4.pdf" target="_blank">View Article</a></p>
+
+<p>[15] Mahmud,
+S., and Fraser, R. A., Magnetohydrodynamic Free Convection and Entropy
+Generation in a Square Porous Cavity, International Journal of Heat and Mass
+Transfer, Vol. 47, 2004, pp. 3245, 3256.<a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2004.02.005" target="_blank">View Article</a></p>
+
+<p>[16] Patankar,
+S. V., Numerical Heat Transfer and Fluid Flow, Hemisphere/McGrawHill,
+Washington DC, 1980. <a href="http://books.google.ca/books?id=5JMYZMX3OVcC&printsec=frontcover&dq=Numerical+Heat+Transfer+and+Fluid+Flow&hl=en&sa=X&ei=P_03VKOnA9DGsQTQwoH4Aw&redir_esc=y#v=onepage&q&f=false" target="_blank">View Book</a></p>
+
+<p>[17] Saeid,
+N. H., and Pop, I., Transient Free Convection in a Square Cavity Filled with a
+Porous Medium, International Journal of Heat and Mass Transfer, Vol. 47, 2004,
+pp. 1917, 1924. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2003.10.014" target="_blank">View Article</a></p>
+
+<p>[18]
+Misirlioglu, A., Baytas, A. C., and Pop, I., Free Convection in a Wavy Cavity
+Filled with a Porous Medium, International Journal of Heat and Mass Transfer,
+Vol. 48, 2005, pp. 1840, 1850. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2004.12.005" target="_blank">View Article</a></p>
+
+<p>[19]
+Badruddin, I. A., Zainal, Z. A., Narayana, P. A., and Seetharamu, K. N., Heat
+Transfer in Porous Cavity under the Influence of Radiation and Viscous
+Dissipation, International Communications in Heat and Mass Transfer, Vol. 33, 2006, pp. 491, 499. <a href="http://dx.doi.org/10.1016/j.icheatmasstransfer.2006.01.015" target="_blank">View Article</a></p>
+
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+
+  </div>
+
+  <div class="footer">
+
+  <div class="container">
+
+  <div class="col-sm-7 footer-link">
+
+        <p><a href="http://avestia.com">Avestia Publishing</a></p>
+        <p><a href="../register/">Subscribe to our Mailing List</a></p>
+        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></p>
+        <p><a href="../terms/">Terms of Use</a></p>
+		<p><a href="../sitemap/">Sitemap</a></p>
+
+      </div>
+      <div class="col-sm-5 footer-txt">
+        <p>Avestia Publishing, International ASET Inc. </p>
+        <p>Unit No. 417, 1376 Bank St. </p>
+        <p>Ottawa, Ontario, Canada </p>
+        <p>Postal Code: K1H 7Y3</p>
+        <p>Phone Number: 1-613-695-3040</p>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
