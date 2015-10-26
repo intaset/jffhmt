@@ -1,199 +1,172 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for JBB Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
 <title>JFFHMT - Numerical Solution for the Boussinesq Type
 Models with Application to Arterial Flow</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
 
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../css/style.css" />
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!--Goole Analytics Most Visited Article Code-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-55498545-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
-
-<!-- Include Most Visited Articles JS Code -->
- <script type="text/javascript" src="mostvisited.js"></script> 
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
-
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-<body>
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<div class="wrapper">
-
-  <div class="header">
-
-    <div class="container">
-
-      <div class="row">
-
-        <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'></span>
-<span class='st_facebook'></span>
-<span class='st_twitter'></span>
-<span class='st_googleplus'></span>
-<span class='st_linkedin'></span>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                </span>
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12">
-
-
-          <div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-<span class="navbar-brand" href="#">Menu</span>
-                  </div>
-
-                  <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">		
-					<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="../board/">Editorial Board</a></li><br>
-                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="../contact/">Contact Us</a></li>
-
-
-
-
-                    </ul>
-
-                  </div>
-
-                  <!--/.nav-collapse -->
-
-                </div>
-
-                <!--/.container-fluid -->
-
-              </div>
-
-            </nav>
-
-            </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-        </header>
-
-      </div>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
-<div class="clearfix"></div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/header.png" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-         <tr>
-                <td>Volume 1, Year 2014 - Pages 9-15</td>
-                <td align="right"><a href="PDF/002.pdf">View PDF (Full-text)</a></td>
-        </tr>
-         <tr>
-                <td>DOI: 10.11159/jffhmt.2014.002</td>
-                <td align="right"><a href="#references">Linked References</a></td>
-        </tr>
-		<tr>
-		<td colspan="2">ISSN: 2368-6111</td>
-		</tr>
-     </table>
-     
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!--Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br>
+    <p class="body">ISSN: 2368-6111</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
-<br>
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center" style="font-size:22pt;"> Numerical Solution for the Boussinesq Type
-Models with Application to Arterial Flow</p>
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">Volume 1, Year 2014 - Pages 9-15<br>
+      DOI: 10.11159/jffhmt.2014.002</p>
+    </div>
 
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/002.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
 
-<p align="center"><strong>Alexander S. Liberson, Jeffrey S. Lillie, David A. Borkholder</strong>
+    <h3 class="center">Numerical Solution for the Boussinesq Type
+Models with Application to Arterial Flow</h3>
 
+    <p class="body-bold center">Alexander S. Liberson, Jeffrey S. Lillie, David A. Borkholder</p>
 
-<br />Rochester Institute of Technology, 1 Lomb Memorial Drive, Rochester, NY, USA
-<br>asleme@rit.edu; jsliee@rit.edu
+    <p class="body center">Rochester Institute of Technology, 1 Lomb Memorial Drive, Rochester, NY, USA
+<br>asleme@rit.edu; jsliee@rit.edu</p>
 
-</p>
-
-<p>&nbsp;</p>
-
-<p align="justify"><i><strong>Abstract- </strong>
-A family of classical Boussinesq system of nonlinear wave theory is presented in a form of
+    <p class="body"><b>Abstract</b> - <i>A family of classical Boussinesq system of nonlinear wave theory is presented in a form of
 conservative equations supplemented by Riemann solver, which is a fundamental
 block in the Godunov frame formulation of flow problems. The governing system
 simulates different physical phenomena, such as propagation of a small
@@ -219,115 +192,72 @@ diagnostic measurements. Mathematical modelling presented in this work leads
 to a physiological understanding and interpretation of diagnostic measurements
 of the wave forms of a blood pressure, flow rate and an artery wall deflection.</i></p>
 
-<p align="left"><i><strong>Keywords:</strong></i>Boussinesq
-type waves, Traveling waves, TVD scheme, Pulse wave</p>
+    <p class="body"><b><i>Keywords:</i></b> Boussinesq
+type waves, Traveling waves, TVD scheme, Pulse wave.</p>
 
+    <p class="body">&copy; Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
 
-<p align="justify">  &copy; Copyright 2014 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
-
-<p>
-Date Received: 2014-05-17 <br />
+    <p class="body">Date Received: 2014-05-17 <br />
 
 Date Accepted: 2014-008-29 <br />
 
-Date Published: 2014-10-07
-</p>
+Date Published: 2014-10-07</p>
 
-<h4>Nomenclature</h4>
+<p class="body">Nomenclature</p>
+<ul class="topics">
+ <li>TVD: Total variation diminishing</li>
+ 
+ <li>CFD: Computational fluid dynamics</li>
+ 
+ <li>PWV: Pressure wave velocity</li>
+ 
+ <li><i>c</i>: speed of propagation</li>
+ 
+ <li><i>c<sub>MK</sub></i>: Moens-Korteweg speed of propagation</li>
+ 
+ <li><i>A</i>: Cross sectional area</li>
+ 
+ <li><i>&micro;</i>: Cross sectional axial flow velocity</li>
+ 
+ <li><i>&eta;</i>: Circumferential wall strain</li>
+ 
+ <li><i>p</i>: Static pressure</li>
+ 
+ <li><i>&rho;</i>: Fluid density</li>
+ 
+ <li><i>E</i>: Elastic modulus</li>
+ 
+ <li><i>h</i>: Wall thickness</li>
+ 
+ <li><i>r</i>: radius</li>
+ 
+ <li><i>A<sub>u</sub></i>: Peak flow velocity</li>
+ 
+ <li><i>A<sub>Q</sub></i>: Peak volume flow rate</li>
+ 
+ <li><i>A<sub>p</sub></i>: Peak pressure</li>
+</ul>
 
-<div class="widetable">
-<table style="border:0">
- <tr>
- <td style="padding:5px; width:100px" align="center">TVD</td>
- <td style="padding:5px;">Total variation diminishing</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center">CFD</td>
- <td style="padding:5px;">Computational fluid dynamics</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center">PWV</td>
- <td style="padding:5px;">Pressure wave velocity</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>c</i></td>
- <td style="padding:5px;">speed of propagation</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>c<sub>MK</sub></i></td>
- <td style="padding:5px;">Moens-Korteweg speed of propagation</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>A</i></td>
- <td style="padding:5px;">Cross sectional area</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>&micro;</i></td>
- <td style="padding:5px;">Cross sectional axial flow velocity</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>&eta;</i></td>
- <td style="padding:5px;">Circumferential wall strain</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>p</i></td>
- <td style="padding:5px;">Static pressure</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>&rho;</i></td>
- <td style="padding:5px;">Fluid density</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>E</i></td>
- <td style="padding:5px;">Elastic modulus</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>h</i></td>
- <td style="padding:5px;">Wall thickness</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>r</i></td>
- <td style="padding:5px;">radius</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>A<sub>u</sub></i></td>
- <td style="padding:5px;">Peak flow velocity</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>A<sub>Q</sub></i></td>
- <td style="padding:5px;">Peak volume flow rate</td>
- </tr>
- <tr>
- <td style="padding:5px; width:100px" align="center"><i>A<sub>p</sub></i></td>
- <td style="padding:5px;">Peak pressure</td>
- </tr>
-</table>
-</div>
-<br>
+  <div class="border"></div>
 
+  <div class="indent">
+<h4>1. Introduction</h4>
 
-
-
-<img src="../images/line.png" width="100%;" height="1" />
-<h2>1. Introduction</h2> 
-
-<p align="justify" style="text-indent:19.85pt;">Consider a broad family of Boussinesq type dispersive
+<p class="body">Consider a broad family of Boussinesq type dispersive
 wave models [1] presented in a conservative form </p>
 
-<div class="eqn">
-<img src="001_files/image004a.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image004a.png" class="eqn">
 <div class="eqn-number">(1)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image004b.png" class="img">
 </div>
+
+<div class="equation">
+<img src="001_files/image004b.png" class="eqn">
 <div class="eqn-number">(2)</div>
-<br>
+</div>
 
 
-
-<p align="justify">where dot above variable means time
+<p class="body">where dot above variable means time
 derivative, subscripts are partial derivative by the axial coordinate. The
 equations (1,2) describe
 a diverse range of physical phenomena, for example acoustics models [2],
@@ -336,7 +266,7 @@ nonlinear Korteweg de Vries or Benjamin-Bona-Mahony dispersive waves models
 flow in the passage of the finite depth [2], pulse propagating incompressible
 flow in elastic or viscoelastic segments [4-7], and others [2,3].</p>
 
-<p align="justify" style="text-indent:19.85pt;">A
+<p class="body">A
 well-developed high resolution computational fluid dynamic (CFD) technique,
 capturing the physics of a wave structure by applying the relating Riemann
 solver, is presented. Convective terms have been discretized by the third order
@@ -347,7 +277,7 @@ variation diminishing (TVD) scheme was applied [5]. The proposed employment of
 implicit solver is justified by significant restriction imposed on a time step
 by alternative explicit scheme in case of stiff boundary value problems. </p>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 problem of accounting for topological bifurcation and possible discontinuity of
 wall properties is addressed. Preliminary analysis is presented which leads to
 the correct jump conditions across bifurcated area. The Riemann solver supplies
@@ -357,101 +287,95 @@ computational analysis the inverse solution was obtained, calculating the local
 elastic properties of the arterial wall using typical diagnostic measurements.
 </p>
 
-<h2>2. Dynamics of
+<h4>2. Dynamics of
 Incompressible Flow in Elastic Vessel</h2>
 
-<p align="justify" style="text-indent:19.85pt;">Conservation
+<p class="body">Conservation
 of mass and momentum results in the following system of one dimensional
 equations (A=A(x,t)-cross sectional area of the vessel, u=u(x,t) - averaged
 flow velocity, p=p(x,t) - static pressure, f - the source friction term, &#961;
 - density of incompressible fluid) [4].</p>
 
-<div class="eqn">
-<img src="001_files/image005a.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image005a.png" class="eqn">
 <div class="eqn-number">(3)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image005b.png" class="img">
 </div>
-<div class="eqn-number">(4)</div>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">For
+<div class="equation">
+<img src="001_files/image005b.png" class="eqn">
+<div class="eqn-number">(4)</div>
+</div>
+
+<p class="body">For
 the thin walled elastic membrane vessel in a transversal motion, pressure -
 strain relationship is maintained by dynamic equilibrium condition (<img src="001_files/image006.png">- density of the wall,<img src="001_files/image007.png">, where <i>E</i> elastic modulus, <i>&#957;</i>-Poisson
 coefficient, <i>&#951;</i> circumferential strain, <i>h</i> thickness of the
 vessel, <i>r<sub>0</sub></i> radius of unstressed vessel)</p>
 
-<div class="eqn">
-<img src="001_files/image008.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image008.png" class="eqn">
 <div class="eqn-number">(5)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">Noting,
+<p class="body">Noting,
 that<img src="001_files/image009.png">, the total system of equations can be
 presented in the following non-conservative form</p>
 
-<div class="eqn">
-<img src="001_files/image010.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image010.png" class="eqn">
 <div class="eqn-number">(6)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image011.png" class="img">
 </div>
+
+<div class="equation">
+<img src="001_files/image011.png" class="eqn">
 <div class="eqn-number">(7)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image012.png" class="img">
 </div>
+
+<div class="equation">
+<img src="001_files/image012.png" class="eqn">
 <div class="eqn-number">(8)</div>
-<br>
+</div>
 
 
-<h4>2.1. Solitary Waves Solution</h4>
+<p class="subhead">2.1. Solitary Waves Solution</p>
 
-<p align="justify" style="text-indent:19.85pt;">It is well known that Boussinesq equations possess
+<p class="body">It is well known that Boussinesq equations possess
 solitary wave solution [1,2]. Substituting solution in a form of a traveling
 wave <img src="001_files/image013.png">, where <img src="001_files/image014.png"><i>, </i>into (6),(7),(8), and
 integrate, one can obtain (<img src="001_files/image015.png">, where prime means derivative
 by X)</p>
 
-<div class="eqn">
-<img src="001_files/image016.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image016.png" class="eqn">
 <div class="eqn-number">(9)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image017.png" class="img">
 </div>
-<div class="eqn-number">(10)</div>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">A
+<div class="equation">
+<img src="001_files/image017.png" class="eqn">
+<div class="eqn-number">(10)</div>
+</div>
+
+<p class="body">A
 non-linear momentum equation is obtained by multiplying equation (10) by <img src="001_files/image018.png">and integration to yield</p>
 
-<div class="eqn">
-<img src="001_files/image019.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image019.png" class="eqn">
 <div class="eqn-number">(11)</div>
-<br>
+</div>
 
-<p align="justify">Setting A<sub>&#951;</sub>=max<sub>X</sub>(&#951;(X)),
+<p class="body">Setting A<sub>&#951;</sub>=max<sub>X</sub>(&#951;(X)),
 A<sub>P</sub>=max<sub>X</sub>(p(X)), A<sub>u</sub>=max<sub>X</sub>(u(X)), and
 using (9) to calculate
 integrals in equation (11), one can
 find speed of a wave propagation (pressure wave velocity (PWV)) in a
 form </p>
 
-<div class="eqn">
-<img src="001_files/image020.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image020.png" class="eqn">
 <div class="eqn-number">(12)</div>
-<br>
+</div>
 
-<p align="justify">where: <img src="001_files/image021.png">is Moens-Korteweg
+<p class="body">where: <img src="001_files/image021.png">is Moens-Korteweg
 speed
 of propagation. Equation (12) presents
 the pressure wave velocity of the forward and backward solitary wave
@@ -460,88 +384,83 @@ Based
 on asymptotic expansion<img src="001_files/image022.png">, it can be reduced to
 the simplified form</p>
 
-<div class="eqn">
-<img src="001_files/image023.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image023.png" class="eqn">
 <div class="eqn-number">(13)</div>
-<br>
-
-<p align="justify" style="text-indent:19.85pt;">The increment</p>
-
-<div class="eqn">
-<img src="001_files/image024.png" class="img">
 </div>
-<div class="eqn-number">(14)</div>
-<br>
 
-<p align="justify">quantifies the correction to the
+<p class="body">The increment</p>
+
+<div class="equation">
+<img src="001_files/image024.png" class="eqn">
+<div class="eqn-number">(14)</div>
+</div>
+
+<p class="body">quantifies the correction to the
 classical Moens-Korteweg model, introduced by the present theory. While the
 linear model predicts all waves travel with the Moens-Korteweg speed (<img src="001_files/image025.png">), accounting for nonlinearities predicts
 speed of propagation which exceeds <img src="001_files/image026.png">by 10-15 % within the
 physiological range of transmural pressure.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 speed - amplitude relationship for the peak of flow velocity<img src="001_files/image027.png">, volume flow rate <img src="001_files/image028.png">, and pressure <img src="001_files/image029.png">are
 retrieved from equations (9), (10) for one way
 wave propagation</p>
 
-<div class="eqn">
-<img src="001_files/image030.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image030.png" class="eqn">
 <div class="eqn-number">(15)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image031.png" class="img">
 </div>
-<div class="eqn-number">(16)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image033.png" class="img">
-</div>
-<div class="eqn-number">(17)</div>
-<br>
 
-<p align="justify"> shows dependence of wave velocity propagation
+<div class="equation">
+<img src="001_files/image031.png" class="eqn">
+<div class="eqn-number">(16)</div>
+</div>
+
+<div class="equation">
+<img src="001_files/image033.png" class="eqn">
+<div class="eqn-number">(17)</div>
+</div>
+
+<p class="body"> shows dependence of wave velocity propagation
 on wall deflection and pressure amplitudes. All quantities are presented in a
 non-dimensional form, being normalized to <i>c<sub>MK</sub></i><sub> </sub>for
 all velocities, to <img src="001_files/image034.png">for the pressure, to the radius r<sub>0</sub>
 of the unstressed tube for the normal deflection.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Results
+<p class="body">Results
 show that the speed of propagation strongly depends on the amplitudes of
 pressure waves. Not mentioning theoretical importance, equations (15-17) are
 useful for verifying numerical accuracy of CFD based simulation of solitary
 wave.</p>
 
 <figure>
-<img src="001_files/image035.jpg" class="img"/>
+<img src="001_files/image035.jpg" class="article-img">
 
 <figcaption>
 Figure 1a. The dependence of non-dimensional wave velocity (<img src="001_files/image036.png">) propagation on peak normal deflection and flow
 velocity amplitudes (<img src="001_files/image037.png">0). Figure 2b The dependence of non-dimensional wave velocity (<img src="001_files/image036.png">) propagation on peak pressure and
 flow velocity amplitudes (<img src="001_files/image037.png">0)</figcaption>
 </figure>
-<br>
 
 
-<h4>2.2. Numerical Approach</h4>
+<p class="subhead">2.2. Numerical Approach</p>
 
-<p align="justify" style="text-indent:19.85pt;">By
+<p class="body">By
 inserting (5) into (3-4) we obtain
 the system written in the matrix conservation form</p>
 
-<div class="eqn">
-<img src="001_files/image038.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image038.png" class="eqn">
 <div class="eqn-number">(18)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image039.png" class="img">
 </div>
-<div class="eqn-number">(19)</div>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<div class="equation">
+<img src="001_files/image039.png" class="eqn">
+<div class="eqn-number">(19)</div>
+</div>
+
+<p class="body">The
 unknown vector of primitive variables <img src="001_files/image040.png">should
 satisfy partial differential equation (18) supplemented
 with relating initial and boundary conditions. To develop implicit procedure of
@@ -549,48 +468,45 @@ integration with respect to time we invoke an asymptotic differential equation
 relating the unknown vector <img src="001_files/image041.png">to its increment with
 respect to time <img src="001_files/image042.png">on different time layers.</p>
 
-<div class="eqn">
-<img src="001_files/image043.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image043.png" class="eqn">
 <div class="eqn-number">(20)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">Here,
+<p class="body">Here,
 <i>n</i> is the time layer number, <i><img src="001_files/image044.png"></i>is
 the time step, <i><img src="001_files/image045.png"></i>-scheme parameter.
 Linearizing (18), we obtain</p>
 
-<div class="eqn">
-<img src="001_files/image046.png" class="img">; <img src="001_files/image047.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image046.png" class="eqn">; <img src="001_files/image047.png" class="eqn">
 <div class="eqn-number">(21)</div>
-<br>
-<div class="eqn">
-<img src="001_files/image048.png" class="img">
 </div>
-<div class="eqn-number">(22)</div>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">We
+<div class="equation">
+<img src="001_files/image048.png" class="eqn">
+<div class="eqn-number">(22)</div>
+</div>
+
+<p class="body">We
 substitute expressions for <img src="001_files/image049.png">and <img src="001_files/image050.png">given by (18), (19), (21), (22)
 respectively into (20) to obtain a
 differential equation for <img src="001_files/image051.png">, in which the
 coefficients and the right hand side are calculated in terms of variables on
 the preceding time layer.</p>
 
-<div class="eqn">
-<img src="001_files/image052.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image052.png" class="eqn">
 <div class="eqn-number">(23)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">To
+<p class="body">To
 construct an implicit finite difference scheme, we express the flux Jacobian
 matrix as the difference between two nonnegative definite matrices defined as <img src="001_files/image053.png"></p>
 
-<p align="justify"><img src="001_files/image054.png"></p>
+<p class="body"><img src="001_files/image054.png"></p>
 
-<p align="justify" style="text-indent:19.85pt;">To
+<p class="body">To
 approximate the differential equation in computational domain, we construct a
 uniform grid with a grid size <i>h</i>. Integer index corresponds to the cell
 center, fractional (half integer) to the cell face. Right and left finite
@@ -598,26 +514,24 @@ difference operators are defined as follows: <img src="001_files/image055.png">.
 result equation (23) is replaced
 by the following finite difference counterpart</p>
 
-<div class="eqn">
-<img src="001_files/image056.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image056.png" class="eqn">
 <div class="eqn-number">(24)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 finite difference approximation of RHS<sub>i</sub> is defined as</p>
 
-<div class="eqn">
-<img src="001_files/image057.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image057.png" class="eqn">
 <div class="eqn-number">(25)</div>
-<br>
+</div>
 
-<p align="justify">where fluxes are evaluating according to
+<p class="body">where fluxes are evaluating according to
 TVD procedure using limited extrapolations of primitive variables described
 with details by [6-9]</p>
 
-<p align="justify" style="text-indent:19.85pt;">The general Riemann problem for discontinuity breakdown is then
+<p class="body">The general Riemann problem for discontinuity breakdown is then
 utilized to evaluate the inviscid fluxes <img src="001_files/image058.png"><span
 style='color:black'>on the sides of each cell. The “viscous” fluxes are
 calculated using standard central differences [7]. The convective part of
@@ -631,40 +545,37 @@ second order accurate in both space and time and provides stable convergence
 for time dependent hyperbolic equations without any artificial dissipation.
 Further details of numerical technique can be found in [8-13].</p>
 
-<h2>3. Numerical Experiments</h2>
+<h4>3. Numerical Experiments</h2>
 
-<h4>3.1. Scalar nonlinear waves</h4>
+<p class="subhead">3.1. Scalar nonlinear waves</p>
 
-<p align="justify" style="text-indent:19.85pt;">Consider
+<p class="body">Consider
 the one dimensional non-steady viscous Burgers' equation</p>
 
-<div class="eqn">
-<img src="001_files/image059.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image059.png" class="eqn">
 <div class="eqn-number">(26)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 Riemann problem with an initial discontinuity at x=0 can be expressed as a
 solution of the corresponding "inviscid" Burgers equation (<img src="001_files/image060.png">) with the initial state </p>
 
-<div class="eqn">
-<img src="001_files/image061.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image061.png" class="eqn">
 <div class="eqn-number">(27)</div>
-<br>
+</div>
 
-<p align="justify">where the subscripts L and R denote the
+<p class="body">where the subscripts L and R denote the
 left and right regions respectively. As it is known the corresponding solution
 U consists of shock and rarefaction waves [2], propagating from discontinuity</p>
 
-<div class="eqn">
-<img src="001_files/image062.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image062.png" class="eqn">
 <div class="eqn-number">(28)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">For the first example
+<p class="body">For the first example
 the Burgers' equation was solved for a few viscosity coefficients &#949;=0.25,
 0.1, 0.05, 0.01, using 100 cells, with initial conditions <img src="001_files/image064.png">, where <img src="001_files/image065.png">. In
 Fig. 2 results are compared with exact solution found in [2]. Courant number
@@ -677,8 +588,8 @@ using TVD formulations.</p>
 <div class="widetable">
 <table style="border:0">
 <tr align="center">
-<td style="padding:5px">(a)<br><img src="001_files/image066.jpg" class="img"/></td>
-<td style="padding:5px">(b)<br><img src="001_files/image067.jpg" class="img"/></td>
+<td style="padding:5px">(a)<br><img src="001_files/image066.jpg" class="article-img"></td>
+<td style="padding:5px">(b)<br><img src="001_files/image067.jpg" class="article-img"></td>
 </tr>
 </table>
 </div>
@@ -686,11 +597,10 @@ using TVD formulations.</p>
 <figcaption>
 Figure 2. Numerical solution of Burgers equation. Comparison with an exact solution (a); Shock resolution (b)</figcaption>
 </figure>
-<br>
 
-<h4>3.2. Flow in elastic arterial segments</h4>
+<p class="subhead">3.2. Flow in elastic arterial segments</p>
 
-<p align="justify" style="text-indent:19.85pt;">Fig
+<p class="body">Fig
 3 shows dependence of a peak displacement amplitude on the flow velocity
 amplitudes based on the traveling wave model (15-17) and TVD approach. This
 solution serves as a test for the TVD model applied to the flow simulation
@@ -701,18 +611,17 @@ was specified. We used Courant number CFL= 2, 100 cells along the tube,
 &#1012;=0.5</p>
 
 <figure>
-<img src="001_files/image068.png" class="img"/>
+<img src="001_files/image068.png" class="article-img">
 
 <figcaption>
 Figure 3. A comparison between the Non-dimesionalized peak deflection magnitude and
 peak pressure magnitude</figcaption>
 </figure>
-<br>
 
 
-<h4>3.3. Flow in junction</h4>
+<p class="subhead">3.3. Flow in junction</p>
 
-<p align="justify" style="text-indent:19.85pt;">Consider
+<p class="body">Consider
 junction element of bifurcation tree shown in Fig.4. We denote the parent
 branch by an index 1, and two daughter branches by the indices 1 and 2.
 Variables related to the cell faces are noted by capital letters, the ones
@@ -723,24 +632,22 @@ each step of iteration process. The total set of 6 equations to calculate 6
 unknowns comprises three conservation laws for the flow rate and momentum (<img src="001_files/image071.png">- losses associated with the area jump and
 a flow direction change inside junction)</p>
 
-<div class="eqn">
-<img src="001_files/image072.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image072.png" class="eqn">
 <div class="eqn-number">(30)</div>
-<br>
+</div>
 
 
-<p align="justify">and
+<p class="body">and
 three equations describing the transfer of forward and backward propagating
 Riemann invariants [4]</p>
 
-<div class="eqn">
-<img src="001_files/image073.png" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image073.png" class="eqn">
 <div class="eqn-number">(31)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">Analytical
+<p class="body">Analytical
 solution can be obtained based on a linearized form of the governing system
 (30), (31), which was used in the present work to calculate fluxes. For general
 purpose the linearized solution could be used as an initial approach of solving
@@ -755,18 +662,17 @@ in-vitro experimental testing data in future work. </p>
 
 
 <figure>
-<img src="001_files/image074.png" class="img"/>
+<img src="001_files/image074.png" class="article-img">
 
 <figcaption>
 Figure 4. Boundary conditions
   specified as a flow at the inlet section (<i>u<sub>1</sub></i>) to the
   system, and a pressure (<i>p<sub>2,3</sub></i>) at each exit section</figcaption>
 </figure>
-<br>
 
-<h4>3.4. Inverse problem of hemodynamics</h4>
+<p class="subhead">3.4. Inverse problem of hemodynamics</p>
 
-<p align="justify" style="text-indent:19.85pt;">Use
+<p class="body">Use
 of the model to solve the inverse problem of hemodynamic results in calculation
 of the local elastic modulus by non-invasively measuring pressure wave
 velocity, peak pressure, normal deflection or ejection time and ejection
@@ -778,25 +684,26 @@ combinations of PWV and ejection time result in the quantification for elastic
 modulus of about 1.04MPa as it is shown in Fig 5b. </p>
 
 <figure>
+  <center>
 <div class="widetable">
 <table style="border:0">
 <tr align="center">
-<td style="padding:5px">(a)<br><img src="001_files/image075.jpg" class="img"/></td>
-<td style="padding:5px">(b)<br><img src="001_files/image076.jpg" class="img"/></td>
+<td style="padding:5px">(a)<br><img src="001_files/image075.jpg" class="article-img"></td>
+<td style="padding:5px">(b)<br><img src="001_files/image076.jpg" class="article-img"></td>
 </tr>
 </table>
-</div>
+</div></center>
 
 <figcaption>
 Figure 5. Elastance
   surface plot from the model over a range of PWV and Ejection Time (a).
   Comparison of the model to three measured ejection times and PWV's (b)</figcaption>
 </figure>
-<br>
 
-<h2>4. Conclusion</h2>
 
-<p align="justify" style="text-indent:19.85pt;">Analytical and numerical
+<h4>4. Conclusion</h2>
+
+<p class="body">Analytical and numerical
 solutions are presented and verified for the one-dimensional direct and inverse
 problems of fluid dynamics in an elastic thin-walled tube. Based on
 direct computational analysis the inverse solution was obtained, calculating
@@ -804,107 +711,199 @@ the local elastic properties of the arterial wall using typical diagnostic
 measurements. </p>
 
 
-
-
-<img src="../images/line.png" width="100&#37;" height="1" />
-<H2><a name="references">References</a></H2>
-
-<p>[1] Bona J.L., Chen M., Saut J.C.,
+<h4 id="references">References</H2>
+<div class="ref">
+<p class="body">[1] Bona J.L., Chen M., Saut J.C.,
 Boussinesq equations and other systems for small-amplitude long waves in nonlinear
 dispersive media. I. Derivation and linear theory, J. Nonlin. Sci. 12 (2002)
 283-318. <a href="http://dx.doi.org/10.1007/s00332-002-0466-4" target="_blank">View Article</a></p>
 
-<p>[2] Whitham G.B., Linear and Nonlinear Waves, John Wiley &amp; Sons</a> (1999), 636pp. <a href="http://books.google.ca/books?id=84Pulkf-Oa8C&dq=Linear+and+Nonlinear+Waves,+John+Wiley+%26amp%3B+Sons&lr=&source=gbs_navlinks_s" target="_blank">View Book</a></p>
+<p class="body">[2] Whitham G.B., Linear and Nonlinear Waves, John Wiley &amp; Sons</a> (1999), 636pp. <a href="http://books.google.ca/books?id=84Pulkf-Oa8C&dq=Linear+and+Nonlinear+Waves,+John+Wiley+%26amp%3B+Sons&lr=&source=gbs_navlinks_s" target="_blank">View Book</a></p>
 
-<p>[3] Karpman V.I., Non-linear waves in
+<p class="body">[3] Karpman V.I., Non-linear waves in
 dispersive media, Elsevier Science &amp; Technology, 1974,186 pp. <a href="http://books.google.ca/books/about/Non_linear_Waves_in_Dispersive_Media.html?id=vhlRAAAAMAAJ&redir_esc=y" target="_blank">View Book</a></p>
 
-<p>[4] Sherwin S., Franke V., Peiro, I., Parker, K., One
+<p class="body">[4] Sherwin S., Franke V., Peiro, I., Parker, K., One
 dimensional modeling of a vascular network in space time variables, Journal of
 Engineering Mathematics 47 (3-4) (2003) 217-250. <a href="http://dx.doi.org/10.1023/B:ENGI.0000007979.32871.e2" target="_blank">View Article</a></p>
 
-<p>[5] Formaggia L., Lamponi D., Quarteroni
+<p class="body">[5] Formaggia L., Lamponi D., Quarteroni
 A., One-dimensional models for blood flow in arteries, J. Eng. Math. 47 (2003)
 251-276. <a href="http://dx.doi.org/10.1023/B:ENGI.0000007980.01347.29" target="_blank">View Article</a></p>
 
-<p>[6] J. Alastruey, Numerical assessment of
+<p class="body">[6] J. Alastruey, Numerical assessment of
 time-domain methods for the estimation of local arterial pulse wave speed.
 Journal of Biomechanics, 44(5), p. 885-891, 2011. <a href="http://dx.doi.org/0.1016/j.jbiomech.2010.12.002" target="_blank">View Article</a></p>
 
-<p>[7] J. Alastruey, K. H. Parker and S.J.
+<p class="body">[7] J. Alastruey, K. H. Parker and S.J.
 Sherwin, Arterial
 pulse wave haemodynamics, Proc. BHR Group's 11th International Conference on
 Pressure Surges, Lisbon, Portugal, Oct , 2012. <a href="https://kclpure.kcl.ac.uk/portal/files/9293356/Alastruey_et_al_2012_Arterial_pulse_wave_haemodynamics.pdf" target="_blank">View Article</a></p>
 
-<p>[8] Chakravarthy S. R., The versatility and reliability
+<p class="body">[8] Chakravarthy S. R., The versatility and reliability
 of Euler solvers based on high-accuracy TVD formulations, AIAA&nbsp;Paper 86-
 0243. <a href="http://dx.doi.org/10.2514/6.1986-243" target="_blank">View Article</a></p>
 
-<p>[9] Liberson A.S., Hesler S.H.,
+<p class="body">[9] Liberson A.S., Hesler S.H.,
 Mc.Closkey T.H., A unified CFD based approach to a variety of condensation
 processes in low pressure steam turbines. In Proceeding of the EPRI/VGB
 Conference, Freiburg, Germany, June 1999, EPRI, TR-114837, August 2000, pp.
 9-1-9-13.</p>
 
-<p>[10] Liberson A.S., Hesler S.H., Mc.Closkey T.H., Inviscid
+<p class="body">[10] Liberson A.S., Hesler S.H., Mc.Closkey T.H., Inviscid
 and viscous numerical simulation for non-equilibrium spontaneously condensing
 flows in steam turbine blade passages. PWR-Vol.33, 1998 International Joint
 Power Generation Conference. Vol.2, ASME 1998, pp.97-105. </p>
 
-<p>[11] Kosolapov Yu.S., Liberson A.S., An implicit relaxation
+<p class="body">[11] Kosolapov Yu.S., Liberson A.S., An implicit relaxation
 method for computation of three-dimensional steady flow of spontaneously condensing
 steam, Comput. Math. Math. Phys. 37, 6, (1997) 739-747. <a href="http://cat.inist.fr/?aModele=afficheN&cpsidt=1592766" target="_blank">View Article</a></p>
 
-<p>[12] Yee H. C., Harten A.,&nbsp;Implicit
+<p class="body">[12] Yee H. C., Harten A.,&nbsp;Implicit
 TVD schemes for hyperbolic conservation laws in curvilinear coordinates, AIAA
 Journal, Vol. 25, No. 2 (1987), pp. 266-274. <a href="http://dx.doi.org/10.2514/3.9617" target="_blank">View Article</a></p>
 
-[13] Chakravarthy
+<p class="body">[13] Chakravarthy
 S R., Relaxation
 methods for unfactored implicit upwind schemes, AIAA Paper 84-0165. <a href="http://ntrs.nasa.gov/search.jsp?R=19840036452" target="_blank">View Article</a></p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
 
-<div class="clearfix"></div>
+  </div> <!--Main Content -->
+</div>
+</div>
+
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
-<div class="clearfix"></div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
-<div class="clearfix"></div>
-  </div>
 
-  </div>
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-        <p><a href="http://avestia.com">Avestia Publishing</a></p>
-        <p><a href="../register/">Subscribe to our Mailing List</a></p>
-        <p><script>var refURL = window.location.protocol + "//" + window.location.host + 
-
-window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL
-
-+'">Feedback</a>');</script></p>
-        <p><a href="../terms/">Terms of Use</a></p>
-		<p><a href="../sitemap/">Sitemap</a></p>
-
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
       </div>
-      <div class="col-sm-5 footer-txt">
-        <p>Avestia Publishing, International ASET Inc. </p>
-        <p>Unit No. 417, 1376 Bank St. </p>
-        <p>Ottawa, Ontario, Canada </p>
-        <p>Postal Code: K1H 7Y3</p>
-        <p>Phone Number: 1-613-695-3040</p>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
 
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
-</body>
+</footer>
+</div>
 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+</body>
 </html>

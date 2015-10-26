@@ -1,220 +1,186 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for JBB Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
 <title>JFFHMT - Thermal Accumulation in a General Car Cabin Model</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
 
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../css/style.css" />
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!--Goole Analytics Most Visited Article Code-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-55498545-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
-
-<!-- Include Most Visited Articles JS Code -->
- <script type="text/javascript" src="mostvisited.js"></script> 
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
-
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-<body>
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<div class="wrapper">
-
-  <div class="header">
-
-    <div class="container">
-
-      <div class="row">
-
-        <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'></span>
-<span class='st_facebook'></span>
-<span class='st_twitter'></span>
-<span class='st_googleplus'></span>
-<span class='st_linkedin'></span>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                </span>
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12">
-
-
-          <div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-<span class="navbar-brand" href="#">Menu</span>
-                  </div>
-
-                  <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">		
-					<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="../board/">Editorial Board</a></li><br>
-                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="../contact/">Contact Us</a></li>
-
-
-
-
-                    </ul>
-
-                  </div>
-
-                  <!--/.nav-collapse -->
-
-                </div>
-
-                <!--/.container-fluid -->
-
-              </div>
-
-            </nav>
-
-            </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-        </header>
-
-      </div>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
-<div class="clearfix"></div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/header.png" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-         <tr>
-                <td>Volume 1, Year 2014 - Pages 48-56</td>
-                <td align="right"><a href="PDF/008.pdf">View PDF (Full-text)</a></td>
-        </tr>
-         <tr>
-                <td>DOI: 10.11159/jffhmt.2014.008</td>
-                <td align="right"><a href="#references">Linked References</a></td>
-        </tr>
-		<tr>
-		<td colspan="2">ISSN: 2368-6111</td>
-		</tr>
-     </table>
-     
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!--Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br>
+    <p class="body">ISSN: 2368-6111</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center" style="font-size:22pt;">Thermal Accumulation in a General Car Cabin Model</p>
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">Volume 1, Year 2014 - Pages 48-56<br>
+      DOI: 10.11159/jffhmt.2014.008</p>
+    </div>
 
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/008.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
 
-<p align="center"><strong>C.-Y. Tseng, Y.-A. Yan, J.C. Leong*</strong>
+    <h3 class="center">Thermal Accumulation in a General Car Cabin Model</h3>
 
+    <p class="body-bold center">C.-Y. Tseng, Y.-A. Yan, J.C. Leong*</p>
 
-<br />Department of Vehicle Engineering, National Pingtung University of Science and Technology, Taiwan R.O.C.<br>
-*+886-8-770-3202 ext. 7468; cleong@mail.npust.edu.tw
+    <p class="body center">Department of Vehicle Engineering, National Pingtung University of Science and Technology, Taiwan R.O.C.<br>
+*+886-8-770-3202 ext. 7468; cleong@mail.npust.edu.tw</p>
 
-</p>
+    <p class="body"><b>Abstract</b> - <i>Automobile air-conditioning systems are not very efficient even for use in conjunction with internal combustion engines. This problem is more critical if they are to be used in electric vehicles because conventional systems consume a significantly more energy and therefore tremendously shortens the travel distance per charge of an electric vehicle. Besides the development of new generation air-conditioning system, one of the easier remedies is to reduce the heating effects of a cabin so that the requirement for air-conditioning can be minimized and thus its energy consumption by the system. Current work aims to identify some of the key factors that may help minimize the cooling load of an electrical vehicle. This work investigates the solar radiation effect on a 5:1 reduced scale car cabin, whose dimensions were based on the actual dimension of a Formosa Martiz. In the process of radiative heating, the temperatures in the cabin were found increase at a much higher rate in the beginning. On the other hand, the installation of window film and sun screen effectively reduced the rise in cabin temperature. Hence, their installation will significantly help saving the overall car energy and therefore extend an electric car travel distance per charge. The color of the cabin external surfaces should be carefully chosen so that these surfaces can effectively reflect the radiative heat energy. Also, the cabin ceiling should be insulated as much as possible to reduce the amount of heat conduction into the cabin space.</i></p>
 
-<p>&nbsp;</p>
+    <p class="body"><b><i>Keywords:</i></b> Car cabin, Solar irradiation, Temperature measurement, Experiment.</p>
 
+    <p class="body">&copy; Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
 
-<p align="justify"><i><strong>Abstract- </strong>
-Automobile air-conditioning systems are not very efficient even for use in conjunction with internal combustion engines. This problem is more critical if they are to be used in electric vehicles because conventional systems consume a significantly more energy and therefore tremendously shortens the travel distance per charge of an electric vehicle. Besides the development of new generation air-conditioning system, one of the easier remedies is to reduce the heating effects of a cabin so that the requirement for air-conditioning can be minimized and thus its energy consumption by the system. Current work aims to identify some of the key factors that may help minimize the cooling load of an electrical vehicle. This work investigates the solar radiation effect on a 5:1 reduced scale car cabin, whose dimensions were based on the actual dimension of a Formosa Martiz. In the process of radiative heating, the temperatures in the cabin were found increase at a much higher rate in the beginning. On the other hand, the installation of window film and sun screen effectively reduced the rise in cabin temperature. Hence, their installation will significantly help saving the overall car energy and therefore extend an electric car travel distance per charge. The color of the cabin external surfaces should be carefully chosen so that these surfaces can effectively reflect the radiative heat energy. Also, the cabin ceiling should be insulated as much as possible to reduce the amount of heat conduction into the cabin space.</i></p>
-
-
-<p>&nbsp;</p>
-
-<p align="left"><i><strong>Keywords:</strong></i> Car cabin, Solar irradiation, Temperature measurement, Experiment.</p>
-
-<p>&nbsp;</p>
-<p align="justify">  &copy; Copyright 2014 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
-
-<p>&nbsp;</p>
-
-<p>
-Date Received: 2013-08-23<br />
+    <p class="body">Date Received: 2013-08-23<br />
 
 Date Accepted: 2014-05-09 <br />
+Date Published: 2014-11-04</p>
 
-Date Published: 2014-11-04
-</p>
+  <div class="border"></div>
 
-<img src="../images/line.png" width="100%;" height="1" />
-<h2>1. Introduction</h2> 
+  <div class="indent">
+<h4>1. Introduction</h4> 
 
-<p align="justify" style="text-indent:19.85pt;">In general, a reliable car
+<p class="body">In general, a reliable car
 is expected to be driven for at least 300 miles (482 km) before another easy
 and quick refueling. Not only so, the vehicle has to be capable of keeping up
 with the flow of traffic. Since their first debut in the 18 century, all
@@ -227,7 +193,7 @@ environment and is believed to be one of the culprits leading to recent
 dramatic change in climate. To remedy this, the use of fossil fuel has to be
 minimized if not entirely eliminated. </p>
 
-<p align="justify" style="text-indent:19.85pt;">For this reason, electric
+<p class="body">For this reason, electric
 cars have lately been given a lot of attention because they, unlike gasoline
 cars, produce almost no pollution. Unfortunately, an average electric car can
 only travel up to 100 miles (161 km) on a single electric charge. Even
@@ -237,7 +203,7 @@ Roadster and had completed 313 miles (501 km) on a single charge in the 10th
 annual Global Green Challenge. This achievement has set a new record for the
 production of electric vehicle [1]. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Since the automobile
+<p class="body">Since the automobile
 air-conditioning system consumes a lot of power, the activation of automobile
 air-conditioning system in any electric vehicle can greatly jeopardize the mileage
 per charge of the electric car [2]. Regardless
@@ -247,7 +213,7 @@ the electric car users on air-conditioning system. When there is less need
 for air-conditioning system, a better mileage per charge for the
 electric vehicle can be achieved. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Fujita et. al. [3] have
+<p class="body">Fujita et. al. [3] have
 developed a numerical simulation to predict the thermal environment of a
 simplified car cabin model under different air-conditioning conditions. Their
 analysis took into consideration of the effect of solar thermal irradiation,
@@ -264,7 +230,7 @@ computational domains corresponding to the air and solid component of
 the car.
 </p>
 
-<p align="justify" style="text-indent:19.85pt;">Rosendahl and Olesen [7] have
+<p class="body">Rosendahl and Olesen [7] have
 presented the different results about the thermal environment inside a vehicle
 for different air temperatures, operative temperatures, and equivalent
 temperatures. The tests were carried out in the winter season during the
@@ -283,7 +249,7 @@ highest cabin temperatures on clear days were 68&deg;C in the summer and 61&deg;
 the spring, but were on average approximately 10&deg;C cooler on cloudy days during
 the spring and summer.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Zhu et al. [12] have numerically and
+<p class="body">Zhu et al. [12] have numerically and
 experimentally examined the environmental conditions in public transportation
 buses. Their CFD model was used to calculate the distributions of the mean age
 and mean residual lifetime of air and to evaluate the ventilation system
@@ -302,7 +268,7 @@ system performance. Sevilgen and Kilic [15] performed a 3D numerical analysis
 of steady-state and transient temperature distribution in the car cabin. Their
 computational results were compared to and validated by experimental measurements.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Since the usage of
+<p class="body">Since the usage of
 conventional automobile air-conditioning systems are highly inefficient for electric
 vehicles, the authors deeply feel that, while new generation vehicle air-conditioning system may take
 a much longer time to develop, a quick and simple yet practical approach is to
@@ -314,25 +280,25 @@ through passive thermal design and daily practice of electric vehicle users.</p>
 
 
 
-<h2>2. Experiment</h2>
+<h4>2. Experiment</h4>
 
-<h4>2.1. Car Cabin Model</h4>
+<p class="subhead">2.1. Car Cabin Model</p>
 
-<p align="justify" style="text-indent:19.85pt;">A 5:1 reduced scale experimental
+<p class="body">A 5:1 reduced scale experimental
 cabin model has been built based on the actual measurement of a Formosa Martiz.
 For simplicity, the front and rear compartments of the car model have been
 neglected. However, the dashboard and four seats have been included for
 the completion of investigation. Fig. 1 shows the actual model after assembly. </p>
 
 <figure>
-<img src="008_files/image001.jpg" class="img"/>
+<img src="008_files/image001.jpg" class="article-img">
 
 <figcaption>
 Figure 1. Car cabin model</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The model has a dimension
+
+<p class="body">The model has a dimension
 of 50 cm (length) x 24.4 cm (width) x 14.4 cm (height). The projection height
 of the glass is 9 cm. The front and rear tilted angles are 35&deg; and 45&deg;,
 respectively. The glass composing the side windows were accurately calculated
@@ -346,20 +312,20 @@ of the model were neglected as well. The arrangement of these accessories is
 shown in Fig. 2.</p>
 
 <figure>
-<img src="008_files/image002.jpg" class="img"/>
+<img src="008_files/image002.jpg" class="article-img">
 
 <figcaption>
 Figure 2. Interior of the car cabin model</figcaption>
 </figure>
-<br>
 
-<h4>2.2. Data Acquisition System</h4>
 
-<p align="justify" style="text-indent:19.85pt;">Other than the environment
+<p class="subhead">2.2. Data Acquisition System</p>
+
+<p class="body">Other than the environment
 temperature, the temperature variations at 19 locations in the cabin have been
 traced and recorded using K-Type thermocouples and a data logger (FLUKE 2640A).</p>
 
-<p align="justify" style="text-indent:19.85pt;">This data logger is
+<p class="body">This data logger is
 capable of simultaneously recording 20 temperature readings through its
 channels. Its temperature readings have a precision of 0.1&deg;C. Some of these
 locations where thermocouples are attached include the cabin ceiling, the
@@ -368,48 +334,47 @@ backseats, the front and rear legrooms, the center of the cabin space, etc.</p>
 
 
 
-<h4>2.3. Apparatus Arrangement</h4>
+<p class="subhead">2.3. Apparatus Arrangement</p>
 
-<p align="justify" style="text-indent:19.85pt;">To simulate the solar
+<p class="body">To simulate the solar
 thermal irradiation, a 350W infrared light source was used. It was fixed at a
 given distance <i>d</i> away from the cabin model illuminating at a given elevation angle &#61553;. This angle is
 measured from a horizontal planar datum, as shown in Fig. 3. </p>
 
 <figure>
-<img src="008_files/image003.png" class="img"/>
+<img src="008_files/image003.png" class="article-img">
 
 <figcaption>
 Figure 3. Experimental setup: (1) car cabin model; (2) light
 source; (3) data acquisition system; (4) computer; and (5) K-Type
 thermocouples</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">The same figure also displays
+
+<p class="body">The same figure also displays
 the experimental setup of current work. This experiment as performed in a dark room
 so that the effect of ambient thermal irradiation can be minimized. Fig. 4
 shows a snapshot of current experiment.</p>
 
 <figure>
-<img src="008_files/image004.jpg" class="img"/>
+<img src="008_files/image004.jpg" class="article-img">
 
 <figcaption>
 Figure 4. Snapshot of present experimental setup</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The simulated solar flux <i>q</i>
+
+<p class="body">The simulated solar flux <i>q</i>
 in this experiment can be estimated as</p>
 
-<div class="eqn">
-<img src="008_files/image005.png" class="img">
-</div>
+<div class="equation">
+<img src="008_files/image005.png" class="eqn">
 <div class="eqn-number">(1)</div>
-<br>
+</div>
 
 
-<p align="justify">where <i>h</i> is the
+<p class="body">where <i>h</i> is the
 efficiency of the infrared light bulb (which normally varies between 0.90 and
 0.95), <i>P</i> is the power of the light source, and <i>d</i> is the distance
 between the light source and the car cabin. As a matter of fact, the exact
@@ -425,28 +390,27 @@ sunny condition where the solar flux is about 1357 W/m<sup>2</sup> [17].</p>
 
 
 
-<h2>3. Results and Discussions</h2>
+<h4>3. Results and Discussions</h4>
 
-<h4>3.1. Effects of Irradiation Shielding</h4>
+<p class="subhead">3.1. Effects of Irradiation Shielding</p>
 
-<h4><i>3.1.1. Tinted Glass</i></h4>
+<p class="subhead"><i>3.1.1. Tinted Glass</i></p>
 
-<p align="justify" style="text-indent:19.85pt;">Figs. 5 compare the
+<p class="body">Figs. 5 compare the
 temperature variation at different locations associated to the car cabin model.
 The blue and red lines correspond to the case whose glasses are tinted or not
 by window film installation, respectively. </p>
 
 
 <figure>
-<img src="008_files/image006.jpg" class="img"/>
+<img src="008_files/image006.jpg" class="article-img">
 
 <figcaption>
 Figure 5. Temperatures for cabin with and without tinted glass: (a) front windscreen; (b) dashboard; (c) front seat bottom; and (d) front seat back</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">It was found that except
+<p class="body">It was found that except
 for the front windscreen (as in Fig. 5(a)), the increase in temperature inside
 the cabin could be significantly reduced if the glasses were tinted. However,
 it can be discovered that the temperature at the front windscreen increased
@@ -467,7 +431,7 @@ a trend very similar to that on the dashboard. This phenomenon is very much
 different from that at the front seat bottom because the infrared beam had not
 directly shined on the front seat back.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Combining all the
+<p class="body">Combining all the
 temperature variation in Fig. 5, if the glass was not tinted, the temperature
 at the front seat bottom was consistently the highest, followed by the front
 windscreen, the dashboard, and the front seat back. This finding contradicts to
@@ -479,29 +443,28 @@ material. If the glass was tinted, the temperature on the front windscreen
 remained the highest followed by the dashboard, the front seat bottom, and the
 front seat back.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Also discovered is that
+<p class="body">Also discovered is that
 the window film installation made the greatest difference in the beginning of
 the heating process because the rate of heat accumulation within the cabin was
 greatly reduced in the first hour. After a certain period of time, the rates of
 temperature increased with and without the installation of window film appeared
 to be the same.</p>
 
-<h4><i>3.1.2. Others</i></h4>
+<p class="subhead"><i>3.1.2. Others</i></p>
 
-<p align="justify" style="text-indent:19.85pt;">The effects of the
+<p class="body">The effects of the
 installation of either window film or sun screen are compared and shown in Fig.
 6. </p>
 
 <figure>
-<img src="008_files/image007.png" class="img"/>
+<img src="008_files/image007.png" class="article-img">
 
 <figcaption>
 Figure 6. Effect of solar irradiation shielding devices on the cabin temperature variation</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">It shows the temperatures
+<p class="body">It shows the temperatures
 at 5 locations in the cabin under a consistent radiative heating through the
 infrared light source for 2 hours. Apparently, in a cabin with clear glass, the
 temperature on the front seat bottom was the highest while that at the front
@@ -520,23 +483,23 @@ and eventually providing more heat to the front windscreen. Hence, the
 placement of the sun screen beneath the front windscreen caused a two stage
 heating process on the front windscreen.</p>
 
-<h4>3.2. Effects of Sun Position</h4>
+<p class="subhead">3.2. Effects of Sun Position</p>
 
-<h4><i>3.2.1 Elevation Angle</i></h4>
+<p class="subhead"><i>3.2.1 Elevation Angle</i></p>
 
-<p align="justify" style="text-indent:19.85pt;">Fig. 7 proves that the
+<p class="body">Fig. 7 proves that the
 solar elevation angle has a crucial influence on the temperature variations
 within the cabin. </p>
 
 <figure>
-<img src="008_files/image008.png" class="img"/>
+<img src="008_files/image008.png" class="article-img">
 
 <figcaption>
 Figure 7. Effect of solar elevation angle on the cabin temperature variation</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">In this case, the car was
+
+<p class="body">In this case, the car was
 assumed to park in such a way that its windscreen was perfectly aligned in the
 direction facing the sun. At relatively small sun elevation angles (i.e., <i>q</i> &#8804; 30&deg;),
 solar thermal radiation penetrated the front windscreen and reached the front
@@ -565,25 +528,25 @@ from us. On the other hand, the temperature at the front portion of the ceiling
 remained unchanged while that at its rear portion increased continuously.</p>
 
 
-<h4><i>3.2.2. Car Orientation</i></h4>
+<p class="subhead"><i>3.2.2. Car Orientation</i></p>
 
-<p align="justify" style="text-indent:19.85pt;">If the solar irradiation
+<p class="body">If the solar irradiation
 shines upon the cabin from the side instead of the front, it is found that the
 variation of temperature increase within the cabin space changed dramatically,
 as clearly depicted in Fig. 8. </p>
 
 
 <figure>
-<img src="008_files/image009.png" class="img"/>
+<img src="008_files/image009.png" class="article-img">
 
 <figcaption>
 Figure 8. Effect of car orientation on the cabin temperature variation: sun shines upon (a) front windscreen; and (b) side
 windows</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">As expected, the dashboard
+
+<p class="body">As expected, the dashboard
 and front seat temperatures increased the most when the car was facing the sun.
 In contrast, the temperatures recorded on the surfaces at the rear portion of
 the cabin were clearly among the lowest. Also discovered was that the front
@@ -603,10 +566,10 @@ the cabin simply because of the increase in window glass area that allowed more
 thermal radiation to enter the cabin.</p>
 
 
-<h4>3.3. Effects of Exterior
-Color</h4>
+<p class="subhead">3.3. Effects of Exterior
+Color</p>
 
-<p align="justify" style="text-indent:19.85pt;">The color of the car cabin
+<p class="body">The color of the car cabin
 exterior was also investigated in this work. The external surface of the cabin
 model was painted in either metallic blue or metallic silver. The light source
 was placed in a way such that the radiative heat from the light entered the
@@ -615,15 +578,14 @@ locations after 4 hours of radiative heating are shown in Fig. 9. </p>
 
 
 <figure>
-<img src="008_files/image010.png" class="img"/>
+<img src="008_files/image010.png" class="article-img">
 
 <figcaption>
 Figure 9. Effect of solar elevation angle on the cabin temperature variation</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">Because the light shined
+<p class="body">Because the light shined
 from the side, the temperature at the dashboard was no longer the highest.
 Instead, the temperature at the front seat bottom was greater than that at the
 dashboard regardless of the color of the cabin exterior. When the cabin
@@ -648,9 +610,9 @@ thermal comfort in the electric car cabin.</p>
 
 
 
-<h4>3.4. Effects of Roof Materials</h4>
+<p class="subhead">3.4. Effects of Roof Materials</p>
 
-<p align="justify" style="text-indent:19.85pt;">The effect of the thermal properties
+<p class="body">The effect of the thermal properties
 of the car body has also been investigated, particularly the roof of the car
 cabin. The roofs of the cabin model were made of either a steel plate or a
 wooden plate. The thermal diffusivity of stainless steel is about 3.4x10<sup>-6</sup>
@@ -674,15 +636,14 @@ radiative heating period. </p>
 
 
 <figure>
-<img src="008_files/image011.jpg" class="img"/>
+<img src="008_files/image011.jpg" class="article-img">
 
 <figcaption>
 Figure 10. Effect of solar elevation angle on the cabin temperature variation</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">Since the light source was
+<p class="body">Since the light source was
 placed 30 cm away from the model and an elevation angle of 30&deg;. Based
 on measurement, the temperatures at the steel and wooden roofs are 38.4&deg;C and
 42.1&deg;C, respectively. Under this setting, the roof of the model absorbed a
@@ -695,9 +656,9 @@ is generally about 5&deg;C hotter than the stainless steel one. </p>
 
 
 
-<h2>4. Conclusions </h2>
+<h4>4. Conclusions </h4>
 
-<p align="justify" style="text-indent:19.85pt;">Based on the experimental
+<p class="body">Based on the experimental
 findings of this work, several important conclusions can be made to assist the
 improvement of future electric car designs. These findings suggest that
 electric car windows should at least be tinted whenever possible. Furthermore,
@@ -711,110 +672,203 @@ windshield. Radiative heat from the sun would enter the cabin space through cond
 the cabin roof. Current experimental results confirm that the cabin ceiling
 insulation significantly helps reducing the overall cabin air temperature.</p>
 
-<h2>Acknowledgements</h2>
+<h4>Acknowledgements</h4>
 
-<p align="justify" style="text-indent:19.85pt;">The financial support of
+<p class="body">The financial support of
 this work by the National Science Council of Taiwan under contract number NSC
 97-3114-E-020-001- was greatly appreciated.</p>
 
+<h4 id="references">References</h4>
 
+<div class="ref">
+<p class="body">[1] E. Prelgauskas, "New EV Range World Record Set," [Online]. Available: http://www.ev.com/tag/emilis-prelgauskas, Accessed on Sept. 9, 2012. <a href="http://www.ev.com/tag/emilis-prelgauskas" target="_blank">View Site</a></p>
 
-
-
-
-<img src="../images/line.png" width="100&#37;" height="1" />
-<H2><a name="references">References</a></H2>
-
-<p>[1] E. Prelgauskas, "New EV Range World Record Set," [Online]. Available: http://www.ev.com/tag/emilis-prelgauskas, Accessed on Sept. 9, 2012. <a href="http://www.ev.com/tag/emilis-prelgauskas" target="_blank">View Site</a></p>
-
-<p>[2] R. Farrington , J. Rugh, "Impact of vehicle air-conditioning on fuel economy, tailpipe emissions, and electric
+<p class="body">[2] R. Farrington , J. Rugh, "Impact of vehicle air-conditioning on fuel economy, tailpipe emissions, and electric
 vehicle range," <i>Earth Technologies Forum</i>, Washington D.C., USA: 2000. <a href="http://www.shrieve.com.cn/200909_ruifu/uploads/UploadFile/%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E7%A9%BA%E8%B0%83%E5%AF%B9%E7%87%83%E6%B2%B9%E7%BB%8F%E6%B5%8E%E6%80%A7%E5%92%8C%E6%8E%92%E6%94%BE%E7%9A%84%E5%BD%B1%E5%93%8D.pdf" target="_blank">View Article</a></p>
 
-<p>[3] A. Fujita , J.-I. Kanemaru, H. Nakagawa, Y. Ozeki, "Numerical simulation method to predict the thermal environment inside a car cabin," <i>JSAE Review</i>, vol. 22, pp. 39-47, 2001. <a href="http://dx.doi.org/10.1016/S0389-4304(00)00101-6" target="_blank">View Article</a></p>
+<p class="body">[3] A. Fujita , J.-I. Kanemaru, H. Nakagawa, Y. Ozeki, "Numerical simulation method to predict the thermal environment inside a car cabin," <i>JSAE Review</i>, vol. 22, pp. 39-47, 2001. <a href="http://dx.doi.org/10.1016/S0389-4304(00)00101-6" target="_blank">View Article</a></p>
 
-<p>[4] T. Kataoka , Y. Nakamura, "Prediction of thermal sensation based on simulation of temperature distribution in a vehicle
+<p class="body">[4] T. Kataoka , Y. Nakamura, "Prediction of thermal sensation based on simulation of temperature distribution in a vehicle
 cabin," <i>Heat Transfer-Asian Research</i>, vol. 30, pp. 195-212, 2001. <a href="http://dx.doi.org/10.1002/htj.1010" target="_blank">View Article</a></p>
 
-<p>[5] N.A.G. Martinho , M.C.G. Silva, J.A.E. Ramos, "Evaluation of Thermal Comfort in a Vehicle Cabin," <i>Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering</i>, vol. 218, pp. 159-166, 2004. <a href="http://dx.doi.org/10.1243/095440704772913936" target="_blank">View Article</a></p>
+<p class="body">[5] N.A.G. Martinho , M.C.G. Silva, J.A.E. Ramos, "Evaluation of Thermal Comfort in a Vehicle Cabin," <i>Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering</i>, vol. 218, pp. 159-166, 2004. <a href="http://dx.doi.org/10.1243/095440704772913936" target="_blank">View Article</a></p>
 
-<p>[6] S.-H. Song , C. Yang, X.-L. Gou, "Simulation of air-flow and temperature field in
+<p class="body">[6] S.-H. Song , C. Yang, X.-L. Gou, "Simulation of air-flow and temperature field in
 air-conditional automobile cabin," <i>Computer Simulation</i>, 2004-09, 2004. <a href="http://en.cnki.com.cn/Article_en/CJFDTOTAL-JSJZ200409050.htm" target="_blank">View Article</a></p>
 
-<p>[7] J. Rosendahl B.W. Olesen, "Comparison of temperature measurement methods for
+<p class="body">[7] J. Rosendahl B.W. Olesen, "Comparison of temperature measurement methods for
 evaluation of the thermal environment in vehicles," <i>International Journal
 of Vehicle Design</i>, vol. 42, pp. 22-34, 2006. <a href="http://inderscience.metapress.com/content/6tv9e0el8e772g4g/" target="_blank">View Article</a></p>
 
-<p>[8] M.  Kilic, G. Sevilgen, "Evaluation of heat transfer characteristics in an automobile cabin with a virtual manikin
+<p class="body">[8] M.  Kilic, G. Sevilgen, "Evaluation of heat transfer characteristics in an automobile cabin with a virtual manikin
 during heating period," <i>Numerical Heat Transfer, Part A: Applications</i>, vol. 56, pp. 515-539, 2009. <a href="http://dx.doi.org/10.1080/10407780903266356" target="_blank">View Article</a></p>
 
-<p>[9] M.O. Korukcu,  M. Kilic, "The usage of IR thermography for the temperature measurements inside an automobile cabin," <i>International Communications in Heat and Mass Transfer</i>, vol. 36, pp. 872-877, 2009. <a href="http://dx.doi.org/10.1016/j.icheatmasstransfer.2009.04.010" target="_blank">View Article</a></p>
+<p class="body">[9] M.O. Korukcu,  M. Kilic, "The usage of IR thermography for the temperature measurements inside an automobile cabin," <i>International Communications in Heat and Mass Transfer</i>, vol. 36, pp. 872-877, 2009. <a href="http://dx.doi.org/10.1016/j.icheatmasstransfer.2009.04.010" target="_blank">View Article</a></p>
 
-<p>[10] J.H. Yang, S. Kato, H. Nagano, "Measurement of airflow of air-conditioning in a car with PIV," <i>Journal of Visualization</i>, vol. 12, pp. 119-130, 2009. <a href="http://iospress.metapress.com/content/82851780712121g4/" target="_blank">View Article</a></p>
+<p class="body">[10] J.H. Yang, S. Kato, H. Nagano, "Measurement of airflow of air-conditioning in a car with PIV," <i>Journal of Visualization</i>, vol. 12, pp. 119-130, 2009. <a href="http://iospress.metapress.com/content/82851780712121g4/" target="_blank">View Article</a></p>
 
-<p>[11] A. Grundstein, V. Meentemeyer, J. Dowd, "Maximum vehicle cabin temperatures under different meteorological conditions," <i>International Journal of Biometeorology</i>, vol. 53, no. 3, pp 255-261, 2009. <a href="http://dx.doi.org/10.1007/s00484-009-0211-x" target="_blank">View Article</a></p>
+<p class="body">[11] A. Grundstein, V. Meentemeyer, J. Dowd, "Maximum vehicle cabin temperatures under different meteorological conditions," <i>International Journal of Biometeorology</i>, vol. 53, no. 3, pp 255-261, 2009. <a href="http://dx.doi.org/10.1007/s00484-009-0211-x" target="_blank">View Article</a></p>
 
-<p>[12] S. Zhu, P. Demokritou, J. Spengler, "Experimental and numerical investigation of micro-environmental conditions in public transportation buses," <i>Building and Environment</i>, col. 45, pp. 2077-2088, 2010. <a href="http://dx.doi.org/10.1016/j.buildenv.2010.03.004" target="_blank">View Article</a></p>
+<p class="body">[12] S. Zhu, P. Demokritou, J. Spengler, "Experimental and numerical investigation of micro-environmental conditions in public transportation buses," <i>Building and Environment</i>, col. 45, pp. 2077-2088, 2010. <a href="http://dx.doi.org/10.1016/j.buildenv.2010.03.004" target="_blank">View Article</a></p>
 
-<p>[13] H.H. Al-Kayiem, M.F. Sidik, M.F., Y.R.A.L. Munusammy, "Study on the thermal accumulation and distribution inside a parked car cabin," <i>American Journal of Applied Sciences</i>, vol. 7, pp. 784-789, 2010. <a href="http://dx.doi.org/10.3844/ajassp.2010.784.789" target="_blank">View Article</a></p>
+<p class="body">[13] H.H. Al-Kayiem, M.F. Sidik, M.F., Y.R.A.L. Munusammy, "Study on the thermal accumulation and distribution inside a parked car cabin," <i>American Journal of Applied Sciences</i>, vol. 7, pp. 784-789, 2010. <a href="http://dx.doi.org/10.3844/ajassp.2010.784.789" target="_blank">View Article</a></p>
 
-<p>[14] H.M. Kamar, M.Y. Senawi, N. Kamsah, "Computerized simulation of automotive air-conditioning system: development of mathematical model and its validation," <i>International Journal of Computer Science Issues</i>, vol. 9, pp. 23-34, 2012. <a href="http://ijcsi.org/papers/IJCSI-9-2-2-23-34.pdf" target="_blank">View Article</a></p>
+<p class="body">[14] H.M. Kamar, M.Y. Senawi, N. Kamsah, "Computerized simulation of automotive air-conditioning system: development of mathematical model and its validation," <i>International Journal of Computer Science Issues</i>, vol. 9, pp. 23-34, 2012. <a href="http://ijcsi.org/papers/IJCSI-9-2-2-23-34.pdf" target="_blank">View Article</a></p>
 
-<p>[15] G. Sevilgen, M. Kilic, "Three dimensional numerical analysis of temperature distribution in an automobile cabin," <i>Thermal Science</i>, vol. 16, pp. 321-326, 2012. <a href="http://dx.doi.org/10.2298/TSCI1201321S" target="_blank">View Article</a></p>
+<p class="body">[15] G. Sevilgen, M. Kilic, "Three dimensional numerical analysis of temperature distribution in an automobile cabin," <i>Thermal Science</i>, vol. 16, pp. 321-326, 2012. <a href="http://dx.doi.org/10.2298/TSCI1201321S" target="_blank">View Article</a></p>
 
-<p>[16] A. Alexandrov, V. Kudriavtsev, M. Reggio, "Analysis of Flow Patterns  and Heat Transfer  in Generic Passenger Car Mini-Environment," <i>9th Annual Conference of the CFD Society of Canada</i>, pp. 27-29, 2001. <a href="http://www.cfdconsulting.com/papers/paper1m_car.pdf" target="_blank">View Article</a></p>
+<p class="body">[16] A. Alexandrov, V. Kudriavtsev, M. Reggio, "Analysis of Flow Patterns  and Heat Transfer  in Generic Passenger Car Mini-Environment," <i>9th Annual Conference of the CFD Society of Canada</i>, pp. 27-29, 2001. <a href="http://www.cfdconsulting.com/papers/paper1m_car.pdf" target="_blank">View Article</a></p>
 
-<p>[17] E.V.P. Smith, and D.M. Gottlieb, "Solar flux and its variations," <i>Space Science Reviews</i>, vol. 16, pp. 771-802, 1974.<a href="http://dx.doi.org/10.1007/BF00182600" target="_blank">View Article</a></p>
+<p class="body">[17] E.V.P. Smith, and D.M. Gottlieb, "Solar flux and its variations," <i>Space Science Reviews</i>, vol. 16, pp. 771-802, 1974.<a href="http://dx.doi.org/10.1007/BF00182600" target="_blank">View Article</a></p>
 
-<p>[18] J.E. Jensen, W.A. Tuttle, R.B. Stewart, H. Brechna, and A.G. Prodell, <i>Selected Cryogenic Data Notebook</i>, Brookhaven National Laboratory Associated Universities, Inc., 1980. <a href="http://materialdatabase.magnet.fsu.edu/CryoDatahandBook/Section10.pdf" target="_blank">View Book</a></p>
+<p class="body">[18] J.E. Jensen, W.A. Tuttle, R.B. Stewart, H. Brechna, and A.G. Prodell, <i>Selected Cryogenic Data Notebook</i>, Brookhaven National Laboratory Associated Universities, Inc., 1980. <a href="http://materialdatabase.magnet.fsu.edu/CryoDatahandBook/Section10.pdf" target="_blank">View Book</a></p>
 
-<p>[19] S.V. Stankus, I.V. Savchenko, A.V. Baginskii, O.I. Verba, A.M. Prokop'ev, and R.A. Khairulin,
+<p class="body">[19] S.V. Stankus, I.V. Savchenko, A.V. Baginskii, O.I. Verba, A.M. Prokop'ev, and R.A. Khairulin,
 "Thermal conductivity and thermal diffusivity coefficients of 12Kh18N10T stainless steel in a wide temperature range," <i>High Temperature</i>, vol. 46, no. 5, pp 731-733, 2008. <a href="http://dx.doi.org/10.1134/S0018151X08050222" target="_blank">View Article</a></p>
 
-<p>[20] R. Bergman, Z. Cai, C.G. Carll, C.A. Clausen, M.A. Dietenberger, R.H. Falk, C.R. Frihart, S.V.
+<p class="body">[20] R. Bergman, Z. Cai, C.G. Carll, C.A. Clausen, M.A. Dietenberger, R.H. Falk, C.R. Frihart, S.V.
 Glass, C.G. Hunt, R.E. Ibach, D.E. Kretschmann, D.R. Rammer, and R.J. Ross, <i>Wood Handbook, Wood as an Engineering Material, Forest Products Laboratory,</i> General Technical Report FPL-GTR-190, 2010. <a href="http://www.fpl.fs.fed.us/documnts/fplgtr/fpl_gtr190.pdf" target="_blank">View Book</a></p>
 
-<p>[21] <i>Color Specifications</i>, Metal Panel Systems, Inc [Online]. Available: http://www.metalpanelsystems.com/colorspecs01.htm,
+<p class="body">[21] <i>Color Specifications</i>, Metal Panel Systems, Inc [Online]. Available: http://www.metalpanelsystems.com/colorspecs01.htm,
 Accessed on: Feb. 1, 2014.</p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
 
+  </div> <!--Main Content -->
+</div>
+</div>
 
-<div class="clearfix"></div>
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
-<div class="clearfix"></div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
-<div class="clearfix"></div>
-  </div>
 
-  </div>
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-        <p><a href="/">Avestia Publishing</a></p>
-        <p><a href="../register/">Subscribe to our Mailing List</a></p>
-        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></p>
-        <p><a href="../terms/">Terms of Use</a></p>
-		<p><a href="../sitemap/">Sitemap</a></p>
-
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
       </div>
-      <div class="col-sm-5 footer-txt">
-        <p>Avestia Publishing, International ASET Inc. </p>
-        <p>Unit No. 417, 1376 Bank St. </p>
-        <p>Ottawa, Ontario, Canada </p>
-        <p>Postal Code: K1H 7Y3</p>
-        <p>Phone Number: 1-613-695-3040</p>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
 
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
-</body>
+</footer>
+</div>
 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+</body>
 </html>

@@ -1,197 +1,170 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for JBB Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
 <title>JFFHMT - Numerical Analysis of Heat Transfer Performance of Flat Plate Solar Collectors</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
 
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../css/style.css" />
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!--Goole Analytics Most Visited Article Code-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-55498545-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
-
-<!-- Include Most Visited Articles JS Code -->
- <script type="text/javascript" src="mostvisited.js"></script> 
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
-
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-<body>
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<div class="wrapper">
-
-  <div class="header">
-
-    <div class="container">
-
-      <div class="row">
-
-        <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'></span>
-<span class='st_facebook'></span>
-<span class='st_twitter'></span>
-<span class='st_googleplus'></span>
-<span class='st_linkedin'></span>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                </span>
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12">
-
-
-          <div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-<span class="navbar-brand" href="#">Menu</span>
-                  </div>
-
-                  <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">		
-					<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="../board/">Editorial Board</a></li><br>
-                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="../contact/">Contact Us</a></li>
-
-
-
-
-                    </ul>
-
-                  </div>
-
-                  <!--/.nav-collapse -->
-
-                </div>
-
-                <!--/.container-fluid -->
-
-              </div>
-
-            </nav>
-
-            </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-        </header>
-
-      </div>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
-<div class="clearfix"></div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/header.png" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-         <tr>
-                <td>Volume 1, Year 2014 - Pages 38-42</td>
-                <td align="right"><a href="PDF/006.pdf">View PDF (Full-text)</a></td>
-        </tr>
-         <tr>
-                <td>DOI: 10.11159/jffhmt.2014.006</td>
-                <td align="right"><a href="#references">Linked References</a></td>
-        </tr>
-		<tr>
-		<td colspan="2">ISSN: 2368-6111</td>
-		</tr>
-     </table>
-     
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!--Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br>
+    <p class="body">ISSN: 2368-6111</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center" style="font-size:22pt;">Numerical Analysis of Heat Transfer Performance of Flat Plate Solar Collectors</p>
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">Volume 1, Year 2014 - Pages 38-42<br>
+      DOI: 10.11159/jffhmt.2014.006</p>
+    </div>
 
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/006.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
 
-<p align="center"><strong>E. Ekramian, S.Gh. Etemad, M. Haghshenasfard*</strong>
+    <h3 class="center">Numerical Analysis of Heat Transfer Performance of Flat Plate Solar Collectors</h3>
 
+    <p class="body-bold center">E. Ekramian, S.Gh. Etemad, M. Haghshenasfard*</p>
 
-<br />Department of Chemical Engineering, Isfahan University of technology, 84156-83111, Isfahan, Iran<br>
-haghshenas@cc.iut.ac.ir
+    <p class="body center">Department of Chemical Engineering, Isfahan University of technology, 84156-83111, Isfahan, Iran<br>
+haghshenas@cc.iut.ac.ir</p>
 
-</p>
-
-<p>&nbsp;</p>
-
-
-<p align="justify"><i><strong>Abstract- </strong>
-In this study,
+    <p class="body"><b>Abstract</b> - <i>In this study,
 numerical analysis was used to investigate the effect of different parameters
 on thermal efficiency of flat plate solar collectors. Various geometries were
 examined in order to assess the influence of geometrical characteristics and
@@ -207,62 +180,56 @@ sections. Thermal efficiency of solar collectors increases with increasing the
 fluid flow rate, plate absorptivity, absorber thickness, and glass
 transmissivity.</i></p>
 
-
-<p>&nbsp;</p>
-
-<p align="left"><i><strong>Keywords:</strong></i>Solar energy, Flat plate
+    <p class="body"><b><i>Keywords:</i></b> Solar energy, Flat plate
 solar collector, Thermal performance, Computational fluid dynamics (CFD).</p>
 
-<p>&nbsp;</p>
-<p align="justify">  &copy; Copyright 2014 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+    <p class="body">&copy; Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
 
-<p>&nbsp;</p>
-
-<p>
-Date Received: 2014-02-05 <br />
+    <p class="body">Date Received: 2014-02-05 <br />
 
 Date Accepted: 2014-10-02 <br />
 
-Date Published: 2014-10-14 
-</p>
+Date Published: 2014-10-14</p>
 
-<h4>Nomenclature</h4>
+<p class="body">Nomenclature</p>
+<ul class="topics">
+<li><i>a</i> = absorption coefficient (dimensionless)</li>
+<li>A<sub>c</sub> = collector absorption area (m<sup>2</sup>)</li>
+<li>Cp =heat capacity (J/kg-K)</li>
+<li>g<sub>z</sub> = components of gravitational accelerationin z direction ((m/s<sup>2</sup>)</li>
+<li><i>G<sub>T</sub></i> = total global solar radiation (W/m<sup>2</sup>)</li>
+<li>I = radiation intensity (W/m<sup>2</sup>)</li>
+<li>k = thermal conductivity (W/m-K)</li>
+<li><img src="006_files/image004.png"> = mass flow rate of fluid flow (kg/s)</li>
+<li>n = refractive index (dimensionless)</li>
+<li>P = pressure (Pa)</li>
+<li>Q<sub>u</sub> = rate of useful energy gained (W)</li>
+<li><img src="006_files/image005.png"> = position vector (m)</li>
+<li><img src="006_files/image006.png"> = direction vector (m)</li>
+<li>s = path length (m)</li>
+<li><img src="006_files/image007.png"> = scattering direction vector (m)</li>
+<li>t = time (s)</li>
+<li>T = local temperature (K)</li>
+<li>T<sub>o</sub> = outlet temperature (K)</li>
+<li>T<sub>i</sub> = inlet fluid temperature (K)</li>
+<li>u = velocity in x direction (m/s)</li>
+<li>v = velocity in y direction (m/s)</li>
+<li>w = velocity in z direction (m/s)</li>
+<li>&rho; = density (kg/m<sup>3</sup>)</li>
+<li>&micro; = viscosity (Pa.s)</li>
+<li>&epsilon; = collector efficiency (dimensionless)</li>
+<li>&sigma;<sub>s</sub> = scattering coefficient (dimensionless)</li>
+<li>&sigma; = Stefan-Boltzmann constant (5.669 * 10<sup>-8</sup> W/m<sup>2</sup>-K<sup>4</sup>)</li>
+<li><i>&phi;</i> = phase function (dimensionless)</li>
+<li><img src="006_files/image012.png">solid angle (dimensionless)</li>
+</ul>
 
-<p align="justify" style="text-indent:7pt;"><i>a</i> = absorption coefficient (dimensionless)</p>
-<p align="justify" style="text-indent:7pt;">A<sub>c</sub> = collector absorption area (m<sup>2</sup>)</p>
-<p align="justify" style="text-indent:7pt;">Cp =heat capacity (J/kg-K)</p>
-<p align="justify" style="text-indent:7pt;">g<sub>z</sub> = components of gravitational accelerationin z direction ((m/s<sup>2</sup>)</p>
-<p align="justify" style="text-indent:7pt;"><i>G<sub>T</sub></i> = total global solar radiation (W/m<sup>2</sup>)</p>
-<p align="justify" style="text-indent:7pt;">I = radiation intensity (W/m<sup>2</sup>)</p>
-<p align="justify" style="text-indent:7pt;">k = thermal conductivity (W/m-K)</p>
-<p align="justify" style="text-indent:7pt;"><img src="006_files/image004.png"> = mass flow rate of fluid flow (kg/s)</p>
-<p align="justify" style="text-indent:7pt;">n = refractive index (dimensionless)</p>
-<p align="justify" style="text-indent:7pt;">P = pressure (Pa)</p>
-<p align="justify" style="text-indent:7pt;">Q<sub>u</sub> = rate of useful energy gained (W)</p>
-<p align="justify" style="text-indent:7pt;"><img src="006_files/image005.png"> = position vector (m)</p>
-<p align="justify" style="text-indent:7pt;"><img src="006_files/image006.png"> = direction vector (m)</p>
-<p align="justify" style="text-indent:7pt;">s = path length (m)</p>
-<p align="justify" style="text-indent:7pt;"><img src="006_files/image007.png"> = scattering direction vector (m)</p>
-<p align="justify" style="text-indent:7pt;">t = time (s)</p>
-<p align="justify" style="text-indent:7pt;">T = local temperature (K)</p>
-<p align="justify" style="text-indent:7pt;">T<sub>o</sub> = outlet temperature (K)</p>
-<p align="justify" style="text-indent:7pt;">T<sub>i</sub> = inlet fluid temperature (K)</p>
-<p align="justify" style="text-indent:7pt;">u = velocity in x direction (m/s)</p>
-<p align="justify" style="text-indent:7pt;">v = velocity in y direction (m/s)</p>
-<p align="justify" style="text-indent:7pt;">w = velocity in z direction (m/s)</p>
-<p align="justify" style="text-indent:7pt;">&rho; = density (kg/m<sup>3</sup>)</p>
-<p align="justify" style="text-indent:7pt;">&micro; = viscosity (Pa.s)</p>
-<p align="justify" style="text-indent:7pt;">&epsilon; = collector efficiency (dimensionless)</p>
-<p align="justify" style="text-indent:7pt;">&sigma;<sub>s</sub> = scattering coefficient (dimensionless)</p>
-<p align="justify" style="text-indent:7pt;">&sigma; = Stefan-Boltzmann constant (5.669 * 10<sup>-8</sup> W/m<sup>2</sup>-K<sup>4</sup>)</p>
-<p align="justify" style="text-indent:7pt;"><i>&phi;</i> = phase function (dimensionless)</p>
-<p align="justify" style="text-indent:7pt;"><img src="006_files/image012.png">solid angle (dimensionless)</p>
+  <div class="border"></div>
 
+  <div class="indent">
+<h4>1. Introduction</h4> 
 
-<img src="../images/line.png" width="100%;" height="1" />
-<h2>1. Introduction</h2> 
-
-<p align="justify" style="text-indent:19.85pt;">Interest in solar energy has been growing in recent years and is
+<p class="body">Interest in solar energy has been growing in recent years and is
 considered one of the main promising alternative sources of energy to replace
 the fossil energy resources [1-2]. Solar water heating systems
 are one of the major applications of solar energy and can
@@ -271,7 +238,7 @@ schools, agricultural farms, hospitals, restaurants and different industries.
 Solar water heating systems, in some cases, can decrease indoor water heating
 costs within 70% [3].</p>
 
-<p align="justify" style="text-indent:19.85pt;">In a solar collector, the solar energy is
+<p class="body">In a solar collector, the solar energy is
 transferred to a fluid medium. The most common and popular kind of solar
 collectors is flat plate type. Flat plate solar collectors are more simple,
 reliable and with relatively low price than the other types of collectors [4]. Gunnewiek
@@ -279,59 +246,59 @@ et al. [5-6] investigated flow distribution in unglazed transpired plate
 collectors using TASC Flow-CFD code. It is shown that the air flow through the
 collector surface is non-uniform due to the buoyancy effects.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Numerical models based on CFD models were presented
+<p class="body">Numerical models based on CFD models were presented
 by Gadi [7]. In that work, the CFD transient predictions were verified using
 indoor testing employing a solar simulator.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Experimental
+<p class="body">Experimental
 and numerical studies of heat transfer in an integrated collector storage solar
 water heater (ICSSWH) were performed by Gertzos et al. [8]. In their investigation a 3-D (CFD) model was
 defined and validated with experimental results taken by a
 Laser Doppler Velocimetry (LDV) system.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Flow distribution and temperature profile through a
+<p class="body">Flow distribution and temperature profile through a
 solar collector under different operating conditions was investigated by Fan et
 al. [9]. Effects of some important parameters such as properties of working
 fluid, flow rate, inlet temperature and collector tilt angle on the solar
 collector performance were studied. They found that the flow distribution
 through the absorber tubes is uniform under high mass flow rates. </p>
 
-<p align="justify" style="text-indent:19.85pt;">A numerical study for investigation of a flat plate solar energy collector was reported by Selmi et al. [3]. CFD-ACE software was employed to solve the equations of fluid flow, heat
+<p class="body">A numerical study for investigation of a flat plate solar energy collector was reported by Selmi et al. [3]. CFD-ACE software was employed to solve the equations of fluid flow, heat
 transfer and radiation. The results showed that the predicted temperature profile has the same trend as
 that of the experimental one. Good agreement between the CFD results and experimental data indicated that
 the CFD is a valuable tool to predict the performance of the solar collectors.</p>
 
-<p align="justify" style="text-indent:19.85pt;">A novel polymer solar collector was investigated by Martinopoulos et al. [10]. In their study the effects of operating parameters on the velocity and
+<p class="body">A novel polymer solar collector was investigated by Martinopoulos et al. [10]. In their study the effects of operating parameters on the velocity and
 temperature profiles, solar irradiation, and heat transfer in the
 circulating fluid through the collector were investigated using CFD analysis. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Al-Ansary and Zeitoun [11] investigated the
+<p class="body">Al-Ansary and Zeitoun [11] investigated the
 parabolic trough collectors using CFD simulation. Numerical modeling was used for
 calculation of conduction and convection heat losses from the receiver of the
 collector. Effect of insulating of solar collector on the heat loss was studied
 and the numerical results showed that the insulation can reduce the overall
 heat loss significantly.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Sultana et al. [12] investigated the thermal
+<p class="body">Sultana et al. [12] investigated the thermal
 performance of a solar micro-concentrating collector by optimizing of design to
 maximize the overall thermal efficiency. Commercial CFD software,
 ANSYS-CFX, was used to predict heat loss mechanisms, radiation, and convection
 heat transfer inside the collector.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Akhtar and Mullick [13] developed numerical methods
+<p class="body">Akhtar and Mullick [13] developed numerical methods
 for investigation of thermal performance of single and double-glazed solar
 collectors. The effects of
 absorption of solar radiation on convective and radiative heat transfer
 coefficients were studied and the inner and outer surface temperatures of the
 glass covers were calculated.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Experimental and numerical studies were performed by Dovic and Andrassy [14] in order to improve the thermal efficiency of the solar plate
+<p class="body">Experimental and numerical studies were performed by Dovic and Andrassy [14] in order to improve the thermal efficiency of the solar plate
 collectors. Effects of
 geometrical and operating parameters on thermal efficiency of solar collectors
 were investigated and the results showed that no noticeable increase of efficiency could be achieved by changing the
 distance between absorber and glazing.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Based on the
+<p class="body">Based on the
 results on the available literature, there is a lack of information on the
 effect of various operating and geometrical parameters on the overall
 performance of solar collector. Therefore, it was decided to perform a
@@ -343,66 +310,60 @@ and glass cover were considered. The commercial ANSYS FLUENT software was used
 to solve numerically the fluid flow, heat transfer, and radiation equations.
 Results were validated with the experimental data reported by Cruz-Peragon et al. [15].</p>
 
-<h2>2. Theoretical Basis</h2>
+<h4>2. Theoretical Basis</h4>
 
-<p align="justify" style="text-indent:19.85pt;">Forced convection heat transfer is encountered on
+<p class="body">Forced convection heat transfer is encountered on
 the front surface of flat plate solar collector; also wind induced heat losses
 have a significant effect on the efficiency of solar collectors [16].</p>
 
-<p align="justify" style="text-indent:19.85pt;">The performance of a flat plate solar collector is
+<p class="body">The performance of a flat plate solar collector is
 influenced by the thermal losses from the absorber to the ambient via the glass
 covers [17-18]. For investigation of thermal performance of a solar collector, the equations
 of fluid flow, heat transfer, and radiation should be considered.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The laminar, incompressible, three dimensional and
+<p class="body">The laminar, incompressible, three dimensional and
 steady constant-properties viscous Newtonian flow inside a solar collector is
 governed by the usual continuity, momentum and energy equations. For the above
 assumptions, the continuity equation may be written as:</p>
 
-<div class="eqn">
-<img src="006_files/image013.png" class="img">
-</div>
+<div class="equation">
+<img src="006_files/image013.png" class="eqn">
 <div class="eqn-number">(1)</div>
-<br>
+</div>
 
 
-<p align="justify" style="text-indent:19.85pt;">he momentum equations in x, y and z directions can
+<p class="body">he momentum equations in x, y and z directions can
 be written as:</p>
 
-<div class="eqn">
-<img src="006_files/image014.png" class="img">
-</div>
+<div class="equation">
+<img src="006_files/image014.png" class="eqn">
 <div class="eqn-number">(2)</div>
-<br>
-
-<div class="eqn">
-<img src="006_files/image015.png" class="img">
 </div>
+
+<div class="equation">
+<img src="006_files/image015.png" class="eqn">
 <div class="eqn-number">(3)</div>
-<br>
-
-<div class="eqn">
-<img src="006_files/image016.png" class="img">
 </div>
-<div class="eqn-number">(4)</div>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The energy equations for fluid and the frame of
+<div class="equation">
+<img src="006_files/image016.png" class="eqn">
+<div class="eqn-number">(4)</div>
+</div>
+
+<p class="body">The energy equations for fluid and the frame of
 collector are as following:</p>
 
-<div class="eqn">
-<img src="006_files/image017.png" class="img">
-</div>
+<div class="equation">
+<img src="006_files/image017.png" class="eqn">
 <div class="eqn-number">(5)</div>
-<br>
-
-<div class="eqn">
-<img src="006_files/image018.png" class="img">
 </div>
-<div class="eqn-number">(6)</div>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The discrete ordinate (DO) model activated for
+<div class="equation">
+<img src="006_files/image018.png" class="eqn">
+<div class="eqn-number">(6)</div>
+</div>
+
+<p class="body">The discrete ordinate (DO) model activated for
 radiation model of heat transfer between the absorber, glass and casing walls.
 DO model solves the radiative transport equation (RTE) for a finite number of
 directions <img src="006_files/image006.png">. RTE of an
@@ -411,39 +372,37 @@ position <img src="006_files/image005.png"> in a domain in the direction <img sr
 shows the radiative transfer equation (RTE) for an absorbing, emitting, and
 scattering medium in DO model.</p>
 
-<div class="eqn">
-<img src="006_files/image021.png" class="img">
-</div>
+<div class="equation">
+<img src="006_files/image021.png" class="eqn">
 <div class="eqn-number">(7)</div>
-<br>
+</div>
 
 
-<p align="justify" style="text-indent:19.85pt;">Among other radiation models available in Fluent
+<p class="body">Among other radiation models available in Fluent
 [19], the DO model was shown to be the most comprehensive, allowing modeling at
 various wave lengths and optical lengths, with moderate demands on CPU and
 memory as well as with a moderate computational time.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The instantaneous collector efficiency relates the
+<p class="body">The instantaneous collector efficiency relates the
 useful energy to the total radiation incident on the collector surface by:</p>
 
-<div class="eqn">
-<img src="006_files/image022.png" class="img">
-</div>
+<div class="equation">
+<img src="006_files/image022.png" class="eqn">
 <div class="eqn-number">(8)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">The performance relation, Eq. (8), assumes that the
+<p class="body">The performance relation, Eq. (8), assumes that the
 sun is perpendicular to the absorber plate of the collector, which infrequently
 occurs.</p>
 
-<h2>3. Numerical
-investigations</h2>
+<h4>3. Numerical
+investigations</h4>
 
-<p align="justify" style="text-indent:19.85pt;">3-D numerical investigations of the solar flat
+<p class="body">3-D numerical investigations of the solar flat
 plate collectors were performed by CFD technique and the governing equations
 were solved using the commercial ANSYS FLUENT software version 14.</p>
 
-<p align="justify" style="text-indent:19.85pt;">In this case, the models of mixed radiation heat transfer and convection
+<p class="body">In this case, the models of mixed radiation heat transfer and convection
 between the glass cover and side walls with surrounding, conduction heat
 transfer in glass cover, insulating base of the collector and conduction
 between the absorber plate and tubes were considered. The absorbed solar energy was simulated by setting
@@ -451,16 +410,17 @@ the value of direct solar irradiance to 800 W/m<sup>2</sup> that uniformly
 distributed over the absorber plate. </p>
 
 
-<h4>3.1. Computational Domain</h4>
+<p class="subhead">3.1. Computational Domain</p>
 
-<p align="justify" style="text-indent:19.85pt;">Steady state simulations are carried out with a 2 m<sup>2</sup>
+<p class="body">Steady state simulations are carried out with a 2 m<sup>2</sup>
 flat plate solar collector panel. The geometrical dimensions are shown in Table
 1.</p>
 
+<center>
 <div class="widetable">
+  <p class="body">Table 1. The specifications
+of the flat-plate solar collector</p>
 <table style="border:0">
-<caption>Table 1. The specifications
-of the flat-plate solar collector</caption>
 <thead>
  <tr>
   <td style="padding:5px">Specification</td>
@@ -503,52 +463,52 @@ of the flat-plate solar collector</caption>
 </tbody>
 </table>
 </div>
-<br>
+</center>
 
 
-<p align="justify" style="text-indent:19.85pt;">Due to the large difference in the dimension of
+<p class="body">Due to the large difference in the dimension of
 absorber tube length (2 m) and tube hydraulic diameter (0.0125 m), a very fine
 grid distribution is needed in the cross-section of the tube. Therefore, some
 assumptions on computational domain were carried out as follow:</p>
 
-<p align="justify" style="text-indent:7pt;">- Radiation loss from margins of collector was
+<p class="body">- Radiation loss from margins of collector was
 neglected.</p>
 
-<p align="justify" style="text-indent:7pt;">- Flow rate in all riser tubes is constant and
+<p class="body">- Flow rate in all riser tubes is constant and
 fluid is divided equally in all risers in collector.</p>
 
-<p align="justify" style="text-indent:7pt;">- The heat loss from bottom surface of collector
+<p class="body">- The heat loss from bottom surface of collector
 was ignored </p>
 
-<p align="justify" style="text-indent:7pt;">- Since the flow field is symmetric with respect to
+<p class="body">- Since the flow field is symmetric with respect to
 y-z plane, only one half of the riser tube and absorber plate has been
 considered for simulation.</p>
 
-<p align="justify">The computational domain is shown in Fig. 1.</p>
+<p class="body">The computational domain is shown in Fig. 1.</p>
 
 
 <figure>
-<img src="006_files/image023.png" class="img"/>
+<img src="006_files/image023.png" class="article-img">
 
 <figcaption>
 Figure 1.
 Schematic diagram of CFD model</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">A commercial mesh generator, Gambit 2.2.3, was used to generate the
+
+<p class="body">A commercial mesh generator, Gambit 2.2.3, was used to generate the
 grids. Fig.2 shows the
 computational domain and grid setup of the model.</p>
 
 <figure>
-<img src="006_files/image024.png" class="img"/>
+<img src="006_files/image024.png" class="article-img">
 
 <figcaption>
 Figure 2. Computational domain and grid setup </figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Eight
+
+<p class="body">Eight
 different numbers of computational grids were tested and the temperature
 differences between inlet and outlet
 were obtained. The results are presented in
@@ -557,31 +517,31 @@ further refinement of grids from 150000 to 450000 did not have a significant
 effect on the temperature differences. Therefore, the grid generation with 150000 grids was considered as a computational domain.</p>
 
 <figure>
-<img src="006_files/image025.png" class="img"/>
+<img src="006_files/image025.png" class="article-img">
 
 <figcaption>
 Figure 3. Temperature difference of water between inlet and outlet versus mesh number</figcaption>
 </figure>
-<br>
 
-<p align="justify">The boundary conditions were defined as: </p>
 
-<p align="justify" style="text-indent:7pt;">1-&nbsp;&nbsp;&nbsp;&nbsp; At the inlet, the "velocity inlet" was used and the mass flow rate of
+<p class="body">The boundary conditions were defined as: </p>
+
+<p class="body">1-&nbsp;&nbsp;&nbsp;&nbsp; At the inlet, the "velocity inlet" was used and the mass flow rate of
 the fluid was specified. </p>
 
-<p align="justify" style="text-indent:7pt;">2-&nbsp;&nbsp;&nbsp;&nbsp; At outlet, the &quot;outflow&quot; condition was
+<p class="body">2-&nbsp;&nbsp;&nbsp;&nbsp; At outlet, the &quot;outflow&quot; condition was
 applied.</p>
 
-<p align="justify" style="text-indent:7pt;">3-&nbsp;&nbsp;&nbsp;&nbsp; &quot;Symmetry&quot; condition was assumed on the
+<p class="body">3-&nbsp;&nbsp;&nbsp;&nbsp; &quot;Symmetry&quot; condition was assumed on the
 wall in middle of riser tube </p>
 
-<p align="justify" style="text-indent:7pt;">4-&nbsp;&nbsp;&nbsp;&nbsp; At the walls, no-slip boundary condition was imposed. The &quot;shell conduction&quot; option was enabled
+<p class="body">4-&nbsp;&nbsp;&nbsp;&nbsp; At the walls, no-slip boundary condition was imposed. The &quot;shell conduction&quot; option was enabled
 for absorber and riser tube to compute heat conduction within the wall. The
 &quot;semi-transparent&quot; option was enabled for glass cover to transmit
 radiation into the collector area and the &quot;opaque&quot; option was enabled
 for other surfaces.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The governing
+<p class="body">The governing
 equations were solved using the finite volume technique. Steady pressure based solver was used with second
 order upwind scheme for convective terms in the momentum and energy equations.
 For pressure discretization, the standard scheme was employed while the SIMPLE
@@ -591,12 +551,12 @@ algorithm was used for pressure-velocity coupling discretization.</p>
 
 
 
-<h2>4. Results
-and Discussion</h2>
+<h4>4. Results
+and Discussion</h4>
 
-<h4>4.1. Validation of the CFD Model</h4>
+<p class="subhead">4.1. Validation of the CFD Model</p>
 
-<p align="justify" style="text-indent:19.85pt;">Numerical results were verified with the
+<p class="body">Numerical results were verified with the
 experimental data reported by Cruz-Peragon et al. [15]. For this case, the
 solar collector involves 15 riser tubes. Solar incident radiation is 936.8 W/m<sup>2</sup>.
 Water flow rate, water inlet temperature, and ambient temperature are 6.42
@@ -604,45 +564,43 @@ kg/hr,31&#730;C and 23.2 &#730;C respectively. Thickness of the absorber and
 glass cover are 2mm and 4mm respectively. Inner diameter of risers is 10 mm and
 distance between risers is 30 mm with 450 mm of riser's length. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Based on flow distribution in the risers given in
+<p class="body">Based on flow distribution in the risers given in
 Cruz-Peragon et al. [15], the flow rate percentage in the riser 1 is 4.65%. So
 the riser 1 was considered and the average fluid temperature was obtained in
 four sections through the system. Fig. 4 shows the comparison between the
 experimental data and the present numerical predictions.</p>
 
 <figure>
-<img src="006_files/image026.png" class="img"/>
+<img src="006_files/image026.png" class="article-img">
 
 <figcaption>
 Figure 4. Comparison between experimental data of Cruz-Peragon et al. [15] and present numerical results</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The numerical results of the present investigation
+<p class="body">The numerical results of the present investigation
 show a good agreement with the experimental data, indicating the accuracy of the
 numerical model. The average relative error between the experimental data and
 numerical results is about 5.5%.</p>
 
-<p align="justify" style="text-indent:19.85pt;">A sample of temperature distribution and velocity
+<p class="body">A sample of temperature distribution and velocity
 vectors in a 2-D cut of simulated collector are shown in Figs. 5. </p>
 
 <figure>
-<img src="006_files/image027.png" class="img"/>
+<img src="006_files/image027.png" class="article-img">
 
 <figcaption>
 Figure 5. (a) Contours of water temperature (K) (b) Velocities vectors (m/s) in a 2-D cut of collector</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Fig. 5 (a) shows the heat transfers from absorber
+<p class="body">Fig. 5 (a) shows the heat transfers from absorber
 to riser tube by conduction and convection mechanisms. It can be found from
 Fig. 5 (b) that the natural convection is created around the riser due to the
 air flow in a gap of 25 mm. Similar behavior is reported by Subiantoro and Ooi
 [4].</p>
 
-<h4>4.2. Effect of Riser Position on the Thermal Efficiency</h4>
+<p class="subhead">4.2. Effect of Riser Position on the Thermal Efficiency</p>
 
-<p align="justify" style="text-indent:19.85pt;">In order to investigate the influence of riser
+<p class="body">In order to investigate the influence of riser
 position, various models with different positions of risers related to the
 absorber were investigated. In models (a, b), the riser tube is attached to the
 top surface of the absorber plate, in model (c) the riser is located in middle
@@ -650,61 +608,60 @@ of absorber, in models (d, e) the riser is attached to the bottom surface of
 the absorber. Fig.6 shows the schematic diagram of the risers.</p>
 
 <figure>
-<img src="006_files/image028.png" class="img"/>
+<img src="006_files/image028.png" class="article-img">
 
 <figcaption>
 Figure 6. Various positions of riser and absorber- (1) absorber plate - (2) riser tube</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">These five configurations were simulated under
+<p class="body">These five configurations were simulated under
 constant Reynolds number, inlet fluid temperature, and solar radiation. Fig. 7
 shows the thermal performance of the various models.</p>
 
 <figure>
-<img src="006_files/image029.png" class="img"/>
+<img src="006_files/image029.png" class="article-img">
 
 <figcaption>
 Figure 7. Efficiency of collector with different riser's position</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Numerical results show
+
+<p class="body">Numerical results show
 that by changing riser's position from top to bottom surface of the absorber
 plate, the efficiency of the collector decreases. The collector with risers on
 top of the absorber plate (model a) is 4.2% more efficient than collector with
 risers on bottom of the absorber plate (model e) because for configuration (a)
 more collectors surface is available for heat transfer.</p>
 
-<h4>4.3. Effect of Riser Shape on the Thermal Efficiency</h4>
+<p class="subhead">4.3. Effect of Riser Shape on the Thermal Efficiency</p>
 
-<p align="justify" style="text-indent:19.85pt;">For investigation on the effect of noncircular
+<p class="body">For investigation on the effect of noncircular
 riser tubes on the heat transfer in flat plate solar collectors, four models
 with different riser shapes were purposed. The collectors with triangular,
 square, hexagonal and circular shape riser tubes were considered as shown in
 Fig.8.</p>
 
 <figure>
-<img src="006_files/image030.png" class="img"/>
+<img src="006_files/image030.png" class="article-img">
 
 <figcaption>
 Figure 8. Non-circular risers</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The efficiency of collector with circular and
+
+<p class="body">The efficiency of collector with circular and
 noncircular riser tubes was studied and results are presented in Fig.9. These simulations were performed under the 0.02 kg/s of fluid mass flow
 rate. </p>
 
 <figure>
-<img src="006_files/image031.png" class="img"/>
+<img src="006_files/image031.png" class="article-img">
 
 <figcaption>
 Figure 9. Efficiency of collector with circular and non-circular riser tube</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Fig.9 shows that collector with circular riser tube
+
+<p class="body">Fig.9 shows that collector with circular riser tube
 (model c) is the most efficient collector type. In fact by increasing the
 cross-sectional sharp corners the collector efficiency decreases. This is due
 to the fact that convection heat transfer is very weak for the channels with
@@ -714,9 +671,9 @@ hexagonal riser tubes, respectively. </p>
 
 
 
-<h4>4.4. Effect of Mass Flow Rate on Thermal Efficiency</h4>
+<p class="subhead">4.4. Effect of Mass Flow Rate on Thermal Efficiency</p>
 
-<p align="justify" style="text-indent:19.85pt;">To investigate on flow rate effects, model (a) was considered with flow
+<p class="body">To investigate on flow rate effects, model (a) was considered with flow
 rate of 0.02-0.05 kg/s. Fig.10 presents the variations of collector efficiency
 versus the reduced temperature parameters, (Ti-Ta)/G, for different mass flow
 rates. As shown in Fig. 10 by increasing the fluid flow rate from 0.02 to 0.05 kg/s,
@@ -726,16 +683,16 @@ decrease of the efficiency and this trend was already reported by Yousefi et
 al. [20].</p>
 
 <figure>
-<img src="006_files/image032.png" class="img"/>
+<img src="006_files/image032.png" class="article-img">
 
 <figcaption>
 Figure 10. Collector Efficiency with different fluid flow rate</figcaption>
 </figure>
-<br>
 
-<h4>4.5. Effect of Absorber Thickness on the Thermal Efficiency</h4>
 
-<p align="justify" style="text-indent:19.85pt;">Effect of absorber thickness on collector efficiency was studied and the
+<p class="subhead">4.5. Effect of Absorber Thickness on the Thermal Efficiency</p>
+
+<p class="body">Effect of absorber thickness on collector efficiency was studied and the
 results are shown in Fig.11. The simulations were performed for 0.05 kg/s of
 mass flow rate and 0.0025 of reduced temperature parameter. Based on the
 results, the collector efficiency increases by increasing the absorber
@@ -744,41 +701,40 @@ efficiency increases up to 15%, which is due to the lower heat transfer
 resistance for the absorber with higher thickness.</p>
 
 <figure>
-<img src="006_files/image033.png" class="img"/>
+<img src="006_files/image033.png" class="article-img">
 
 <figcaption>
 Figure 11. Collector efficiency of various absorber thicknesses (mm)</figcaption>
 </figure>
-<br>
 
-<h4>4.6. Effect of Absorber Material on Thermal Efficiency</h4>
 
-<p align="justify" style="text-indent:19.85pt;">One of the most important sections in a solar flat
+<p class="subhead">4.6. Effect of Absorber Material on Thermal Efficiency</p>
+
+<p class="body">One of the most important sections in a solar flat
 plate collector is absorber plate, which absorbs the solar radiation and
 transfers heat to the risers and fluid medium. Therefore, the material
 properties of absorber plate play an important role in conduction heat transfer
 from the absorber to the riser tubes. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Within this study, different absorber plates of
+<p class="body">Within this study, different absorber plates of
 copper, aluminum and steel with various thermal conductivities were used and
 results are demonstrated in Fig.12. As shown in this figure, by increasing the
 absorber conductivity, the collector efficiency increases.</p>
 
 <figure>
-<img src="006_files/image034.png" class="img"/>
+<img src="006_files/image034.png" class="article-img">
 
 <figcaption>
 Figure 12. Collector efficiency of various absorber materials</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Efficiency of copper absorber is 3.4% and 35%
+<p class="body">Efficiency of copper absorber is 3.4% and 35%
 higher than those of the aluminum and steel absorber plates respectively.</p>
 
-<h2>4.7. Effect of Absorber Absorptivity and Glass Cover Transmissivity on
-Thermal Efficiency</h2>
+<h4>4.7. Effect of Absorber Absorptivity and Glass Cover Transmissivity on
+Thermal Efficiency</h4>
 
-<p align="justify" style="text-indent:19.85pt;">In order to examine the effect of absorber
+<p class="body">In order to examine the effect of absorber
 absorptivity, collectors with different absorptivity were considered and the
 calculated results are shown in Fig.13. Results indicate that by increasing the
 absorber absorptivity, the collector efficiency increases linearly. By
@@ -786,14 +742,14 @@ increasing the absorptivity from 0.8 to 0.98, the collector efficiency
 increases up to 4.2%.</p>
 
 <figure>
-<img src="006_files/image035.png" class="img"/>
+<img src="006_files/image035.png" class="article-img">
 
 <figcaption>
 Figure 13. Collector efficiency of various absorber absorptivities</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Glass cover transmissivity is an important parameter affecting collector
+
+<p class="body">Glass cover transmissivity is an important parameter affecting collector
 efficiency. In the present investigation simulations were carried out with
 different glass transmissivities and the results are presented in Fig.14. The
 results indicate that as the transmissivity increases the radiation to inside
@@ -802,17 +758,17 @@ of the solar collector. For instance by increasing the transmissivity from 0.82
 to 0.96, the collector efficiency increases by 16.9%.</p>
 
 <figure>
-<img src="006_files/image036.png" class="img"/>
+<img src="006_files/image036.png" class="article-img">
 
 <figcaption>
 Figure 14. Collector efficiency for solar collectors with various glass transmissivities</figcaption>
 </figure>
-<br>
 
 
-<h2>5. Conclusion</h2>
 
-<p align="justify" style="text-indent:19.85pt;">A 3-D numerical simulation was carried out to
+<h4>5. Conclusion</h4>
+
+<p class="body">A 3-D numerical simulation was carried out to
 investigate about the efficiency of a flat plate solar collector. Various geometries and operating conditions were examined in order to assess
 the influence of riser position, shape of tube area section, mass flow rate,
 absorber thickness, absorber material, absorber absorptivity, and glass
@@ -821,7 +777,7 @@ commercial ANSYS FLUENT software was used to solve numerically fluid flow, heat
 transfer, and radiation equations. Results were verified through the comparison with the available
 experimental data in the literature.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The results showed that the collector with risers
+<p class="body">The results showed that the collector with risers
 on top of the absorber plate is 4.2% more efficient than collector with risers
 on bottom of the absorber plate. Also the collectors with circular riser tubes
 have more efficiency than those of the collectors with non-circular cross
@@ -829,139 +785,234 @@ sectional tubes. In addition, thermal efficiency of
 solar collectors increases with increasing the absorber conductivity, fluid flow
 rate, plate absorptivity, absorber thickness, and glass transmissivity.</p>
 
+<h4 id="references">References</h4>
 
-
-<img src="../images/line.png" width="100&#37;" height="1" />
-<H2><a name="references">References</a></H2>
-
-<p> [1] Banos, R., Manzano-Agugliaro, F., Montoya,
+<div class="ref">
+<p class="body"> [1] Banos, R., Manzano-Agugliaro, F., Montoya,
 FG., Gil, C., Alcayde, A., Gomez, J., (2011). Optimization methods applied to
 renewable and sustainable energy. Renewable &amp; Sustainable Energy Reviews
 15, 1753-1766. <a href="http://dx.doi.org/10.1016/j.rser.2010.12.008" target="_blank">View Article</a></p>
 
-<p>[2] Ssen, Z., 2004.
+<p class="body">[2] Ssen, Z., 2004.
 Solar energy in progress and future research trends. Progress in Energy and
 Combustion Science 30, 367-416. <a href="http://dx.doi.org/10.1016/j.pecs.2004.02.004" target="_blank">View Article</a></p>
 
-<p>[3] Selmi, M., Al-Khawaja, M.J., Marafia, A., (2008). Validation of CFD
+<p class="body">[3] Selmi, M., Al-Khawaja, M.J., Marafia, A., (2008). Validation of CFD
 simulation for flat plate solar energy collector. Renewable Energy 33, 383-387. <a href="http://dx.doi.org/10.1016/j.renene.2007.02.003" target="_blank">View Article</a></p>
 
-<p>[4] Subiantoro, A., Ooi,
+<p class="body">[4] Subiantoro, A., Ooi,
 K.T., (2013). Analytical models for the computation and optimization of single
 and double glazing flat plate solar collectors with normal and small air gap
 spacing. Applied Energy 104, 392-399. <a href="http://dx.doi.org/" target="_blank">View Article</a></p>
 
-<p>[5] Gunnewiek, L.H.,
+<p class="body">[5] Gunnewiek, L.H.,
 Brundrett, E., Hollands, G.T.,( 1996). Flow distribution in unglazed transpired
 plate solar air heaters of large area. Solar Energy 58, 227-237. <a href="http://dx.doi.org/10.1016/j.apenergy.2012.11.009" target="_blank">View Article</a></p>
 
-<p>[6] Gunnewiek, L.H.,
+<p class="body">[6] Gunnewiek, L.H.,
 Hollands, K.G.T., Brundrett, E., (2002). Effect of wind on flow distribution in
 unglazed transpired plate collectors. Solar Energy 72, 317-325. <a href="http://dx.doi.org/10.1016/S0038-092X(96)00083-7" target="_blank">View Article</a></p>
 
-<p>[7] Gadi, M.B., (2000).
+<p class="body">[7] Gadi, M.B., (2000).
 Design and simulation of a new energy-conscious system (CFD and solar
 simulation). Applied Energy 65, 251-256. <a href="http://dx.doi.org/10.1016/S0306-2619(99)00121-X" target="_blank">View Article</a></p>
 
-<p>[8] Gertzos, K.P., Pnevmatikakis, S.E., Caouris, Y.G.,
+<p class="body">[8] Gertzos, K.P., Pnevmatikakis, S.E., Caouris, Y.G.,
 (2008). Experimental and numerical study of heat transfer phenomena, inside a
 flat-plate integrated collector storage solar water heater (ICSSWH), with
 indirect heat withdrawal. Energy Conversion and Management 49, 3104-3115. <a href="http://dx.doi.org/10.1016/j.enconman.2008.06.005" target="_blank">View Article</a></p>
 
-<p>[9] Fan, J., Shah, L.J.,
+<p class="body">[9] Fan, J., Shah, L.J.,
 Furbo, S., (2007). Flow distribution in a solar collector panel with
 horizontally inclined absorber strips. Solar Energy 81, 1501-1511. <a href="http://dx.doi.org/10.1016/j.solener.2007.02.001" target="_blank">View Article</a></p>
 
-<p>[10] Martinopoulos, G.,
+<p class="body">[10] Martinopoulos, G.,
 Missirlis, D., Tsilingiridis, G., Yakinthos, K., Kyriakis, N., (2010). CFD
 modeling of a polymer solar collector. Renewable Energy 35, 499-1508. <a href="http://dx.doi.org/10.1016/j.renene.2010.01.004" target="_blank">View Article</a></p>
 
-<p> [11] Al-Ansary, H., Zeitoun, O., (2011).
+<p class="body"> [11] Al-Ansary, H., Zeitoun, O., (2011).
 Numerical study of conduction and convection heat losses from a half-insulated
 air-filled annulus of the receiver of a parabolic trough collector. Solar
 Energy 85, 3036-3045. <a href="http://dx.doi.org/10.1016/j.solener.2011.09.002" target="_blank">View Article</a></p>
 
-<p>[12] Sultana, T.,
+<p class="body">[12] Sultana, T.,
 Morrison, G.L., Rosengarten, G., (2012). Thermal performance of a novel rooftop
 solar micro-concentrating collector. Solar Energy 86, 1992-2000. <a href="http://dx.doi.org/10.1016/j.solener.2012.04.002" target="_blank">View Article</a></p>
 
-<p>[13] Akhtar, N.,
+<p class="body">[13] Akhtar, N.,
 Mullick, S.C., (2012). Effect of absorption of solar radiation in
 glass-cover(s) on heat transfer coefficients in upward heat flow in single and
 double glazed flat-plate collectors. International Journal of Heat and Mass
 Transfer 55, 125-132. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.048" target="_blank">View Article</a></p>
 
-<p>[14] Dovic, D.,
+<p class="body">[14] Dovic, D.,
 Andrassy, M., (2012). Numerically assisted analysis of flat and corrugated
 plate solar collectors thermal performances. Solar Energy 86, 2416-2431. <a href="http://dx.doi.org/10.1016/j.solener.2012.05.016" target="_blank">View Article</a></p>
 
-<p>[15] Cruz-Peragon, F.,
+<p class="body">[15] Cruz-Peragon, F.,
 Palomar, J.M., Casanovab, P.J., Dorado, M.P., Manzano-Agugliaro, F., (2012).
 Characterization of solar flat plate collectors. Renewable and Sustainable
 Energy Reviews 16, 1709- 1720. <a href="http://dx.doi.org/10.1016/j.rser.2011.11.025" target="_blank">View Article</a></p>
 
-<p>[16] Turgut, O., Onur,
+<p class="body">[16] Turgut, O., Onur,
 N., (2009). Three dimensional numerical and experimental study of forced
 convection heat transfer on solar collector surface. International
 Communications in Heat and Mass Transfer 36, 274-279. <a href="http://dx.doi.org/10.1016/j.icheatmasstransfer.2008.10.017" target="_blank">View Article</a></p>
 
-<p>[17] Vestlund, J.,
+<p class="body">[17] Vestlund, J.,
 Dalenback, J., Ronnelid, M., (2012). Thermal and mechanical performance of
 sealed, gas-filled, flat plate solar collectors. Solar Energy 86, 13-25. <a href="http://dx.doi.org/10.1016/j.solener.2011.08.023" target="_blank">View Article</a></p>
 
-<p> [18] Kumar, S., Mullick, S.C., (2010). Wind
+<p class="body"> [18] Kumar, S., Mullick, S.C., (2010). Wind
 heat transfer coefficient in solar collectors in outdoor conditions. Solar
 Energy 84, 956-963. <a href="http://dx.doi.org/10.1016/j.solener.2010.03.003" target="_blank">View Article</a></p>
 
-<p>[19] Fluent Inc, (2011). Fluent Release 14.0, USA. 
+<p class="body">[19] Fluent Inc, (2011). Fluent Release 14.0, USA. 
 
-<p>[20] Yousefi, T., Veisy,
+<p class="body">[20] Yousefi, T., Veisy,
 F., Shojaeizadeh, E., Zinadini, S., (2012). An experimental investigation on
 the effect of MWCNT-H2O nanofluid on the efficiency of flat-plate solar
 collectors. Experimental Thermal and Fluid Science 39, 207-212. <a href="http://dx.doi.org/ An experimental investigation on
 the effect of MWCNT-H2O nanofluid on the efficiency of flat-plate solar
 collectors" target="_blank">View Article</a></p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
 
+  </div> <!--Main Content -->
+</div>
+</div>
 
-
-<div class="clearfix"></div>
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
-<div class="clearfix"></div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
-<div class="clearfix"></div>
-  </div>
 
-  </div>
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-        <p><a href="http://avestia.com">Avestia Publishing</a></p>
-        <p><a href="../register/">Subscribe to our Mailing List</a></p>
-        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></p>
-        <p><a href="../terms/">Terms of Use</a></p>
-		<p><a href="../sitemap/">Sitemap</a></p>
-
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
       </div>
-      <div class="col-sm-5 footer-txt">
-        <p>Avestia Publishing, International ASET Inc. </p>
-        <p>Unit No. 417, 1376 Bank St. </p>
-        <p>Ottawa, Ontario, Canada </p>
-        <p>Postal Code: K1H 7Y3</p>
-        <p>Phone Number: 1-613-695-3040</p>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
 
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
-</body>
+</footer>
+</div>
 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+</body>
 </html>

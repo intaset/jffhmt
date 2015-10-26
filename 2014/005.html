@@ -1,197 +1,170 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for JBB Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
 <title>JFFHMT - A Well-Balanced 2-D Model for Dam-Break Flow with Wetting and Drying</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
 
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../css/style.css" />
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!--Goole Analytics Most Visited Article Code-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-55498545-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
-
-<!-- Include Most Visited Articles JS Code -->
- <script type="text/javascript" src="mostvisited.js"></script> 
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
-
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-<body>
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<div class="wrapper">
-
-  <div class="header">
-
-    <div class="container">
-
-      <div class="row">
-
-        <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'></span>
-<span class='st_facebook'></span>
-<span class='st_twitter'></span>
-<span class='st_googleplus'></span>
-<span class='st_linkedin'></span>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                </span>
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12">
-
-
-          <div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-<span class="navbar-brand" href="#">Menu</span>
-                  </div>
-
-                  <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">		
-					<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="../board/">Editorial Board</a></li><br>
-                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="../contact/">Contact Us</a></li>
-
-
-
-
-                    </ul>
-
-                  </div>
-
-                  <!--/.nav-collapse -->
-
-                </div>
-
-                <!--/.container-fluid -->
-
-              </div>
-
-            </nav>
-
-            </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-        </header>
-
-      </div>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
-<div class="clearfix"></div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/header.png" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-         <tr>
-                <td>Volume 1, Year 2014 - Pages 30-37</td>
-                <td align="right"><a href="PDF/005.pdf">View PDF (Full-text)</a></td>
-        </tr>
-         <tr>
-                <td>DOI: 10.11159/jffhmt.2014.005</td>
-                <td align="right"><a href="#references">Linked References</a></td>
-        </tr>
-		<tr>
-		<td colspan="2">ISSN: 2368-6111</td>
-		</tr>
-     </table>
-     
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!--Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br>
+    <p class="body">ISSN: 2368-6111</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
-<br>
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center" style="font-size:22pt;">A Well-Balanced 2-D Model for Dam-Break Flow with Wetting and Drying</p>
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">Volume 1, Year 2014 - Pages 30-37<br>
+      DOI: 10.11159/jffhmt.2014.005</p>
+    </div>
 
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/005.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
 
-<p align="center"><strong>Xin Liu, Abdolmajid Mohammadian, Julio Angel Infante Sedano</strong>
+    <h3 class="center">A Well-Balanced 2-D Model for Dam-Break Flow with Wetting and Drying</h3>
 
+    <p class="body-bold center">Xin Liu, Abdolmajid Mohammadian, Julio Angel Infante Sedano</p>
 
-<br />Department of Civil Engineering, University of Ottawa, 161 Louis Pasteur, Ottawa, Ontario, Canada K1N 6N5
-<br>xliu111@uottawa.ca; majid.mohammadian@uottawa.ca; jinfante@uottawa.ca
+    <p class="body center">Department of Civil Engineering, University of Ottawa, 161 Louis Pasteur, Ottawa, Ontario, Canada K1N 6N5
+<br>xliu111@uottawa.ca; majid.mohammadian@uottawa.ca; jinfante@uottawa.ca</p>
 
-</p>
-
-<p>&nbsp;</p>
-
-<p align="justify"><i><strong>Abstract- </strong>
-This paper
+    <p class="body"><b>Abstract</b> - <i>This paper
 presents a two-dimension (2-D) numerical model for simulating dam-break flow
 involving wet-dry fronts over irregular topography. The Central-upwind scheme
 is chosen to calculate interface fluxes for each cell edge. A second order
@@ -208,138 +181,102 @@ accuracy of current model are verified by several benchmark tests as well as a
 real dam-break case, and good performances are achieved in
 tests.</i></p>
 
-<p align="left"><i><strong>Keywords:</strong></i>Dam-break flow, Central-upwind method, Well-balanced, Wetting and drying, Finite volume method.</p>
+    <p class="body"><b><i>Keywords:</i></b> Dam-break flow, Central-upwind method, Well-balanced, Wetting and drying, Finite volume method.</p>
 
+    <p class="body">&copy; Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
 
-<p align="justify">  &copy; Copyright 2014 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
-
-<p>
-Date Received: 2014-05-09 <br />
+    <p class="body">Date Received: 2014-05-09 <br />
 
 Date Accepted: 2014-08-08 <br />
 
-Date Published: 2014-10-14
-</p>
+Date Published: 2014-10-14</p>
 
-<h4>Nomenclature</h4>
+<p class="body">Nomenclature</p>
+<ul class="topics">
+  <li>t: The simulating time</li>
+ 
+ 
+  <li>h: The water depth</li>
+ 
+ 
+  <li>x: The horizontal coordinate</li>
+ 
+ 
+  <li>y: The horizontal coordinate</li>
+ 
+ 
+  <li>u: The depth-averaged velocity components in x direction</li>
+ 
+ 
+  <li>v: The depth-averaged velocity components in y direction</li>
+ 
+ 
+  <li>z: The bed elevation</li>
+ 
+ 
+  <li>g: The gravitational acceleration</li>
+ 
+ 
+  <li>v<sub>t</sub>: The eddy viscosity coefficient</li>
+ 
+ 
+  <li>n<sub>b</sub>: The Manning's roughness coefficient</li>
+ 
+ 
+  <li><img src="005_files/image010.png">: The friction slope terms in the x direction</li>
+ 
+ 
+  <li><img src="005_files/image011.png">: The friction slope terms in the y direction</li>
+ 
+ 
+  <li>&eta;: The water surface level</li>
+ 
+ 
+  <li><i>n<sub>x</sub></i>: The components of unit normal vector in the <i>x</i> direction</li>
+ 
+ 
+  <li><i>n<sub>y</sub></i>: The components of unit normal vector in the <i>y</i> direction</li>
+ 
+ 
+  <li>l<sub>ik</sub>: The length of the kth edge of control volume i</li>
+ 
+ 
+  <li>F<sub>ik</sub>: The numerical convective flux across l<sub>ik</sub></li>
+ 
+ 
+  <li><img src="005_files/image021.png">: The diffusive flux across l<sub>ik</sub> in the <i>x</i> direction</li>
+ 
+ 
+  <li><img src="005_files/image022.png">: The diffusive flux across l<sub>ik</sub> in the <i>x</i> direction</li>
+ 
+ 
+  <li>U<sub>R</sub>: The one-sided local speed of propagation on right side of kth edge</li>
+ 
+ 
+  <li>U<sub>L</sub>: The one-sided local speed of propagation on left side of kth edge</li>
+ 
+ 
+  <li>S<sub>R</sub>: The one-sided local speeds of propagation on right side of kth edge</li>
+ 
+ 
+  <li>S<sub>R</sub>: The one-sided local speeds of propagation on left side of kth edge</li>
+ 
+ 
+  <li><i>&epsilon;</i>: The threshold for defining wet and dry cells</li>
+</ul>
+  <div class="border"></div>
 
-<div class="widetable">
-<table style="border:0">
- <tr>
-  <td style="padding:5px" align="center">t</td>
-  <td style="padding:5px;">The simulating time</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">h</td>
-  <td style="padding:5px;">The water depth</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">x</td>
-  <td style="padding:5px;">The horizontal coordinate</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">y</td>
-  <td style="padding:5px;">The horizontal coordinate</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">u</td>
-  <td style="padding:5px;">The depth-averaged velocity components in x direction</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">v</td>
-  <td style="padding:5px;">The depth-averaged velocity components in y direction</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">z</td>
-  <td style="padding:5px;">The bed elevation</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">g</td>
-  <td style="padding:5px;">The gravitational acceleration</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">v<sub>t</sub></td>
-  <td style="padding:5px;">The eddy viscosity coefficient</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">n<sub>b</sub></td>
-  <td style="padding:5px;">The Manning's roughness coefficient</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center"><img src="005_files/image010.png"></td>
-  <td style="padding:5px;">The friction slope terms in the x direction</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center"><img src="005_files/image011.png"></td>
-  <td style="padding:5px;">The friction slope terms in the y direction</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">&eta;</td>
-  <td style="padding:5px;">The water surface level</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center"><i>n<sub>x</sub></i></td>
-  <td style="padding:5px;">The components of unit normal vector in the <i>x</i> direction</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center"><i>n<sub>y</sub></i></td>
-  <td style="padding:5px;">The components of unit normal vector in the <i>y</i> direction</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">l<sub>ik</sub></td>
-  <td style="padding:5px;">The length of the kth edge of control volume i</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">F<sub>ik</sub></td>
-  <td style="padding:5px;">The numerical convective flux across l<sub>ik</sub></td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center"><img src="005_files/image021.png"></td>
-  <td style="padding:5px;">The diffusive flux across l<sub>ik</sub> in the <i>x</i> direction</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center"><img src="005_files/image022.png"></td>
-  <td style="padding:5px;">The diffusive flux across l<sub>ik</sub> in the <i>x</i> direction</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">U<sub>R</sub></td>
-  <td style="padding:5px;">The one-sided local speed of propagation on right side of kth edge</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">U<sub>L</sub></td>
-  <td style="padding:5px;">The one-sided local speed of propagation on left side of kth edge</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">S<sub>R</sub></td>
-  <td style="padding:5px;">The one-sided local speeds of propagation on right side of kth edge</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center">S<sub>R</sub></td>
-  <td style="padding:5px;">The one-sided local speeds of propagation on left side of kth edge</td>
- </tr>
- <tr>
-  <td style="padding:5px" align="center"><i>&epsilon;</i></td>
-  <td style="padding:5px;">The threshold for defining wet and dry cells</td>
- </tr>
-</table>
-</div>
-<br>
+  <div class="indent">
+<h4>1. Introduction</h4>
 
-
-
-
-<img src="../images/line.png" width="100%;" height="1" />
-<h2>1. Introduction</h2> 
-
-
-<p align="justify" style="text-indent:19.85pt;">Dam-break flows over irregular bed often
+<p class="body">Dam-break flows over irregular bed often
 experience the cases as transcritical flows, steep bed slope, very small water
 depth, cells' wetting and drying, wave propagation. Inappropriate hydraulic simulation
 may leads to inaccurate and unstable prediction. Hence, it's
 necessary to apply a robust, accurate and effective hydraulic model to predict
 Hydraulic parameters of dam-break flow. </p>
 
-<p align="justify" style="text-indent:19.85pt;">By using Godunov-type scheme, complicated
+<p class="body">By using Godunov-type scheme, complicated
 shallow water flow phenomena such as transcritical flows, shock-type flows and
 moving wet-dry interface of a water wave front can be appropriately simulated.
 To solve a Godunov-type scheme, approximate Riemann solver is normally adopted
@@ -351,7 +288,7 @@ numerical flux on the basis of eigenvalues and furthermore, only an estimation
 of largest and smallest eigenvalues of the Jacobian matrix, which leads to a
 significant reduction of computational cost. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Flow over initially dry bed is very common in
+<p class="body">Flow over initially dry bed is very common in
 dam break flows, which involves complicated boundary conditions. For irregular
 topography, both positive and negative bed slopes generally exist, which may
 leads to cell drying and wetting with moving fronts which could not be easily
@@ -372,7 +309,7 @@ recently refined for triangular grids by Xia et al. [17]. In present
 study, a technology for tracking wet-dry front is developed combing with method
 of Brufau et al. [3] to achieve zero mass error. </p>
 
-<p align="justify" style="text-indent:19.85pt;">It is well-known that accuracy is the most
+<p class="body">It is well-known that accuracy is the most
 important aspect for flow solver since it has a direct influence on the number
 of computational cells required. This means that a higher-order implementation
 involving a piecewise linear reconstruction is necessary. Higher order schemes
@@ -383,7 +320,7 @@ al. [9]
 is adopted to calculate the limited gradient for reconstruction of variables.
 Moreover, a second order accuracy in time could be obtained in current model by apply Runge-Kutta scheme. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Based on the efficient divergence form of the
+<p class="body">Based on the efficient divergence form of the
 slope source term proposed by Valiani et al. [16], Hou et al. [8]developed a
 novel slope source term treatment which is devised to transform the slope
 source of a cell into a flux form. By splitting the integral of the bed slope
@@ -394,52 +331,46 @@ employed with second order or even higher order schemes. In addition, this
 treatment is able to handle the occurrence of wet-dry fronts, in conjunction
 with the non-negative water depth reconstruction.</p>
 
-<h2>2. Numerical Scheme</h2>
+<h4>2. Numerical Scheme</h2>
 
-<p align="justify" style="text-indent:19.85pt;">The 2-D shallow water is adopted in the current
+<p class="body">The 2-D shallow water is adopted in the current
 study as governing equations which can be described as:</p>
 
-<div class="eqn">
-<img src="005_files/image028.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image028.png" class="eqn">
 <div class="eqn-number">(1)</div>
-<br>
-
-<div class="eqn">
-<img src="005_files/image029.png" class="img">
 </div>
+
+<div class="equation">
+<img src="005_files/image029.png" class="eqn">
 <div class="eqn-number">(2)</div>
-<br>
-
-<div class="eqn">
-<img src="005_files/image032.png" class="img">
 </div>
-<div class="eqn-number">(3)</div>
-<br>
 
-<p class=MsoNormalCxSpMiddle style='text-indent:19.85pt'>The 2-D shallow water
+<div class="equation">
+<img src="005_files/image032.png" class="eqn">
+<div class="eqn-number">(3)</div>
+</div>
+
+<p class="body">The 2-D shallow water
 equations constitute a hyperbolic system which can be presented in the
 following vector form:</p>
 
-<div class="eqn">
-<img src="005_files/image035.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image035.png" class="eqn">
 <div class="eqn-number">(4)</div>
-<br>
-
-<div class="eqn">
-<img src="005_files/image036.png" class="img">
 </div>
+
+<div class="equation">
+<img src="005_files/image036.png" class="eqn">
 <div class="eqn-number">(5)</div>
-<br>
-
-<div class="eqn">
-<img src="005_files/image037.png" class="img">
 </div>
-<div class="eqn-number">(6)</div>
-<br>
 
-<p align="justify">in which t = time, h = the water depth, x and y are
+<div class="equation">
+<img src="005_files/image037.png" class="eqn">
+<div class="eqn-number">(6)</div>
+</div>
+
+<p class="body">in which t = time, h = the water depth, x and y are
 horizontal coordinates, u and v are the
 depth-averaged velocity components in x and y directions
 respectively, Z is the bed
@@ -453,27 +384,26 @@ the second order spatial reconstruction and the non-negative water depth
 reconstruction. &eta; can be
 calculated as <img src="005_files/image044.png">. </p>
 
-<h4>2.1.
-Discretization of Flow and Sediment Governing Equations</h4>
+<p class="subhead">2.1.
+Discretization of Flow and Sediment Governing Equations</p>
 
-<p align="justify" style="text-indent:19.85pt;">The coupled system is discretized on an
+<p class="body">The coupled system is discretized on an
 unstructured triangular grid by finite volume method. </p>
 
-<div class="eqn">
-<img src="005_files/image045.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image045.png" class="eqn">
 <div class="eqn-number">(7)</div>
-<br>
+</div>
 
-<p align="justify">in which <i>n<sub>x</sub></i> and <i>n<sub>y</sub></i> are components of unit normal vector in the <i>x</i> and <i>y</i> directions, l<sub>ik</sub> is the length of the kth edge of
+<p class="body">in which <i>n<sub>x</sub></i> and <i>n<sub>y</sub></i> are components of unit normal vector in the <i>x</i> and <i>y</i> directions, l<sub>ik</sub> is the length of the kth edge of
 control volume i, F<sub>ik</sub> is numerical convective flux across l<sub>ik</sub>, <img width=76 height=20
 src="005_files/image046.png"> is the diffusive flux across l<sub>ik</sub>. </p>
 
 
-<h4>2.2. Central-upwind
-scheme for the interface flux</h4>
+<p class="subhead">2.2. Central-upwind
+scheme for the interface flux</p>
 
-<p align="justify" style="text-indent:19.85pt;">Central-upwind schemes on general triangular
+<p class="body">Central-upwind schemes on general triangular
 grids for solving two-dimensional systems of conservation laws are developed by
 Kurganov
 et al. [11],
@@ -483,53 +413,49 @@ complicated geometries. The triangular central-upwind schemes are based on the
 use of the directional local speeds of propagation and are a generalization of
 the central-upwind schemes on rectangular grids, introduced in [10]. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Applying the Central-upwind scheme, the
+<p class="body">Applying the Central-upwind scheme, the
 convective fluxes in Eqs. (7) could be estimated by: </p>
 
-<div class="eqn">
-<img src="005_files/image047.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image047.png" class="eqn">
 <div class="eqn-number">(8)</div>
-<br>
+</div>
 
-<p align="justify">in which <img src="005_files/image048.png"> and <img src="005_files/image049.png"> are normal fluxes on the left and right sides
+<p class="body">in which <img src="005_files/image048.png"> and <img src="005_files/image049.png"> are normal fluxes on the left and right sides
 of the kth edge,
 respectively. S<sub>R</sub>and S<sub>L</sub> are one-sided local speeds of propagation on
 right and left sides of kth edge, respectively,
 and can be determined by</p>
 
-<div class="eqn">
-<img src="005_files/image050.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image050.png" class="eqn">
 <div class="eqn-number">(9)</div>
-<br>
+</div>
 
-<p align="justify">with <img src="005_files/image051.png"> being the N eigenvalues of the Jacobian matrix <img src="005_files/image053.png"> using reconstructed variables <img src="005_files/image054.png"> or <img src="005_files/image055.png">. </p>
+<p class="body">with <img src="005_files/image051.png"> being the N eigenvalues of the Jacobian matrix <img src="005_files/image053.png"> using reconstructed variables <img src="005_files/image054.png"> or <img src="005_files/image055.png">. </p>
 
-<p align="justify" style="text-indent:19.85pt;">It can be deduced that, when a cell is dry or
+<p class="body">It can be deduced that, when a cell is dry or
 nearly dry, <img src="005_files/image056.png"> exists in denominator of equation Eqs. (8) which may
 cause numerical instability. In order to handle this situation that both S<sub>R</sub>and S<sub>L</sub> are zero (or very close to zero), following the
 suggestion in Bryson et al. [4], the scheme Eqs. (8) reduces to:</p>
 
-<div class="eqn">
-<img src="005_files/image057.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image057.png" class="eqn">
 <div class="eqn-number">(10)</div>
-<br>
+</div>
 
-<h4>2.3. Spatial
-linear Reconstruction</h4>
+<p class="subhead">2.3. Spatial
+linear Reconstruction</p>
 
-<p align="justify" style="text-indent:19.85pt;">In this paper, the following 2-D linear
+<p class="body">In this paper, the following 2-D linear
 reconstruction is employed: </p>
 
-<div class="eqn">
-<img src="005_files/image058.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image058.png" class="eqn">
 <div class="eqn-number">(11)</div>
-<br>
+</div>
 
-<p align="justify">in which <img src="005_files/image059.png"> is the reconstructed value of variables at
+<p class="body">in which <img src="005_files/image059.png"> is the reconstructed value of variables at
 point <img src="005_files/image060.png"> inside of cell i, <img src="005_files/image061.png"> and <img src="005_files/image062.png"> are component-wise approximation of numerical
 derivatives which are computed via a nonlinear limiter, used to minimize the
 oscillations of the reconstructions. In current study, the
@@ -537,59 +463,56 @@ multidimensional limiter proposed by Jawahar et al. [9] is adopted to
 calculated limited gradient <img src="005_files/image063.png"> within a cell by taking the weighted average of
 three representative unlimited gradients. </p>
 
-<p align="justify" style="text-indent:19.85pt;">In order to preserve the well-balanced property
+<p class="body">In order to preserve the well-balanced property
 for second order schemes, as suggested by Audusse et al. [1], surface levels
 <img src="005_files/image064.png">, <img src="005_files/image065.png">, water depths <img src="005_files/image066.png">, <img src="005_files/image067.png">, flow discharges <img src="005_files/image068.png">, <img src="005_files/image069.png">,<img src="005_files/image070.png"> and <img src="005_files/image071.png"> are reconstructed at the midpoint <img src="005_files/image072.png"> of considered edges. The reconstructed bed levels at M are given by</p>
 
-<div class="eqn">
-<img src="005_files/image073.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image073.png" class="eqn">
 <div class="eqn-number">(12)</div>
-<br>
+</div>
 
-<p class=MsoNormalCxSpMiddle style='text-indent:19.85pt'>Besides, flow velocities
+<p class="body">Besides, flow velocities
 required at M are computed as</p>
 
-<div class="eqn">
-<img src="005_files/image074.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image074.png" class="eqn">
 <div class="eqn-number">(13)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">A threshold &epsilon; will be
+<p class="body">A threshold &epsilon; will be
 introduced for defining wet and dry cells. The second order reconstructions are
 only applicable to the wet cells.</p>
 
-<h4>2.4.
-Non-negative water depth reconstruction</h4>
+<p class="subhead">2.4.
+Non-negative water depth reconstruction</p>
 
-<p align="justify" style="text-indent:19.85pt;">A robust and efficient reconstruction approach to
+<p class="body">A robust and efficient reconstruction approach to
 preserve non-negative water depth which is suggested by Liang et al. [12]
 is adopted in present study. The Z<sup>M</sup> bed elevation at the midpoint of the considered
 edge is calculated as:</p>
 
-<div class="eqn">
-<img src="005_files/image076.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image076.png" class="eqn">
 <div class="eqn-number">(14)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">Then the non-negative water depth values on both
+<p class="body">Then the non-negative water depth values on both
 sides are reconstructed as:</p>
 
-<div class="eqn">
-<img src="005_files/image077.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image077.png" class="eqn">
 <div class="eqn-number">(15)</div>
-<br>
-<p align="justify" style="text-indent:19.85pt;">The discharges at M are in turn reconstructed as:</p>
+</div>
 
-<h4>2.5. Treatment of the source term</h4>
+<p class="body">The discharges at M are in turn reconstructed as:</p>
 
-<h4><i>2.5.1.
-Well-balanced treatment of the slope source term</i></h4>
+<p class="subhead">2.5. Treatment of the source term</p>
 
-<p align="justify" style="text-indent:19.85pt;">Hou et al. [8] developed a novel slope source
+<p class="subhead"><i>2.5.1.
+Well-balanced treatment of the slope source term</i></p>
+
+<p class="body">Hou et al. [8] developed a novel slope source
 term treatment which is devised to transform the slope source of a cell into a
 flux form, which can strictly preserve the well-balanced property and can be
 conveniently employed with second order or even higher order schemes. In
@@ -597,83 +520,80 @@ addition, this treatment is able to handle the occurrence of wet-dry fronts, in
 conjunction with the non-negative water depth reconstruction. The vector of
 source term <img src="005_files/image078.png"> at the considered faces k in cell i becomes</p>
 
-<div class="eqn">
-<img src="005_files/image079.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image079.png" class="eqn">
 <div class="eqn-number">(16)</div>
-<br>
+</div>
 
-<p align="justify">where <i>Z<sup>M</sup></i> and <img src="005_files/image081.png"> are obtained by spatial linear
+<p class="body">where <i>Z<sup>M</sup></i> and <img src="005_files/image081.png"> are obtained by spatial linear
 reconstruction.</p>
 
-<h4><i>2.5.2.
-Calculation of derivatives in source terms</i></h4>
+<p class="subhead"><i>2.5.2.
+Calculation of derivatives in source terms</i></p>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 approach adopted by Mohammadian et al., [13] is used to
 calculate the unlimited gradient of variables. A similar approach may be also
 applied to calculate the diffusive terms <img src="005_files/image082.png">, <img src="005_files/image083.png">, <img src="005_files/image084.png"> and <img src="005_files/image085.png">. </p>
 
 
-<h4><i>2.5.3. Friction
-source term treatment</i></h4>
+<p class="subhead"><i>2.5.3. Friction
+source term treatment</i></p>
 
-<p align="justify" style="text-indent:19.85pt;">In current study, a simple semi-implicit
+<p class="body">In current study, a simple semi-implicit
 treatment suggested by Yoon et al. [18] is adopted to deal with
 very shallow water depth.     </p>
 
-<div class="eqn">
-<img src="005_files/image086.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image086.png" class="eqn">
 <div class="eqn-number">(17)</div>
-<br>
+</div>
 
-<p align="justify">in which the superscript n denotes the time step.</p>
+<p class="body">in which the superscript n denotes the time step.</p>
 
-<h4>2.6. Time
-integration and CFL condition</h4>
+<p class="subhead">2.6. Time
+integration and CFL condition</p>
 
-<p align="justify" style="text-indent:19.85pt;"> In order to obtain the second-order accuracy in
+<p class="body"> In order to obtain the second-order accuracy in
 time and retain the stability of the model, the two-stage explicit TVD
 Runge-Kutta method is applied in current study. The time step is limited by the
 Courant-Friedrichs-Lewy (CFL) condition. </p>
 
-<h4>2.7. Treatment
-of wetting and drying fronts</h4>
+<p class="subhead">2.7. Treatment
+of wetting and drying fronts</p>
 
-<p align="justify" style="text-indent:19.85pt;"> Wetting and drying fronts need to be specially
+<p class="body"> Wetting and drying fronts need to be specially
 treated to retain the numerical stability when very tiny water depth is
 introduced. In current model, a scheme of wetting and drying treatment is
 proposed which can be summarized as: </p>
 
-<p align="justify" style="text-indent:19.85pt;">1. A tolerance water depth &epsilon; is introduced
+<p class="body">1. A tolerance water depth &epsilon; is introduced
 to classify the wet and dry cell. In present model, <img src="005_files/image088.png"> is used. In the dry cell, first order
 reconstruction will be applied to maintain the numerical stability. </p>
 
-<p align="justify" style="text-indent:19.85pt;">2. For dry cell with <img src="005_files/image089.png">, only continuity equation will be solved to
+<p class="body">2. For dry cell with <img src="005_files/image089.png">, only continuity equation will be solved to
 deal with potentially wetting. </p>
 
-<p align="justify">         3. To deal with
+<p class="body">         3. To deal with
 the cell-drying, if a cell with <img src="005_files/image090.png">, it's treated as completely dry cell in next
 time-step and all hydraulic parameters are set to zero in this cell. </p>
 
-<h2>3. Numerical Tests</h2>
+<h4>3. Numerical Tests</h2>
 
-<h4>3.1. Quiescent
-water around a hump with sediment deposition</h4>
+<p class="subhead">3.1. Quiescent
+water around a hump with sediment deposition</p>
 
-<p align="justify" style="text-indent:19.85pt;"> The first
+<p class="body"> The first
 test is applied to verify the well-balanced property preserving of present
 model involving wet-dry interfaces. To implement this test, the elevation of a
 hump on flat bed is defined as: </p>
 
-<div class="eqn">
-<img src="005_files/image091.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image091.png" class="eqn">
 <div class="eqn-number">(18)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 hump is located at the center of a 8m&times;8m computational domain, the height of the bump
 is
 2m.
@@ -686,49 +606,45 @@ undisturbed water surfaces are observed through the whole simulating
 process. </p>
 
 <figure>
-<img src="005_files/image093.jpg" class="img"/>
+<img src="005_files/image093.jpg" class="article-img">
 
 <figcaption>
 Figure 1. Quiescent lake around a hump with initial sediment concentration and wet-dry boundaries at t=50s</figcaption>
 </figure>
-<br>
 
-<h4>3.2. 2-D
-shorelines tracking in a parabolic bowl</h4>
+<p class="subhead">3.2. 2-D
+shorelines tracking in a parabolic bowl</p>
 
-<p align="justify" style="text-indent:19.85pt;">This
+<p class="body">This
 test is adopted here to investigate the hydraulic model and the accuracy of
 tracking the wetting and drying fronts. The bottom topography with the center (x<sub>0</sub>,y<sub>0</sub>) is defined as: </p>
 
-<div class="eqn">
-<img src="005_files/image096.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image096.png" class="eqn">
 <div class="eqn-number">(19)</div>
-<br>
+</div>
 
-<p align="justify">in which h<sub>0</sub> is the water depth at the center of the domain, a is the
+<p class="body">in which h<sub>0</sub> is the water depth at the center of the domain, a is the
 distance from the center to the edge of the shoreline. Since the topography is
 set to be frictionless in this test, as described in [15], the
 periodic analytical solution of the evolutions of surface elevation, water
 depth and velocities can be computed using following equations: </p>
 
-<div class="eqn">
-<img src="005_files/image099.png" class="img">
-</div>
+<div class="equation">
+<img src="005_files/image099.png" class="eqn">
 <div class="eqn-number">(20)</div>
-
-<div class="eqn">
-<img src="005_files/image100.png" class="img">
 </div>
-<div class="eqn-number">(21)</div>
-<br>
-<br>
 
-<p align="justify">in which, &sigma; is a
+<div class="equation">
+<img src="005_files/image100.png" class="eqn">
+<div class="eqn-number">(21)</div>
+</div>
+
+<p class="body">in which, &sigma; is a
 constant that determines the amplitude of the motion; <img src="005_files/image102.png"> is the frequency of the pool's circulation
 around the center of the bowl. </p>
 
-<p align="justify" style="text-indent:19.85pt;">In
+<p class="body">In
 this test for current model, a 4m&times;4m domain is chosen, which is discretized to
 14836 triangular cells, as shown
 in Fig. 2.
@@ -737,15 +653,15 @@ parameters <i>h<sub>0</sub></i>=0.1 m, <i>a</i>=1.0m and &sigma;=0.5m. The
 initial flow states are defined by Eqs. (20)  and Eqs. (21) at t=0s. </p>
 
 <figure>
-<img src="005_files/image105.jpg" class="img"/>
+<img src="005_files/image105.jpg" class="article-img">
 
 <figcaption>
 Figure 2. Simulated
 grids and bed profile of a parabolic bowl</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;"> Fig.
+
+<p class="body"> Fig.
 3 shows the comparison between simulated water surface profiles and analytical
 solutions at t=3T and 3.5T, respectively, where T represents the circulation
 period of the pool. It can be observed that the calculated free surface from
@@ -757,27 +673,26 @@ observed near the shoreline where very shallow water exists. The around area
 preserve zero velocity when it becomes dry.</p>
 
 <figure>
-<img src="005_files/image106.png" class="img"/>
+<img src="005_files/image106.png" class="article-img">
 
 <figcaption>
 Figure 3. Simulated
 shoreline profiles and analytical solution at different times </figcaption>
 </figure>
-<br>
 
 <figure>
-<img src="005_files/image107.jpg" class="img"/>
+<img src="005_files/image107.jpg" class="article-img">
 
 <figcaption>
 Figure 4. Velocity
 field of circulating pool at t=3.5T</figcaption>
 </figure>
-<br>
 
-<h4>3.3. 2-D partially
-dam-break flow on initially dry bed</h4>
 
-<p align="justify" style="text-indent:19.85pt;">For
+<p class="subhead">3.3. 2-D partially
+dam-break flow on initially dry bed</p>
+
+<p class="body">For
 examining the numerical performance of the present scheme, a 2-d dam break
 problem with rapid varying unsteady flow is chosen as test cases. This test
 case is firstly introduced by Fennema et al. [7] in a numerical method study,
@@ -797,25 +712,25 @@ condition, meanwhile all other boundaries are set to be standard wall
 condition. The simulating domain is discretized into 6806 triangular cells, as shown in Fig. 5.</p>
 
 <figure>
-<img src="005_files/image108.png" class="img"/>
+<img src="005_files/image108.png" class="article-img">
 
 <figcaption>
 Figure 5. Triangular
 meshes used for the 2-D dam-break test</figcaption>
 </figure>
-<br>
+
 
 <figure>
-<img src="005_files/image109.jpg" class="img"/>
+<img src="005_files/image109.jpg" class="article-img">
 
 <figcaption>
 Figure 6. Wave front
 propagation of dam break flow, velocity field and contours of water depth at
 different times</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Fig.6
+
+<p class="body">Fig.6
 shows 3D views of the water front-wave propagations and predicted bed erosion
 at varying times (first row). It can be seen that a shock wave forms and
 propagates downstream and a depression wave spreads upstream during the
@@ -824,9 +739,9 @@ generated at the front-wave locations where wetting and drying interfaces are
 existing. The velocity field with contour of water depth is present in second
 row. </p>
 
-<h2>4. Conclusion</h2>
+<h4>4. Conclusion</h2>
 
-<p align="justify" style="text-indent:19.85pt;">A robust two-dimensional
+<p class="body">A robust two-dimensional
 numerical model for dam-break flow with wetting and drying is proposed in
 current study, based on finite volume method using unstructured triangular
 grids. The Central-upwind scheme can accurately estimate the convective
@@ -838,24 +753,21 @@ drying scheme could efficiently track the wet-dry fronts. The testing results
 confirm the capacity and accuracy of current model in dealing with various
 cases of dam-break flow over irregular bed in practical conditions.</p>
 
-<h2>Acknowledgements</h2>
+<h4>Acknowledgements</h2>
 
-<p align="justify" style="text-indent:19.85pt;">This
+<p class="body">This
 publication was made possible by NPRP grant #4-935-2-354
 from the Qatar National Research Fund (a member of Qatar Foundation). The
 statements made herein are solely the responsibility of the authors. </p>
 
-
-
-<img src="../images/line.png" width="100&#37;" height="1" />
-<H2><a name="references">References</a></H2>
-
-<p>[1] Audusse,
+<h4 id="references">References</H4>
+<div class="ref">
+<p class="body">[1] Audusse,
 E., Bristeau, M. O. (2005). A well-balanced positivity preserving
 "second-order" scheme for shallow water flows on unstructured meshes.&nbsp;Journal
 of Computational Physics,&nbsp;206(1), 311-333. <a href="http://dx.doi.org/10.1016/j.jcp.2004.12.016" target="_blank">View Article</a></p>
 
-<p>[2] Brufau,
+<p class="body">[2] Brufau,
 P., V&aacute;zquez&#8208;Cend&oacute;n, M.
 E., Garc&iacute;a&#8208;Navarro, P.
 (2002). A
@@ -863,129 +775,227 @@ numerical model for the flooding and drying of irregular
 domains.&nbsp;International Journal for Numerical Methods in
 Fluids,&nbsp;39(3), 247-275. <a href="http://dx.doi.org/10.1002/fld.285" target="_blank">View Article</a></p>
 
-<p>[3] Brufau,
+<p class="body">[3] Brufau,
 P., Garc&iacute;a&#8208;Navarro, P.,
 V&aacute;zquez&#8208;Cend&oacute;n, M. E.
 (2004). Zero mass error using unsteady wetting-drying conditions in shallow
 flows over dry irregular topography.&nbsp;International Journal for Numerical
 Methods in Fluids,&nbsp;45(10), 1047-1082. <a href="http://dx.doi.org/10.1002/fld.729" target="_blank">View Article</a></p>
 
-<p>[4] Bryson,
+<p class="body">[4] Bryson,
 S., Epshteyn, Y., Kurganov, A., Petrova, G. (2011). Well-balanced positivity
 preserving central-upwind scheme on triangular grids for the Saint-Venant
 system.&nbsp;ESAIM: Mathematical Modelling and Numerical Analysis,&nbsp;45(3),
 423-446. <a href="http://dx.doi.org/10.1051/m2an/2010060" target="_blank">View Article</a></p>
 
-<p>[5] Falconer,
+<p class="body">[5] Falconer,
 R.A. and Chen, Y., (1991). An improved representation of flooding and drying
 and wind stress effects in a 2D tidal numerical model. Proceedings of the
 Institution of Civil Engineers Part 2(Research and Theory), 91, 659-672. </p>
 
-<p>[6] Falconer,
+<p class="body">[6] Falconer,
 R.A.,et al., (2001). DIVAST model: reference manual. Internal Report,
 Hydro-Environmental Research Centre, School of Engineering, Cardiff University,
 35 pp.</p>
 
-<p>[7] Fennema,
+<p class="body">[7] Fennema,
 R. J., Chaudhry, M. H. (1990). Explicit methods for 2-D transient free surface
 flows.&nbsp;Journal of Hydraulic Engineering,&nbsp;116(8), 1013-1034. <a href="http://dx.doi.org10.1061/(ASCE)0733-9429(1990)116:8(1013)/" target="_blank">View Article</a></p>
 
-<p>[8] Hou, J.,
+<p class="body">[8] Hou, J.,
 Simons, F., Hinkelmann, R., (2013). A 2D well-balanced shallow flow model for
 unstructured grids with novel slope source treatment, Advances in Water
 Resources, 52, 107-131. <a href="http://dx.doi.org/10.1016/j.advwatres.2012.08.003" target="_blank">View Article</a></p>
 
-<p>[9] Jawahar,
+<p class="body">[9] Jawahar,
 P., Kamath, H. (2000). A high-resolution procedure for Euler and Navier-Stokes
 computations on unstructured grids.&nbsp;Journal of Computational
 Physics,&nbsp;164(1), 165-203. <a href="http://dx.doi.org/10.1006/jcph.2000.6596" target="_blank">View Article</a></p>
 
-<p>[10] Kurganov,
+<p class="body">[10] Kurganov,
 A., Noelle, S., and Petrova, G., (2001). Semi-discrete central-upwind scheme
 for hyperbolic conservation laws and Hamilton-Jacobi equations, SIAM J Sci
 Comput, 23, 707-740. <a href="http://dx.doi.org/10.1137/S1064827500373413" target="_blank">View Article</a></p>
 
-<p>[11] Kurganov,
+<p class="body">[11] Kurganov,
 A., Petrova, G. (2005). Central&#8208;upwind schemes on triangular grids for
 hyperbolic systems of conservation laws.&nbsp;Numerical Methods for Partial
 Differential Equations,&nbsp;21(3), 536-552. <a href="http://dx.doi.org/10.1002/num.20049" target="_blank">View Article</a></p>
 
-<p>[12] Liang,
+<p class="body">[12] Liang,
 Q. (2010). Flood simulation using a well-balanced shallow flow model. Journal of
 hydraulic engineering,&nbsp;136(9), 669-675. <a href="http://dx.doi.org/10.1061/(ASCE)HY.1943-7900.0000219" target="_blank">View Article</a></p>
 
-<p>[13] Mohammadian,
+<p class="body">[13] Mohammadian,
 A., Tajrishi, M., Lotfiazad, F. (2004). Two dimentional numerical simulation of
 flow and geo-morphological processes near headlands by using unstructured
 grid.&nbsp;International Journal of Sediment Research,&nbsp;4, 001. <a href="http://www.civilica.com/EnPaper-ICCE06-ICCE06_443_2501986268.html" target="_blank">View Article</a></p>
 
-<p>[14] Sleigh,
+<p class="body">[14] Sleigh,
 P. A., Gaskell, P. H., Berzins, M., Wright, N. G. (1998). An unstructured
 finite-volume algorithm for predicting flow in rivers and estuaries. Computers
 &amp; Fluids,&nbsp;27(4), 479-508. <a href="http://dx.doi.org/10.1016/S0045-7930(97)00071-6" target="_blank">View Article</a></p>
 
-<p>[15] Thacker,
+<p class="body">[15] Thacker,
 W. C. (1981). Some exact solutions to the nonlinear shallow-water wave
 equations.&nbsp;Journal of Fluid Mechanics,&nbsp;107, 499-508. <a href="http://dx.doi.org/10.1017/S0022112081001882" target="_blank">View Article</a></p>
 
-<p>[16] Valiani,
+<p class="body">[16] Valiani,
 A., Begnudelli, L. (2006). Divergence form for bed slope source term in shallow
 water equations.&nbsp;Journal of Hydraulic Engineering,&nbsp;132(7), 652-665. <a href="http://dx.doi.org/10.1061/(ASCE)0733-9429(2006)132:7(652)" target="_blank">View Article</a></p>
 
-<p>[17] Xia, J.,
+<p class="body">[17] Xia, J.,
 Falconer, R. A., Lin, B., Tan, G. (2010). Modelling flood routing on initially
 dry beds with the refined treatment of wetting and drying.&nbsp;International
 Journal of River Basin Management,&nbsp;8(3-4), 225-243. <a href="http://dx.doi.org/10.1080/15715124.2010.502121" target="_blank">View Article</a></p>
 
-<p>[18] Yoon, T.
+<p class="body">[18] Yoon, T.
 H., Kang, S. K. (2004). Finite volume model for two-dimensional shallow water
 flows on unstructured grids.&nbsp;Journal of Hydraulic Engineering,130(7),
 678-688. <a href="http://dx.doi.org/10.1061/(ASCE)0733-9429(2004)130:7(678)" target="_blank">View Article</a></p>
 
-<p>[19] Zhao, D. H.,
+<p class="body">[19] Zhao, D. H.,
 Shen, H. W., Tabios III, G. Q., Lai, J. S., Tan, W. Y. (1994). Finite-volume
 two-dimensional unsteady-flow model for river basins.&nbsp;Journal of Hydraulic
 Engineering,&nbsp;120(7), 863-883. <a href="http://dx.doi.org/10.1061/(ASCE)0733-9429(1994)120:7(863)" target="_blank">View Article</a></p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
 
+  </div> <!--Main Content -->
+</div>
+</div>
 
-<div class="clearfix"></div>
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
-<div class="clearfix"></div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
-<div class="clearfix"></div>
-  </div>
 
-  </div>
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-        <p><a href="http://avestia.com">Avestia Publishing</a></p>
-        <p><a href="../register/">Subscribe to our Mailing List</a></p>
-        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></p>
-        <p><a href="../terms/">Terms of Use</a></p>
-		<p><a href="../sitemap/">Sitemap</a></p>
-
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
       </div>
-      <div class="col-sm-5 footer-txt">
-        <p>Avestia Publishing, International ASET Inc. </p>
-        <p>Unit No. 417, 1376 Bank St. </p>
-        <p>Ottawa, Ontario, Canada </p>
-        <p>Postal Code: K1H 7Y3</p>
-        <p>Phone Number: 1-613-695-3040</p>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
 
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
-</body>
+</footer>
+</div>
 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+</body>
 </html>

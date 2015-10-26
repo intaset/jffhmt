@@ -129,10 +129,10 @@ if ($emailcheck2 != 0) {
     </div> <!-- Mobile -->
   </header>
 
-  <div class="j-header">
+<div class="mobile">
+<div class="j-header">
   <div class="name">
-    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br>
-    <p class="body">ISSN: 2368-6111</p></h1>
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br><p class="body">ISSN: 2368-6111</p></h1>
     <div class="oalink">
     <a href="/openaccess" target="blank" title="Avestia's Open Access">
           <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
@@ -140,7 +140,25 @@ if ($emailcheck2 != 0) {
   </div>
   </div>
 
-    <img src="../img/journals/j-jffhmt.jpg" class="j-img">
+    <img src="../img/journals/j-jcste.jpg" class="j-img">
+</div>
+</div>
+
+<div class="desktop jhead">
+  <div class="name">
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)</h1>
+    <div class="issn">
+    <p class="body">ISSN: 2368-6111</p>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+   </div>
+   </div>
+  </div>
+
+  <div class="j-header">
+  </div>
 </div>
 
   <div role="navigation" class="navbar navbar-default">
@@ -462,10 +480,10 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
     </div> <!-- Mobile -->
   </header>
 
+<div class="mobile">
 <div class="j-header">
   <div class="name">
-    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br>
-    <p class="body">ISSN: 2368-6111</p></h1>
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br><p class="body">ISSN: 2368-6111</p></h1>
     <div class="oalink">
     <a href="/openaccess" target="blank" title="Avestia's Open Access">
           <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
@@ -473,7 +491,25 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
   </div>
   </div>
 
-    <img src="../img/journals/j-jffhmt.jpg" class="j-img">
+    <img src="../img/journals/j-jcste.jpg" class="j-img">
+</div>
+</div>
+
+<div class="desktop jhead">
+  <div class="name">
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)</h1>
+    <div class="issn">
+    <p class="body">ISSN: 2368-6111</p>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+   </div>
+   </div>
+  </div>
+
+  <div class="j-header">
+  </div>
 </div>
 
   <div role="navigation" class="navbar navbar-default">

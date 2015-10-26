@@ -1,319 +1,301 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for JBB Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
 <title>JFFHMT - Simulation of Time-Lag Permeation Experiments Using Finite Differences</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
 
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="/../css/style.css" />
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<link href="/../css/bootstrap.css" rel="stylesheet">
-<link href="/../images/icon.ico" rel="shortcut icon" type="image/x-icon">
-<script type="text/javascript">
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-55498545-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
-<!-- Include Most Visited Articles JS Code -->
- <script type="text/javascript" src="mostvisited.js"></script> 
-
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-<body>
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<div class="wrapper">
-
-  <div class="header">
-
-    <div class="container">
-
-      <div class="row">
-
-         <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'>
-<span class='st_facebook'>
-<span class='st_twitter'>
-<span class='st_googleplus'>
-<span class='st_linkedin'>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="/../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12">
-
-          <div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation <span class="icon-bar"> <span class="icon-bar"> <span class="icon-bar"> </button>
-<span class="navbar-brand" href="#">Menu
-                  </div>
-
-                  <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">     
-            <li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="/../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="/../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="/../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="/../board/">Editorial Board</a></li><br>
-                        <li><a href="/../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="/../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="/../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="/../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="/../contact/">Contact Us</a></li>
-
-
-
-
-                    </ul>
-
-                  </div>
-
-                  <!--/.nav-collapse -->
-
-                </div>
-
-                <!--/.container-fluid -->
-
-              </div>
-
-            </nav>
-
-            </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-        </header>
-
-      </div>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
-<div class="clearfix"></div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="/../images/header.png" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-         <tr>
-                <td>Volume 2 - Year 2015 - Pages 14-25</td>
-                <td align="right"><a href="PDF/003.pdf">View PDF (Full-text)</a></td>
-        </tr>
-         <tr>
-                <td>DOI: 10.11159/jffhmt.2015.003</td>
-                <td align="right"><a href="#references">Linked References</a></td>
-        </tr>
-    <tr>
-    <td colspan="2">ISSN: 2368-6111</td>
-    </tr>
-     </table>
-     
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!--Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br>
+    <p class="body">ISSN: 2368-6111</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
-<p align="center" style="font-size:22pt;">Simulation of Time-Lag Permeation Experiments Using Finite Differences</p>
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center"><strong>Haoyu Wu, Neveen Al-Qasas, Boguslaw Kruczek, Jules Thibault<sup>*</sup></strong><br>
-Department of Chemical and Biological Engineering, University of Ottawa<br>
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">Volume 2 - Year 2015 - Pages 14-25<br>
+      DOI: 10.11159/jffhmt.2015.003</p>
+    </div>
+
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/003.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
+
+    <h3 class="center">Simulation of Time-Lag Permeation Experiments Using Finite Differences</h3>
+
+    <p class="body-bold center">Haoyu Wu, Neveen Al-Qasas, Boguslaw Kruczek, Jules Thibault<sup>*</sup></p>
+
+    <p class="body center">Department of Chemical and Biological Engineering, University of Ottawa<br>
 161 Louis Pasteur, Ottawa, Ontario, Canada K1N 6N5<br>
 hwu055@uottawa.ca; nalqa027@uottawa.ca; bkruczek@uottawa.ca; Jules.Thibault@uottawa.ca</p>
 
-<p>&nbsp;</p>
+    <p class="body"><b>Abstract</b> - <i>Membrane-based pressure driven processes are used in an increasing number of applications. To properly design membrane applications, it is necessary to have a good estimate of membrane properties. To characterize membrane permeation properties, the time-lag method is commonly used. A study has been undertaken to gain a deeper understanding on the accuracy of the time-lag method under realistic boundary conditions using numerical methods. Numerical simulations offer the opportunity to obtain a solution to the Fick’s diffusion equation under various boundary conditions and for nonlinear sorption behaviour for which analytical solutions are difficult or impossible to obtain. This paper is mainly concerned with the selection of the optimal finite difference scheme for solving the Fick’s diffusion equation that leads to the accurate determination of the membrane time lag. Pressure responses in the upstream and downstream reservoirs at both membrane interfaces are determined from the concentration gradients. The concentration gradient at the upstream side of the membrane is initially very steep and to accurately extract membrane properties, it is important to predict it very accurately. Simulation results for the prediction of concentration profiles and gradients at both interfaces are compared with known benchmark analytical equations to assess the precision of numerous numerical schemes where the effect of mesh size and time step is quantified. Results show that a variable mesh size is required to predict accurately the concentration gradient at the upstream interface. The choice of a variable mesh size scheme is important as a compromise must be struck between the smallest mesh size and the time step as it greatly impacts on the computation time. Results also showed that both the implicit and explicit finite difference schemes gave very similar results.</i></p>
 
-<p align="justify"><i><strong>Abstract- </strong>
-Membrane-based pressure driven processes are used in an increasing number of applications. To properly design membrane applications, it is necessary to have a good estimate of membrane properties. To characterize membrane permeation properties, the time-lag method is commonly used. A study has been undertaken to gain a deeper understanding on the accuracy of the time-lag method under realistic boundary conditions using numerical methods. Numerical simulations offer the opportunity to obtain a solution to the Fick’s diffusion equation under various boundary conditions and for nonlinear sorption behaviour for which analytical solutions are difficult or impossible to obtain. This paper is mainly concerned with the selection of the optimal finite difference scheme for solving the Fick’s diffusion equation that leads to the accurate determination of the membrane time lag. Pressure responses in the upstream and downstream reservoirs at both membrane interfaces are determined from the concentration gradients. The concentration gradient at the upstream side of the membrane is initially very steep and to accurately extract membrane properties, it is important to predict it very accurately. Simulation results for the prediction of concentration profiles and gradients at both interfaces are compared with known benchmark analytical equations to assess the precision of numerous numerical schemes where the effect of mesh size and time step is quantified. Results show that a variable mesh size is required to predict accurately the concentration gradient at the upstream interface. The choice of a variable mesh size scheme is important as a compromise must be struck between the smallest mesh size and the time step as it greatly impacts on the computation time. Results also showed that both the implicit and explicit finite difference schemes gave very similar results.</i></p>
+    <p class="body"><b><i>Keywords:</i></b> Membrane characterization, finite differences, time lag, upstream pressure decay, variable mesh scheme.</p>
 
-<p align="left"><i><strong>Keywords:</strong></i> Membrane characterization, finite differences, time lag, upstream pressure decay, variable mesh scheme.</p>
+    <p class="body">&copy; Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
 
-<p align="justify">&copy; Copyright 2015 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
-
-<p>&nbsp;</p>
-
-<p>
-Date Received: 2015-05-12<br />
+    <p class="body">Date Received: 2015-05-12<br />
 
 Date Accepted: 2015-08-10<br />
 
-Date Published: 2015-09-15
-</p>
+Date Published: 2015-09-15</p>
 
-<img src="../images/line.png" width="100%;" height="1" />
+<p class="body">Nomenclature</p>
+<ul class="topics">
+<li><i>A</i>: Cross
+sectional membrane area, m<sup>2</sup></li>
 
-<h2>Nomenclature</h2>
+<li><i>C</i>: Permeating
+gas concentration, mol/m<sup>3</sup></li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>A</i>          Cross
-sectional membrane area, m<sup>2</sup></p>
+<li><i>D</i>: Diffusion
+coefficient, m<sup>2</sup>/s</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>C</i>          Permeating
-gas concentration, mol/m<sup>3</sup></p>
+<li><i>G<sup>A</sup></i>: Analytical
+concentration gradient, mol/(m·m<sup>3</sup>)</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>D</i>         Diffusion
-coefficient, m<sup>2</sup>/s</p>
+<li><i><img
+width=20 height=21 src="003_files/image001.png"></i>: Steady-state
+analytical concentration gradient, mol/(m·m<sup>3</sup>)</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>G<sup>A</sup></i>        Analytical
-concentration gradient, mol/(m·m<sup>3</sup>)</p>
+<li><i>G<sub>u</sub></i>: Upstream
+concentration gradient, mol/(m·m<sup>3</sup>)</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i><span style='position:relative;top:6.0pt'><img
-width=20 height=21 src="003_files/image001.png">      </i>Steady-state
-analytical concentration gradient, mol/(m·m<sup>3</sup>)</p>
+<li><i>G<sub>d</sub></i>: Downstream
+concentration gradient, mol/(m·m<sup>3</sup>)</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>G<sub>u</sub></i>        Upstream
-concentration gradient, mol/(m·m<sup>3</sup>)</p>
+<li><i>J</i>: Flux,
+mol/(m<sup>2</sup>·s)</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>G<sub>d</sub></i>        Downstream
-concentration gradient, mol/(m·m<sup>3</sup>)</p>
+<li><i>L</i>: Membrane
+thickness, m</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>J</i>           Flux,
-mol/(m<sup>2</sup>·s)</p>
+<li><i>n</i>: Number
+of time increments</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>L</i>          Membrane
-thickness, m</p>
+<li><i>N</i>: Total
+number of mesh points for both uniform and variable mesh schemes</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>n</i>          Number
-of time increments</p>
+<li><i>N<sub>0</sub></i>: Number
+of original uniform mesh sizes before conversion to variable mesh</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>N</i>         Total
-number of mesh points for both uniform and variable mesh schemes</p>
+<li><i>N<sub>1</sub></i>: Number
+of uniform mesh sizes converted to variable mesh sizes</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>N<sub>0</sub></i>        Number
-of original uniform mesh sizes before conversion to variable mesh</p>
+<li><i>N<sub>2</sub></i>: Number
+of converted variable mesh sizes from uniform mesh sizes</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>N<sub>1</sub></i>        Number
-of uniform mesh sizes converted to variable mesh sizes</p>
+<li><i>p<sup>A</sup></i>: Analytical
+pressure change, kPa</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>N<sub>2</sub></i>        Number
-of converted variable mesh sizes from uniform mesh sizes</p>
+<li><i>p</i><sup>0</sup>: Constant
+pressure in the upstream chamber, kPa</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>p<sup>A</sup></i>        Analytical
-pressure change, kPa</p>
+<li><i>p<sub>u</sub></i>: Upstream
+pressure, kPa</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>p</i><sup>0</sup>        Constant
-pressure in the upstream chamber, kPa</p>
+<li><i>p<sub>d</sub></i>: Downstream
+pressure, kPa</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>p<sub>u</sub></i>        Upstream
-pressure, kPa</p>
+<li><i>P</i>: Permeability,
+mol·m/(m<sup>2</sup>·Pa·s)</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>p<sub>d</sub></i>        Downstream
-pressure, kPa</p>
+<li><i>R</i>: Universal
+gas constant, J/(K·mol)</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>P</i>          Permeability,
-mol·m/(m<sup>2</sup>·Pa·s)</p>
+<li><i>S</i>: Solubility,
+mol/(m<sup>3</sup> Pa)</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>R</i>          Universal
-gas constant, J/(K·mol)</p>
+<li><i>t</i>: Simulation
+time, s</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>S</i>          Solubility,
-mol/(m<sup>3</sup> Pa)</p>
+<li><i>T</i>: Absolute
+temperature, K</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>t</i>           Simulation
-time, s</p>
+<li><i>V<sub>u</sub></i>: Upstream
+volume, m<sup>3</sup></li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>T</i>          Absolute
-temperature, K</p>
+<li><i>V<sub>d</sub></i>: Downstream
+volume, m<sup>3</sup></li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>V<sub>u</sub></i>        Upstream
-volume, m<sup>3</sup></p>
+<li><i>x</i>: Permeation
+distance, m</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>V<sub>d</sub></i>        Downstream
-volume, m<sup>3</sup></p>
+<li><i>&#603;</i>: Error
+between analytical results and numerical results</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>x</i>          Permeation
-distance, m</p>
+<li><i>&#916;t</i>: Simulation
+time step, s</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>&#603; </i>         Error
-between analytical results and numerical results</p>
+<li><i>&#916;x</i><sub>1</sub>: Grid
+size upstream of the grid point located at <i>x</i>,  m</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>&#916;t</i>        Simulation
-time step, s</p>
+<li><i>&#916;x</i><sub>2</sub>: rid
+size downstream of the grid point located at <i>x</i>, m</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>&#916;x</i><sub>1</sub>     Grid
-size upstream of the grid point located at <i>x</i>,  m</p>
-
-<p class=MsoNormal style='text-indent:0cm'><i>&#916;x</i><sub>2</sub>     Grid
-size downstream of the grid point located at <i>x</i>, m</p>
-
-<p class=MsoNormal style='text-indent:0cm'><i>&#916;x</i><sub>s</sub>      First
+<li><i>&#916;x</i><sub>s</sub>: First
 and smallest mesh size for both the variable and uniform mesh
-schemes.</p>
+schemes.</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>&#916;p</i><sub>u</sub>     Upstream
-pressure decrease, kPa</p>
+<li><i>&#916;p</i><sub>u</sub>: Upstream
+pressure decrease, kPa</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>&#916;p</i><sub>d</sub>     Downstream
-pressure increase, kPa</p>
+<li><i>&#916;p</i><sub>d</sub>: Downstream
+pressure increase, kPa</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>&#952;<sup>A</sup></i>        Analytical
-time lag, s</p>
+<li><i>&#952;<sup>A</sup></i>: Analytical
+time lag, s</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>&#952;<sub>u</sub></i>        Upstream
-time lag, s</p>
+<li><i>&#952;<sub>u</sub></i>: Upstream
+time lag, s</li>
 
-<p class=MsoNormal style='text-indent:0cm'><i>&#952;<sub>d</sub></i>        Downstream
-time lag, s</p>
+<li><i>&#952;<sub>d</sub></i>: Downstream
+time lag, s</li>
+</ul>
 
-<h2>1. Introduction</h2>
+  <div class="border"></div>
 
-<p align="justify" style="text-indent:19.85pt;">Membrane-based pressure driven processes are used in an increasing number of applications, and are the subject of intensive
+  <div class="indent">
+<h4>1. Introduction</h4>
+
+<p class="body">Membrane-based pressure driven processes are used in an increasing number of applications, and are the subject of intensive
 research and development [1]. To characterize simple permeation processes as well as more complex processes involving diffusion with simultaneous adsorption, the time-lag method initially proposed by Daynes [2] and then
 modified by Barrer [3] is the method that is currently being used by most researchers. The determination of the time lag allows finding the membrane
 diffusion coefficient for a target solute. The downstream time lag is based on
@@ -328,7 +310,7 @@ equation under various boundary conditions at which analytical solutions are
 difficult or impossible to obtain, in addition to consider diffusion within
 membranes that is characterized with nonlinear sorption behaviours. </p>
 
-<p align="justify" style="text-indent:19.85pt;">This paper is mainly concerned with the
+<p class="body">This paper is mainly concerned with the
 selection of the optimal finite difference scheme for solving the Fick’s
 diffusion equation that leads to the accurate determination of the upstream and
 downstream membrane time lags. For the experimental determination of the time
@@ -348,22 +330,20 @@ respectively, the relationships that exist between the upstream and downstream
 time lags with the membrane diffusion coefficient and thickness. </p>
 
 <figure>
-<img src="003_files/image002.png" class="img"/>
+<img src="003_files/image002.png" class="article-img">
 
 <figcaption>
 Figure 1. Schematic diagram of a typical membrane testing module.</figcaption>
 </figure>
-<br>
 
 <figure>
-<img src="003_files/image003.png" class="img"/>
+<img src="003_files/image003.png" class="article-img">
 
 <figcaption>
 Figure 2. Schematic model of the membrane-based pressure driven processes in a constant volume (CV) system.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">At
+<p class="body">At
 time <i>t </i>= 0<sup>-</sup>, the system is maintained under high vacuum and
 at <i>t</i> = 0<sup>+ </sup>the system is suddenly exposed to high pressure gas
 that rapidly fills the upstream chamber. <i>V<sub>u</sub></i> and <i>V<sub>d</sub></i>
@@ -374,19 +354,17 @@ distance <i>x</i> and time <i>t</i> and <i>D</i>, <i>S </i>and <i>P</i> are the
 membrane properties: diffusion coefficient, solubility and permeability,
 respectively.</p>
 
-<div class="eqn">
-<img src="003_files/image004.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image004.png" class="eqn">
 <div class="eqn-number">(1)</div>
-<br>
-<br>
-<div class="eqn">
-<img src="003_files/image005.png" class="img">
 </div>
+
+<div class="equation">
+<img src="003_files/image005.png" class="eqn">
 <div class="eqn-number">(2)</div>
-<br>
-<br>
-<p align="justify" style="text-indent:19.85pt;">where <i>L</i> is the membrane thickness, <i>D</i> is the
+</div>
+
+<p class="body">where <i>L</i> is the membrane thickness, <i>D</i> is the
 diffusion coefficient, and <i><span style='font-family:Symbol'>q</i><i><sub><span
 style='font-size:11.0pt'>u</sub></i><i><span style='font-size:11.0pt'> </i><span
 style='font-size:11.0pt'>and <i><span style='font-family:Symbol'>q</i><i><sub><span
@@ -395,14 +373,13 @@ style='font-size:11.0pt'>are the upstream and downstream time lags,
 respectively.</p>
 
 <figure>
-<img src="003_files/image006.jpg" class="img"/>
+<img src="003_files/image006.jpg" class="article-img">
 
 <figcaption>
 Figure 3. Schematic representation of the time lag determination from the upstream and downstream pressure difference curves.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 change in gas pressure in both chambers as a function of time is determined
 from the concentration gradients at their respective gas-membrane interfaces.
 Because the upstream interface of the membrane is subjected to a step change in
@@ -422,7 +399,7 @@ diffusion over the membrane into a number of finite thin slices and to solve
 numerically the partial differential equation to obtain the concentration
 profile of the gas permeating within the membrane. </p>
 
-<p align="justify" style="text-indent:19.85pt;">In
+<p class="body">In
 this paper, to support the experimental and numerical research program
 undertaken to determine the conditions under which the evaluation of the
 upstream and downstream time lags leads to better accuracy, numerical
@@ -436,29 +413,27 @@ conditions are first presented, followed by a description of the various
 numerical schemes that have been investigated. Results of the various numerical
 studies are presented and discussed before concluding.</p>
 
-<h2>2. Analytical Solutions</h2>
+<h4>2. Analytical Solutions</h4>
 
-<p align="justify" style="text-indent:19.85pt;">A series of benchmark analytical solutions for
+<p class="body">A series of benchmark analytical solutions for
 the concentration profiles, the gradients at both interfaces, and the changes
 in pressures in the upstream and downstream volumes have been used to compare
 the different numerical schemes. These analytical solutions are presented in
 this section.</p>
 
-<p align="justify" style="text-indent:19.85pt;">For the simplest case, the gas permeation via
+<p class="body">For the simplest case, the gas permeation via
 diffusion through the membrane follows Fick’s second law of diffusion which
 allows representing the concentration <i>C</i>(<i>x</i>, <i>t</i>) of the
 permeating species as a function of time (<i>t</i>) and position (<i>x</i>) via
 Eq. (3) where the diffusion coefficient (<i>D</i>) of the permeating gas within
 the membrane is assumed to be constant.</p>
 
-<div class="eqn">
-<img src="003_files/image007.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image007.png" class="eqn">
 <div class="eqn-number">(3)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">For deriving one of the benchmark solutions, the
+<p class="body">For deriving one of the benchmark solutions, the
 two chambers separating the membranes are initially under high vacuum such that
 the initial concentration throughout the membrane is equal to zero. The
 experiment starts when the upstream chamber is rapidly filled with the
@@ -471,14 +446,12 @@ the membrane is assumed to be zero during the experiment. Based on these
 assumptions, the initial condition (IC) and the two boundary conditions (BC1
 and BC2) used to derive the analytical solution are given in Eq. (4).</p>
 
-<div class="eqn">
-<img src="003_files/image008.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image008.png" class="eqn">
 <div class="eqn-number">(4)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">where <i>C</i>
+<p class="body">where <i>C</i>
 is the concentration of the permeating gas, <i>p<sub>0</sub></i> is the
 constant pressure in the upstream chamber, <i>S</i> is the solubility of the
 membrane and <i>L</i> is the thickness of the membrane. The two boundary
@@ -488,44 +461,36 @@ boundary conditions of Eq. (4) can be obtained using the method of separation
 of variables and is given in Eq. (5) [4]. This equation gives the concentration
 profile as a function of time <i>t</i> and permeation distance <i>x</i>.</p>
 
-<div class="eqn">
-<img src="003_files/image009.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image009.png" class="eqn">
 <div class="eqn-number">(5)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">To determine the concentration gradients at both
+<p class="body">To determine the concentration gradients at both
 interfaces, the Fick’s first law can be used where, as expressed by Eq. (6),
 the flux <i>J</i> is the negative of the product of the diffusivity and the
 gradient.</p>
 
-<div class="eqn">
-<img src="003_files/image010.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image010.png" class="eqn">
 <div class="eqn-number">(6)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">The benchmark analytical solutions for the gas
+<p class="body">The benchmark analytical solutions for the gas
 fluxes at the upstream side (<i>x</i> = 0) and downstream side (<i>x</i> = <i>L</i>)
 of the membrane are evaluated using Eqs. (7) and (8), respectively:</p>
 
-<div class="eqn">
-<img src="003_files/image011.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image011.png" class="eqn">
 <div class="eqn-number">(7)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image012.png" class="img">
 </div>
-<div class="eqn-number">(8)</div>
-<br>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">To develop the analytical solutions for the
+<div class="equation">
+<img src="003_files/image012.png" class="eqn">
+<div class="eqn-number">(8)</div>
+</div>
+
+<p class="body">To develop the analytical solutions for the
 concentration profile (Eq. (5)) and the mass fluxes at the interfaces (Eqs. (7)
 and (8)), it was necessary to use the boundary conditions given in Eq. (4). To determine the time lag,
 a pressure difference needs to be recorded in the upstream and/or downstream
@@ -538,76 +503,64 @@ the prevalence of the two boundary conditions of Eq. (4) even if the two gradien
 at the interfaces would be in reality slightly different than the ones
 calculated with the assumptions of Eq. (4).</p>
 
-<p align="justify" style="text-indent:19.85pt;">The pressures in the upstream and downstream
+<p class="body">The pressures in the upstream and downstream
 chambers can be calculated by performing a simple mass balance in each chamber
 while integrating Eqs. (7) and (8) with time. The following expressions were
 derived for the upstream and downstream pressures as a function of time:</p>
 
-<div class="eqn">
-<img src="003_files/image013.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image013.png" class="eqn">
 <div class="eqn-number">(9)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image014.png" class="img">
 </div>
+
+<div class="equation">
+<img src="003_files/image014.png" class="eqn">
 <div class="eqn-number">(10)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image015.png" class="img">
 </div>
+
+<div class="equation">
+<img src="003_files/image015.png" class="eqn">
 <div class="eqn-number">(11)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image016.png" class="img">
 </div>
-<div class="eqn-number">(12)</div>
-<br>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">where <i>p</i>(0, <i>t</i>) and <i>p</i>(<i>L</i>,
+<div class="equation">
+<img src="003_files/image016.png" class="eqn">
+<div class="eqn-number">(12)</div>
+</div>
+
+<p class="body">where <i>p</i>(0, <i>t</i>) and <i>p</i>(<i>L</i>,
 <i>t</i>) are the respective pressure at the upstream and downstream
 interfaces, <i>p<sub>u</sub></i> and <i>p<sub>d</sub></i> are the pressure
 decrease at the upstream interface and pressure increase at the downstream
 interface, <i>A</i> is the cross sectional area of the membrane and <i>R</i> is
 the gas constant.  </p>
 
-<p align="justify" style="text-indent:19.85pt;">At long permeation time (<i>t·D</i>/<i>L</i><sup>2</sup>&gt;1),
+<p class="body">At long permeation time (<i>t·D</i>/<i>L</i><sup>2</sup>&gt;1),
 the transient terms in Eqs. (10) and (12) become negligible and these equations
 reduce to the following two linear equations:</p>
 
-<div class="eqn">
-<img src="003_files/image017.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image017.png" class="eqn">
 <div class="eqn-number">(13)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image018.png" class="img">
 </div>
-<div class="eqn-number">(14)</div>
-<br>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The intercept of the linear portion of the
+<div class="equation">
+<img src="003_files/image018.png" class="eqn">
+<div class="eqn-number">(14)</div>
+</div>
+
+<p class="body">The intercept of the linear portion of the
 pressure difference curves with the time axis (see Figure 3), obtained after a
 long permeation time, gives the upstream and downstream time lags. The time
 lags, evaluated from the pressure changes on both sides of the membrane, are
 directly proportional to the reciprocal of the membrane diffusion coefficient,
 as shown in Eqs. (1) and (2).</p>
 
-<h2>3. Numerical Solutions</h2>
+<h4>3. Numerical Solutions</h4>
 
-<h4>3. 1. Numerical Solutions</h4>
+<p class="subhead">3. 1. Numerical Solutions</p>
 
-<p align="justify" style="text-indent:19.85pt;">The benchmark analytical solutions derived in
+<p class="body">The benchmark analytical solutions derived in
 the previous section under ideal boundary conditions can be used to evaluate
 the accuracy of the numerical solutions. The evaluation was performed
 for the following variables: concentration profiles, gradients at
@@ -621,14 +574,12 @@ equation to approximate the differential equation using Taylor’s series
 expansion with respect to a change in time, <i>&#916;t</i>. For all grid points
 in the solution domain, Eq. (3) can be approximated as follows.</p>
 
-<div class="eqn">
-<img src="003_files/image019.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image019.png" class="eqn">
 <div class="eqn-number">(15)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">where <i>&#916;x</i><sub>1</sub>
+<p class="body">where <i>&#916;x</i><sub>1</sub>
 and <i>&#916;x</i><sub>2</sub> are the grid sizes upstream and downstream of
 the grid point located at <i>x</i>, respectively. For a uniform grid size, <i>&#916;x</i><sub>1</sub>
 would be equal to <i>&#916;x</i><sub>2</sub>. The concentration profile can be
@@ -646,51 +597,41 @@ this investigation we have used the same criterion to select the integration
 time step. In addition, the Crank-Nicolson algorithm [5], which is a
 combination of explicit and implicit algorithms, was also implemented.</p>
 
-<div class="eqn">
-<img src="003_files/image021.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image021.png" class="eqn">
 <div class="eqn-number">(16)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image022.png" class="img">
 </div>
-<div class="eqn-number">(17)</div>
-<br>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Eqs. (16) and (17) are valid for all interior
+<div class="equation">
+<img src="003_files/image022.png" class="eqn">
+<div class="eqn-number">(17)</div>
+</div>
+
+<p class="body">Eqs. (16) and (17) are valid for all interior
 grid points. To satisfy the two boundary conditions, Eqs. (18) (a) and (b) are
 used for the first and last grid points, respectively.</p>
 
-<div class="eqn">
-<img src="003_files/image023.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image023.png" class="eqn">
 <div class="eqn-number">(18)</div>
-<br>
-<br>
+</div>
 
 
-<p align="justify" style="text-indent:19.85pt;"> The
+<p class="body"> The
 concentration gradients at both surfaces of the membranes are calculated from
 the concentration profile using Eqs. (19) and (20).</p>
 
-<div class="eqn">
-<img src="003_files/image024.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image024.png" class="eqn">
 <div class="eqn-number">(19)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image025.png" class="img">
 </div>
-<div class="eqn-number">(20)</div>
-<br>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">             where <i>N</i>
+<div class="equation">
+<img src="003_files/image025.png" class="eqn">
+<div class="eqn-number">(20)</div>
+</div>
+
+<p class="body">             where <i>N</i>
 is the number of grid points in the solution domain. The pressure differences
 are calculated from the gradient on both sides of the membrane via Eqs. (21)
 and (22) where <i>T</i> is the absolute temperature, <i>G<sub>u</sub></i> and <i>G<sub>d</sub>
@@ -699,23 +640,19 @@ and <i>V<sub>d</sub></i> are the upstream and downstream volumes of the
 chambers and <i>n</i> is the number of time increments <i>&#916;t</i> for which
 the simulation was run.</p>
 
-<div class="eqn">
-<img src="003_files/image026.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image026.png" class="eqn">
 <div class="eqn-number">(21)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image027.png" class="img">
 </div>
+
+<div class="equation">
+<img src="003_files/image027.png" class="eqn">
 <div class="eqn-number">(22)</div>
-<br>
-<br>
+</div>
 
-<h4>3. 2. Numerical Schemes for Variable Mesh Sizes</h4>
+<p class="subhead">3. 2. Numerical Schemes for Variable Mesh Sizes</p>
 
-<p align="justify" style="text-indent:19.85pt;">Since the gradient at upstream interface of the
+<p class="body">Since the gradient at upstream interface of the
 membrane is very steep, especially at a short permeation time, it is desired to
 resort to a relatively small mesh size at this interface to predict very
 accurately the concentration gradient. In this investigation, both uniform and
@@ -726,7 +663,7 @@ size at the surface. Figure 4 shows one of the variable mesh schemes that were
 used in this study where 3 uniform mesh sizes were converted into 10 variable
 mesh sizes.</p>
 
-<p align="justify" style="text-indent:19.85pt;">To obtain an exponentially increasing mesh size,
+<p class="body">To obtain an exponentially increasing mesh size,
 a multiplication factor was defined for each variable mesh scheme such that the
 smallest mesh point at the boundary is progressively increased until the
 uniform central mesh size is obtained. The uniform mesh size is then used for
@@ -737,32 +674,26 @@ uniform mesh size (=<i>L</i>/(<i>N</i><sub>0</sub> - 1)) is divided by the
 factor to the 10<sup>th</sup> power. <i>N</i><sub>0</sub> is the number of grid
 points used with a uniform mesh size.</p>
 
-<div class="eqn">
-<img src="003_files/image028.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image028.png" class="eqn">
 <div class="eqn-number">(23)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">The sizes of the subsequent variable meshes are
+<p class="body">The sizes of the subsequent variable meshes are
 calculated using Eqs. (24) and (25) for the upstream and downstream boundaries,
 respectively.</p>
 
-<div class="eqn">
-<img src="003_files/image029.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image029.png" class="eqn">
 <div class="eqn-number">(24)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image030.png" class="img">
 </div>
-<div class="eqn-number">(25)</div>
-<br>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Three different factors were tested in this
+<div class="equation">
+<img src="003_files/image030.png" class="eqn">
+<div class="eqn-number">(25)</div>
+</div>
+
+<p class="body">Three different factors were tested in this
 investigation and their values are given in Table 1. In Eqs. (23) and (25), <i>N</i><sub>0</sub>
 represents the original number of mesh points in a uniform grid. <i>N</i><sub>1</sub>
 represents the number of uniform mesh sizes that were converted into <i>N</i><sub>2</sub>
@@ -771,7 +702,7 @@ to <i>N</i><sub>0</sub>+2(<i>N</i><sub>2</sub> - <i>N</i><sub>1</sub>) when a
 variable grid scheme is used. For both mesh schemes, the total number of mesh
 points will be denoted <i>N</i>.</p>
 
-<p align="justify" style="text-indent:19.85pt;">It is
+<p class="body">It is
 important to reiterate that in practice, the upstream and downstream pressure
 changes cannot be observed under ideal boundary conditions (Eq. (4)) and
 analytical solutions are only available under these ideal conditions. However,
@@ -786,15 +717,13 @@ determine the accuracy of various numerical schemes. The numerical scheme was
 then used to gain a deeper understanding of the time lag method.</p>
 
 <figure>
-<img src="003_files/image031.jpg" class="img"/>
+<img src="003_files/image031.jpg" class="article-img">
 
 <figcaption>
 Figure 4. Schematic illustration of the transformation of a uniform mesh into a variable mesh with Factor 2.</figcaption>
 </figure>
-<br>
 
-<div align=center>
-
+<center>
 <div class="widetable">
 <figcaption>Table 1. Factors used in variable mesh schemes. <i>N</i><sub>1</sub> is the number of uniform mesh sizes converted into <i>N</i><sub>2</sub> variable mesh sizes.</figcaption>
 
@@ -884,17 +813,16 @@ Figure 4. Schematic illustration of the transformation of a uniform mesh into a 
  </tr>
 </table>
 </div>
-</div>
+</center>
 
-<h2>4. Results and Discussion</h2>
+<h4>4. Results and Discussion</h4>
 
-<p align="justify" style="text-indent:19.85pt;">In this investigation, analytical calculations
+<p class="body">In this investigation, analytical calculations
 and numerical simulations were performed under typical laboratory operating
 conditions that were used in actual experimental membrane tests. The typical
 experimental parameters are listed in Table 2.</p>
 
-<div align=center>
-
+<div class="widetable">
 <figcaption>Table 2.
 Simulation conditions and membrane system parameters.</figcaption>
 
@@ -1051,12 +979,11 @@ Simulation conditions and membrane system parameters.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-</div>
+<p class="subhead">4. 1. Concentration Profiles</p>
 
-<h4>4. 1. Concentration Profiles</h4>
-
-<p align="justify" style="text-indent:19.85pt;">Figure
+<p class="body">Figure
 5 presents the dimensionless average percentage error for the prediction of the
 concentration profiles as a function of the number of mesh points. In Figure 5,
 results are presented for both uniform and variable (Factor 2) schemes using
@@ -1070,24 +997,22 @@ investigation, the comparison was performed each 10 s up to 80 s. Superscript <i
 in Eq. (26) designates the evaluation with the analytical solution (Eq. (5)).<span
 lang=EN-GB> </p>
 
-<div class="eqn">
-<img src="003_files/image032.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image032.png" class="eqn">
 <div class="eqn-number">(26)</div>
-<br>
-<br>
+</div>
 
 <figure>
-<img src="003_files/image033.jpg" class="img"/>
+<img src="003_files/image033.jpg" class="article-img">
 
 <figcaption>
 Figure 5.
 Dimensionless percentage average error <i>&#603;</i>(<i>C</i>) of the concentration profiles versus the number of mesh points (<i>N</i>). An integration time step of 0.00001 s was used for both explicit and implicit methods and for uniform
 and variable mesh (Factor 2) schemes.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Results
+
+<p class="body">Results
 of Figure 5 clearly show that the concentration profiles are obtained very
 accurately with an average percentage error of less than 0.015% when the number
 of mesh points is larger than about 25. For the prediction of the concentration
@@ -1102,37 +1027,33 @@ this investigation led to very accurate concentration profile predictions and
 that it can be used with confidence for other problems for which analytical
 solutions do not exist or were not yet derived.</p>
 
-<h4>4. 2. Concentration Gradients</h4>
+<p class="subhead">4. 2. Concentration Gradients</p>
 
-<p align="justify" style="text-indent:19.85pt;">Figure
+<p class="body">Figure
 6 and Figure 7 present the plots of the upstream and downstream gradient
 percentage errors evaluated at three different times: 2, 4 and 10 s. The
 gradients were computed numerically (Eqs. (19) and (20)) and compared with the
 analytical gradients in order to determine the error in its prediction as
 defined by Eqs. (27) and (28)</p>
 
-<div class="eqn">
-<img src="003_files/image034.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image034.png" class="eqn">
 <div class="eqn-number">(27)</div>
-<br>
-<br>
-
-<div class="eqn">
-<img src="003_files/image035.png" class="img">
 </div>
-<div class="eqn-number">(28)</div>
-<br>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">where <i>G<sub>u</sub></i>
+<div class="equation">
+<img src="003_files/image035.png" class="eqn">
+<div class="eqn-number">(28)</div>
+</div>
+
+<p class="body">where <i>G<sub>u</sub></i>
 and <i>G<sub>d</sub></i> are the upstream and downstream gradients,
 respectively. Superscript <i>A</i> designates the analytical solution. Since
 the downstream gradient is initially zero, the steady-state analytical gradient
 <img width=20 height=21 src="003_files/image001.png"> was used in
 Eq. (28) to avoid dividing by zero or by an extremely small number.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Results
+<p class="body">Results
 for the upstream gradient (Figure 6) obtained with a uniform mesh size show a
 progressively decreasing percentage error starting with 10 grid points with
 relatively high percentage error values of 4.915%, 2.395% and 0.953% at 2, 4
@@ -1150,14 +1071,13 @@ uniform mesh size when a higher number of mesh points is used and times larger
 than 2s. </p>
 
 <figure>
-<img src="003_files/image036.jpg" class="img"/>
+<img src="003_files/image036.jpg" class="article-img">
 
 <figcaption>
 Figure 6. Upstream gradient percentage error <i>&#603;</i>(<i>G<sub>u</sub></i>) versus the number of mesh points (<i>N</i>) with an integration time step of 0.00001s and at 2, 4 and 10 s for uniform and variable mesh schemes.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Results
+<p class="body">Results
 for the downstream gradient (Figure 7) obtained with a uniform and a variable
 mesh size show a progressively decreasing percentage error as the number of
 mesh points is increased. For the downstream gradient, the percentage error for
@@ -1172,16 +1092,16 @@ times, the percentage errors were always below 0.02% for a number of mesh
 points of 150 or more. </p>
 
 <figure>
-<img src="003_files/image037.jpg" class="img"/>
+<img src="003_files/image037.jpg" class="article-img">
 
 <figcaption>
 Figure 7. Downstream gradient percentage error (<i>&#603;</i>(<i>G<sub>d</sub></i>)) versus the number of mesh points (<i>N</i>) with an integration time step of 0.00001 s and at 2, 4 and 10 s for uniform and variable mesh schemes.</figcaption>
 </figure>
-<br>
 
-<h4>4. 3. Pressure Changes</h4>
 
-<p align="justify" style="text-indent:19.85pt;">With
+<p class="subhead">4. 3. Pressure Changes</p>
+
+<p class="body">With
 the instantaneous values of the gradients being calculated at the membrane
 boundaries, it is possible to determine the pressure changes in the upstream
 and downstream chambers using Eqs. (21) and (22). Figure 8 presents the plots
@@ -1190,14 +1110,12 @@ decay is computed with the results of the implicit finite difference method and
 the pressure decay relative percentage error equation is calculated by
 comparing the analytical and numerical values using Eq. (29).</p>
 
-<div class="eqn">
-<img src="003_files/image038.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image038.png" class="eqn">
 <div class="eqn-number">(29)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">Results
+<p class="body">Results
 show that the upstream pressure decay percentage error for both uniform and
 variable meshes decreases steadily with an increase in the number of mesh
 points. For a given number of mesh points, the percentage error is smaller by
@@ -1221,15 +1139,14 @@ the upstream pressure change that the use of variable mesh points takes all its
 importance.</p>
 
 <figure>
-<img src="003_files/image039.jpg" class="img"/>
+<img src="003_files/image039.jpg" class="article-img">
 
 <figcaption>
 Figure 8. Upstream pressure decay percentage error (<i>&#603;</i>(<i>&#916;P<sub>u</sub></i>))versus the number of mesh points (<i>N</i>) with an integration time step of 0.00001 s
 and at 10 s and 80 s for uniform and variable mesh schemes.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 percentage error for the downstream pressure change as a function of the number
 of mesh points is presented in Figure 10. In general, regardless of the number
 of mesh points and the permeation time, the percentage error for the downstream
@@ -1242,23 +1159,22 @@ by roughly 0.01%. For both upstream and downstream pressure differences, the
 errors are relative percentage errors.</p>
 
 <figure>
-<img src="003_files/image040.jpg" class="img"/>
+<img src="003_files/image040.jpg" class="article-img">
 
 <figcaption>
 Figure 9. Upstream gradient percentage error <i>&#603;</i>(<i>&#916;G<sub>u</sub></i>) versus time (s) at the first 10 seconds with an integration time step of 0.000001 s and the number of mesh points (<i>N</i>) of 100, 200 and 300 for
 uniform and variable mesh schemes.</figcaption>
 </figure>
-<br>
 
 <figure>
-<img src="003_files/image041.jpg" class="img"/>
+<img src="003_files/image041.jpg" class="article-img">
 
 <figcaption>
 Figure 10. Modified downstream pressure decay percentage error <i>&#603;</i>(<i>&#916;P<sub>d</sub></i>) versus the number of mesh points (<i>N</i>) with an integration time step of 0.00001 s and at 10 and 80 s for uniform and variable mesh schemes.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">However,
+
+<p class="body">However,
 if the absolute errors were considered instead of the relative errors, results
 would show that the error accumulates with time. For instance, for a variable
 scheme with 150 mesh points, the absolute error at 10 s is 0.525 Pa while the
@@ -1269,9 +1185,9 @@ capture adequately the concentration gradient at the upstream interface and
 that the absolute error strongly depends on the prediction error occurring at
 very short time where the concentration gradient is very steep.</p>
 
-<h4>4. 4. Time Lags</h4>
+<p class="subhead">4. 4. Time Lags</p>
 
-<p align="justify" style="text-indent:19.85pt;">Figures
+<p class="body">Figures
 11 and 12 show the plots of the upstream and downstream time lag percentage
 errors as a function of the number of mesh points, respectively. The evaluation
 of the time lag, that is the extrapolation of the linear portion of the
@@ -1279,14 +1195,12 @@ pressure curve as a function of time, was performed at a permeation time of 190
 s. The time lag is computed with the implicit finite difference method and the
 percentage time lag prediction error is calculated via Eq. (30).</p>
 
-<div class="eqn">
-<img src="003_files/image042.png" class="img">
-</div>
+<div class="equation">
+<img src="003_files/image042.png" class="eqn">
 <div class="eqn-number">(30)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">Figure
+<p class="body">Figure
 11 shows that the percentage error of the upstream time lag is strongly
 influenced by the mesh scheme used to solve the problem. For a greater accuracy
 in the determination of the time lag, it is important to use a variable mesh
@@ -1304,23 +1218,22 @@ time step needs also to be smaller which leads to higher computation time.
 Factor 2 was therefore used for most results presented in this investigation. </p>
 
 <figure>
-<img src="003_files/image043.jpg" class="img"/>
+<img src="003_files/image043.jpg" class="article-img">
 
 <figcaption>
 Figure 11. Upstream time lag prediction error (<i>&#603;</i>(<i>&#952;<sub>u</sub></i>)) versus the number of mesh points (<i>N</i>) with an integration time step of 0.00001 s for uniform and variable mesh (with different factors) schemes. Time lag was evaluated at 190 s.</figcaption>
 </figure>
-<br>
 
 <figure>
-<img src="003_files/image044.jpg" class="img"/>
+<img src="003_files/image044.jpg" class="article-img">
 
 <figcaption>
 Figure 12. Downstream time lag error <i>&#603;</i>(<i>&#952;<sub>d</sub></i>) versus the number of mesh points (<i>N</i>) with an integration time step of 0.00001 s for uniform and variable mesh (with different factors) schemes. Time lag was
 evaluated at 190 s.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">For
+
+<p class="body">For
 the downstream time lag, results of Figure 12 show that the percentage time lag
 prediction error is a function of the number of mesh points, but unlike the
 upstream time lag, the uniform mesh size is slightly better than the variable
@@ -1329,9 +1242,9 @@ insignificant difference is the smooth concentration profile for the downstream
 interface. The accuracy of the time lag stabilizes to a percentage error of
 less than 0.015% for a number of mesh points greater than 150.</p>
 
-<h4>4. 5. Computation Time</h4>
+<p class="subhead">4. 5. Computation Time</p>
 
-<p align="justify" style="text-indent:19.85pt;">Figure
+<p class="body">Figure
 13 presents the magnitude of dimensionless percentage average error <i>&#603;</i>(<i>C</i>)
 for the concentration profile within the membrane as a function of the
 integration time step to study the accuracy of the numerical method with
@@ -1343,14 +1256,14 @@ a smaller time step would only lead to greater computation time and not to a
 greater accuracy. </p>
 
 <figure>
-<img src="003_files/image045.jpg" class="img"/>
+<img src="003_files/image045.jpg" class="article-img">
 
 <figcaption>
 Figure 13. The average percentage error <i>&#603;</i>(<i>C</i>) of the concentration profiles versus the size of the integration time step with a uniform mesh scheme and a number of mesh points <i>N</i> = 100 and the corresponding computation time for each experiment.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Figure
+
+<p class="body">Figure
 14 presents an analysis to determine the computation time as a function of the
 number of mesh points. The computation time increases linearly with the number
 of mesh points. Comparing the two numerical methods, the implicit method with
@@ -1362,17 +1275,17 @@ it is recommended to use explicit finite differences to solve the type of
 problems encountered in this investigation.</p>
 
 <figure>
-<img src="003_files/image046.jpg" class="img"/>
+<img src="003_files/image046.jpg" class="article-img">
 
 <figcaption>
 Figure 14. Computation times for different mesh points and for explicit and explicit schemes with uniform mesh size and simulation time of 80 s. Computer and processor used are Dell OptiPlex 780 and Intel Core 2 Duo E8400 (3.00 GHz),
 respectively.</figcaption>
 </figure>
-<br>
 
-<h2>5. Conclusion</h2>
 
-<p align="justify" style="text-indent:19.85pt;">Results
+<h4>5. Conclusion</h4>
+
+<p class="body">Results
 have shown that the concentration profiles can be solved very accurately
 regardless of the finite difference scheme used to solve the Fick’s second law
 of diffusion. The concentration gradients obtained with a uniform mesh scheme
@@ -1389,7 +1302,7 @@ a variable mesh scheme where the first three uniform mesh sizes are transformed
 into 10 variable meshes (Factor 2) is a good compromise between accuracy and
 computation time. </p>
 
-<p align="justify" style="text-indent:19.85pt;">This
+<p class="body">This
 investigation has also allowed showing that both explicit and implicit finite
 difference schemes led to similar results. It is
 recommended to use an explicit scheme because of lower computation time for the
@@ -1401,79 +1314,173 @@ where stability criteria are very sensitive to nonlinearity. Crank-Nicolson algo
 [5] was also tested and the accuracy was found to be between the explicit and
 implicit schemes.</p>
 
-<p align="justify" style="text-indent:19.85pt;">It
+<p class="body">It
 is concluded that the numerical scheme used in this investigation can be used
 with confidence to solve problems with various boundary conditions and for
 systems where nonlinear diffusive behaviour is observed.</p>
 
-<h2>References</h2>
-
-<p align="justify">[1] P. Bernardo and G. Clarizia,
+<h4 id="references">References</h4>
+<div class="ref">
+<p class="body">[1] P. Bernardo and G. Clarizia,
 “30 Years of Membrane Technology for Gas Separation,” <i>Chemical Engineering
 Transactions</i>, vol. 32, pp. 1999-2004, 2013. <a href="http://www.aidic.it/cet/13/32/334.pdf" target="_blank">View Article</a></p>
 
-<p align="justify">[2] H.A. Daynes, “The
+<p class="body">[2] H.A. Daynes, “The
 process of diffusion through a rubber membrane,” <i>Proceedings of the Royal
 Society of London</i>, London, UK, 1920, vol. 97A, pp. 286-307. <a href="http://rspa.royalsocietypublishing.org/content/royprsa/97/685/286.full.pdf" target="_blank">View Article</a></p>
 
-<p align="justify">[3] R. Barrer and E.
+<p class="body">[3] R. Barrer and E.
 Rideal, “Permeation, diffusion and solution of gases in organic polymers,” <i>Transactions
 of the Faraday Society</i>, vol. 35, pp. 628-643, 1939. <a href="http://dx.doi.org/10.1039/TF9393500628" target="_blank">View Article</a></p>
 
-<p align="justify">[4] S.W. Rutherford and
+<p class="body">[4] S.W. Rutherford and
 D.D. Do, “Review of time lag permeation technique as a method for characterisation
 of porous media and membranes,” <i>Adsorption</i>, vol. 3, pp. 283-312, 1997. <a href="http://dx.doi.org/10.1007/BF01653631" target="_blank">View Article</a></p>
 
-<p align="justify">[5] B. Carnahan, H.A. Luther
+<p class="body">[5] B. Carnahan, H.A. Luther
 and J. O. Wilkes, <i>Applied numerical methods</i>, New York, USA: Wiley, 1969.</p>
 
-<p align="justify">[6] A. Iserles, <i>A
+<p class="body">[6] A. Iserles, <i>A
 first course in the numerical analysis of differential equations</i>. No. 44.
 Cambridge University Press, 2009. <a href="http://www.cambridge.org/ca/academic/subjects/mathematics/numerical-analysis/first-course-numerical-analysis-differential-equations-2nd-edition?format=PB" target="_blank">View Book</a></p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
 
+  </div> <!--Main Content -->
+</div>
 </div>
 
-</body>
-
-</html>
-<div class="clearfix"></div>
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
-<div class="clearfix"></div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
-<div class="clearfix"></div>
-  </div>
 
-  </div>
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-        <p><a href="/">Avestia Publishing</a></p>
-        <p><a href="../register/">Subscribe to our Mailing List</a></p>
-        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></p>
-        <p><a href="../terms/">Terms of Use</a></p>
-    <p><a href="../sitemap/">Sitemap</a></p>
-
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
       </div>
-      <div class="col-sm-5 footer-txt">
-        <p>Avestia Publishing, International ASET Inc. </p>
-        <p>Unit No. 417, 1376 Bank St. </p>
-        <p>Ottawa, Ontario, Canada </p>
-        <p>Postal Code: K1H 7Y3</p>
-        <p>Phone Number: 1-613-695-3040</p>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
 
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
-</body>
+</footer>
+</div>
 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+</body>
 </html>

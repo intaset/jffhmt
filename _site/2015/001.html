@@ -1,180 +1,167 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for JBB Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
 <title>JFFHMT - Numerical Simulation of Swirling Flows - Heat Transfer Enhancement</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
 
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="/../css/style.css" />
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<link href="/../css/bootstrap.css" rel="stylesheet">
-<link href="/../images/icon.ico" rel="shortcut icon" type="image/x-icon">
-<script type="text/javascript">
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-55498545-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
-<!-- Include Most Visited Articles JS Code -->
- <script type="text/javascript" src="mostvisited.js"></script> 
-
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-<body>
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<div class="wrapper">
-
-  <div class="header">
-
-    <div class="container">
-
-      <div class="row">
-
-         <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'></span>
-<span class='st_facebook'></span>
-<span class='st_twitter'></span>
-<span class='st_googleplus'></span>
-<span class='st_linkedin'></span>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="/../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                </span>
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12">
-
-          <div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-<span class="navbar-brand" href="#">Menu</span>
-                  </div>
-
-                  <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">     
-            <li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="/../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="/../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="/../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="/../board/">Editorial Board</a></li><br>
-                        <li><a href="/../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="/../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="/../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="/../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="/../contact/">Contact Us</a></li>
-
-
-
-
-                    </ul>
-
-                  </div>
-
-                  <!--/.nav-collapse -->
-
-                </div>
-
-                <!--/.container-fluid -->
-
-              </div>
-
-            </nav>
-
-            </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-        </header>
-
-      </div>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
-<div class="clearfix"></div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="/../images/header.png" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-         <tr>
-                <td>Volume 2 - Year 2015 - Pages 1-6</td>
-                <td align="right"><a href="PDF/001.pdf">View PDF (Full-text)</a></td>
-        </tr>
-         <tr>
-                <td>DOI: 10.11159/jffhmt.2015.001</td>
-                <td align="right"><a href="#references">Linked References</a></td>
-        </tr>
-    <tr>
-    <td colspan="2">ISSN: 2368-6111</td>
-    </tr>
-     </table>
-     
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!--Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>Journal of Fluid Flow, Heat and Mass Transfer (JFFHMT)<br>
+    <p class="body">ISSN: 2368-6111</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
-<p align="center" style="font-size:22pt;">Numerical Simulation of Swirling Flows - Heat Transfer Enhancement</p>
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center"><strong>Teresa Parra<sup>1</sup>, Ruben Perez<sup>1</sup>, Miguel A. Rodriguez<sup>1</sup>, Francisco Castro<sup>1</sup>, Robert Z. Szasz<sup>2</sup>, Artur Gutkowski<sup>3</sup></strong><br>
-<sup>1</sup>University of Valladolid, Department of Energy and Fluid Mechanics<br>
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">Volume 2 - Year 2015 - Pages 1-6<br>
+      DOI: 10.11159/jffhmt.2015.001</p>
+    </div>
+
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/001.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
+
+    <h3 class="center">Numerical Simulation of Swirling Flows - Heat Transfer Enhancement</h3>
+
+    <p class="body-bold center">Teresa Parra<sup>1</sup>, Ruben Perez<sup>1</sup>, Miguel A. Rodriguez<sup>1</sup>, Francisco Castro<sup>1</sup>, Robert Z. Szasz<sup>2</sup>, Artur Gutkowski<sup>3</sup></p>
+
+    <p class="body center"><sup>1</sup>University of Valladolid, Department of Energy and Fluid Mechanics<br>
 Paseo del Cauce 59, 47011 Valladolid, Spain<br>
 terpar@eii.uva.es; jrubenpd@gmail.com; miguel@eii.uva.es; castro@eii.uva.es<br>
 <sup>2</sup>Lund University, Energy Division, Lund, Sweden<br>
@@ -183,97 +170,91 @@ Robert-Zoltan.Szasz@energy.lth.se<br>
 219/223 Wolczańska, 90-924 Łódz, Poland<br>
 artur.gutkowski@p.lodz.pl</p>
 
-<p>&nbsp;</p>
+    <p class="body"><b>Abstract</b> - <i>In this paper, the influence of swirl number on mixing of two confined coaxial jets is analysed. The swirl generator is a set of fixed vanes located in the annular nozzle. Different trailing edge angles result in swirl numbers ranging from 0.14 to 0.95. Numerical model is validated using non reactive benchmarks. Low, intermediate and large swirling injectors are simulated to contrast the flow pattern. The presence of Inner Recirculation Zone associated to intermediate and high swirl numbers plays an important role in the heat and mass transfer since promote high gradients with minimum head loss. Low swirl injectors show large mixing regions in absence of the central vortex structure.</i></p>
 
-<p align="justify"><i><strong>Abstract- </strong>
-In this paper, the influence of swirl number on mixing of two confined coaxial jets is analysed. The swirl generator is a set of fixed vanes located in the annular nozzle. Different trailing edge angles result in swirl numbers ranging from 0.14 to 0.95. Numerical model is validated using non reactive benchmarks. Low, intermediate and large swirling injectors are simulated to contrast the flow pattern. The presence of Inner Recirculation Zone associated to intermediate and high swirl numbers plays an important role in the heat and mass transfer since promote high gradients with minimum head loss. Low swirl injectors show large mixing regions in absence of the central vortex structure.</i></p>
+    <p class="body"><b><i>Keywords:</i></b> Swirl number, CFD, mixing, recirculation zone.</p>
 
-<p align="left"><i><strong>Keywords:</strong></i> Swirl number, CFD, mixing, recirculation zone.</p>
+    <p class="body">&copy; Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
 
-<p align="justify">&copy; Copyright 2015 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
-
-<p>&nbsp;</p>
-
-<p>
-Date Received: 2014-11-07<br />
+    <p class="body">Date Received: 2014-11-07<br />
 
 Date Accepted: 2015-07-23<br />
 
-Date Published: 2015-09-03
-</p>
+Date Published: 2015-09-03</p>
 
-<img src="../images/line.png" width="100%;" height="1" />
+  <div class="border"></div>
 
-<h2>1. Introduction</h2>
+  <div class="indent">
+<h4>1. Introduction</h4>
 
-<p align="justify" style="text-indent:19.85pt;">Swirling flows in burners are common because of
+<p class="body">Swirling flows in burners are common because of
 the stabilization of lean flames with minimum head losses, ultra low emissions
 and fuel saving, [1-2]. This issue has important environment implications since
-the fuel slip due to incomplete combustion is a harmful greenhouse gas.</span></p>
+the fuel slip due to incomplete combustion is a harmful greenhouse gas.</p>
 
-<p align="justify" style="text-indent:19.85pt;">It is commonly known the mixing capacity is a
+<p class="body">It is commonly known the mixing capacity is a
 feature of turbulent flows. It has been widely studied the heat transfer
 enhancement associated to the swirling flows. Guo <i>et al.</i> [3] carried out
 a theoretical study about the effect of a secondary flow on the laminar convective
 heat transfer. Saqr and Wahid [4] proposed an empirical correlation
-for predicting the entropy augmentation as a function of the swirl number. </span></p>
+for predicting the entropy augmentation as a function of the swirl number. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Bearing in mind the quantification of thr
+<p class="body">Bearing in mind the quantification of thr
 enhanced heat transfer, Gul and Evin [5] showed that an increase of 300% of
 heat transfer can be achieved by placing a helical tape at the begining of the
 test section. Nuntadusit
 et al. [6] studied the effect on Nusselt number of different set ups of
-multiple swirling jets.</span></p>
+multiple swirling jets.</p>
 
-<p align="justify" style="text-indent:19.85pt;">As for design of the swirl generators, Zohir <i>et
+<p class="body">As for design of the swirl generators, Zohir <i>et
 al.</i> [7-8] evaluated the increase of heat transfer rate when modifying the
 location and pitch angle of the swirl generator upwind and downwind the test
-chamber. </span></p>
+chamber. </p>
 
-<h2>2. Physical Model</h2>
+<h4>2. Physical Model</h4>
 
-<p align="justify" style="text-indent:19.85pt;">The geometry of the burner is composed by two
+<p class="body">The geometry of the burner is composed by two
 coaxial nozzles, a swirl generator (a number of fixed vanes on the annular
 nozzle) and the combustion chamber. Configuration corresponds to the
 experimental characterization performed by Roback and Johnson [9] being the
-only difference the swirl injector, such as is depicted in figure 1. </span></p>
+only difference the swirl injector, such as is depicted in figure 1. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Despite the simple geometrical set-up of the
+<p class="body">Despite the simple geometrical set-up of the
 benchmark, the flow pattern shows complex aerodynamic behaviour. The case
 considers two coaxial jets: one axial and another annular swirling jet. An
 expansion ratio of 4 in area produces the Outer Recirculation Zone (ORZ) when
 annular jet enters in the chamber. This kind of configuration has been analyzed
-by Palm [10] for swirl numbers 0, 0.6 and 1.2. </span></p>
+by Palm [10] for swirl numbers 0, 0.6 and 1.2. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Main difference in flow pattern between low and
+<p class="body">Main difference in flow pattern between low and
 large swirling injectors is the presence of an expansion or a recirculation in
 the centre of the chamber. If swirl number is over 0.6, the flow turns back
 into the centre and then vortex break down phenomenon appears to form an Inner
 Recirculation Zone (IRZ), [11]. Both recirculation zones are responsible of high
 shear and mixture. If swirl number is lower, there is an Inner Divergence Zone
-instead of the IRZ.</span></p>
+instead of the IRZ.</p>
 
 <figure>
-<img src="001_files/image001.jpg" class="img"/>
+<img src="001_files/image001.jpg" class="article-img">
 
 <figcaption>
 Figure 1. Scheme of the swirling burner of Roback and Johnson [9] with swirler angle 64º and detail of the hexahedral mesh.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Computational Fluid Dynamics (CFD) has become a
+
+<p class="body">Computational Fluid Dynamics (CFD) has become a
 useful tool to gain insight of the phenomena involved in thermal and fluid
 mechanics processes. The simulation requests the generation of a mesh that is a
 discretization of a continuous geometry into a computational domain. The finite
-volume Ansys-Fluent was used to carry out the simulations. </span></p>
+volume Ansys-Fluent was used to carry out the simulations. </p>
 
-<p align="justify" style="text-indent:19.85pt;">The selection of numerical methods is a
+<p class="body">The selection of numerical methods is a
 prerequisite to perform accurate numerical simulations to better predict the
-performance of the swirling flow burner.</span></p>
+performance of the swirling flow burner.</p>
 
-<h2>3. Numerical Model</h2>
+<h4>3. Numerical Model</h4>
 
-<p align="justify" style="text-indent:19.85pt;">The conservative equations for 3D, steady,
+<p class="body">The conservative equations for 3D, steady,
 turbulent and incompressible flow are solved with a second order scheme looking
 for better accuracy. Table 1 summarizes the boundary conditions for the nozzle
 inlets working with air. Passive scalar let identify the mixture fraction
@@ -283,9 +264,9 @@ uncertainty is the transitional flow regime. The 3D mesh has 1.5 million
 hexahedral cells. The sensibility analysis of mesh resolution revealed that
 RANS models provide velocity profiles that were independent from meshes for
 more than 1.5 million cells. Meshes with 0.5, 0.75 1, 1.5 and 2 million cells
-were tested, as described in [12].</span></p>
+were tested, as described in [12].</p>
 
-<p align="justify" style="text-indent:19.85pt;">PISO was the algorithm for pressure-velocity
+<p class="body">PISO was the algorithm for pressure-velocity
 coupling since the option provides faster convergence. Multigrid options
 provide a substantial reduction of the computational time. It consists on
 solving equations on a coarse mesh to get initial solution to iterate on a
@@ -294,189 +275,184 @@ averaging on temperature field is a precursor of the lack of accuracy on the
 reaction rate. Parallel processing is important to afford resolution of meshes
 with adequate spatial resolution. The domain decomposition process was
 established to minimize the processor boundaries and therefore, saving
-information transfer time.</span></p>
+information transfer time.</p>
 
-<div align=center>
-
+<center>
 <div class="widetable">
-<caption>Table 1. Boundary conditions for nozzles from reference [9].</caption>
+<p class="body">Table 1. Boundary conditions for nozzles from reference [9].</p>
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none'>
+ <thead>
  <tr>
   <td width=137 valign=top style='width:102.75pt;border:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>&nbsp;</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>&nbsp;</p>
   </td>
   <td width=123 valign=top style='width:92.15pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Annular inlet</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Annular inlet</p>
   </td>
   <td width=101 valign=top style='width:75.7pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Central inlet</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Central inlet</p>
+  </td>
+ </tr>
+</thead>
+ <tr>
+  <td width=137 valign=top style='width:102.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Radio </p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>(inner-outer) (m)</p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0.0128-0.0295</p>
+  </td>
+  <td width=101 valign=top style='width:75.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0-0.0125</p>
   </td>
  </tr>
  <tr>
   <td width=137 valign=top style='width:102.75pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Radio </span></p>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>(inner-outer) (m)</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Velocity (m/s)</p>
   </td>
   <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0.0128-0.0295</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>1.54</p>
   </td>
   <td width=101 valign=top style='width:75.7pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0-0.0125</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0.66</p>
   </td>
  </tr>
  <tr>
   <td width=137 valign=top style='width:102.75pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Velocity (m/s)</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Temperature (K)</p>
   </td>
   <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>1.54</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>900</p>
   </td>
   <td width=101 valign=top style='width:75.7pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0.66</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=137 valign=top style='width:102.75pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Temperature (K)</span></p>
-  </td>
-  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>900</span></p>
-  </td>
-  <td width=101 valign=top style='width:75.7pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>300</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>300</p>
   </td>
  </tr>
  <tr>
   <td width=137 valign=top style='width:102.75pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Turbulent Intensity
-  (%)</span></p>
+  (%)</p>
   </td>
   <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>7.5</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>7.5</p>
   </td>
   <td width=101 valign=top style='width:75.7pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>12</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>12</p>
   </td>
  </tr>
  <tr>
   <td width=137 valign=top style='width:102.75pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Length scale (m)</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Length scale (m)</p>
   </td>
   <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0.017</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0.017</p>
   </td>
   <td width=101 valign=top style='width:75.7pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0.025</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0.025</p>
   </td>
  </tr>
  <tr>
   <td width=137 valign=top style='width:102.75pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Passive scalar</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Passive scalar</p>
   </td>
   <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>0</p>
   </td>
   <td width=101 valign=top style='width:75.7pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>1</span></p>
+  <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>1</p>
   </td>
  </tr>
 </table>
 </div>
-</div>
+</center>
 
-<p class=MsoNormalCxSpMiddle style='text-indent:19.85pt'>&nbsp;</span></p>
+<h4>4. Turbulence Model</h4>
 
-<h2>4. Turbulence Model</h2>
-
-<p align="justify" style="text-indent:19.85pt;">As for the turbulence model, among RANS models
+<p class="body">As for the turbulence model, among RANS models
 of 1, 2 or 4 equations, the most accurate was the k-&#949; RNG model dominated
 by the swirl. It is recommended by Ferziger [13-14] to deal with the
 non-isotropic turbulence associated with the swirling.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The conservation equations for the k and &#949;
+<p class="body">The conservation equations for the k and &#949;
 are represented in the RNG model as:</p>
 
-<div class="eqn">
-<img src="001_files/image003.gif" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image003.gif" class="eqn">
 <div class="eqn-number">(1)</div>
-<br>
-
-<div class="eqn">
-<img src="001_files/image004.gif" class="img">
 </div>
+
+<div class="equation">
+<img src="001_files/image004.gif" class="eqn">
 <div class="eqn-number">(2)</div>
-<br>
-
-<p align="justify" style="text-indent:19.85pt;">being</span></p>
-
-<div class="eqn">
-<img src="001_files/image005.gif" class="img">
 </div>
+
+<p class="body">being</p>
+
+<div class="equation">
+<img src="001_files/image005.gif" class="eqn">
 <div class="eqn-number">(3)</div>
-<br>
-
-<p align="justify" style="text-indent:19.85pt;">and</span></p>
-
-<div class="eqn">
-<img src="001_files/image006.gif" class="img">
 </div>
+
+<p class="body">and</p>
+
+<div class="equation">
+<img src="001_files/image006.gif" class="eqn">
 <div class="eqn-number">(4)</div>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">Where k is
+<p class="body">Where k is
 the turbulent kinetic energy and &#949; its corresponding dissipation, u
-denotes the averaged velocities and r the density. </span></p>
+denotes the averaged velocities and r the density. </p>
 
-<p align="justify" style="text-indent:19.85pt;">The source term
+<p class="body">The source term
 R<sub>&#949;</sub> in equation 2, represents the rate of strain defined in equations
 (3) and (4). Where S is the strain tensor calculated based on averaged
-velocities.</span></p>
+velocities.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The
-coefficients are summarized in table 2.</span></p>
+<p class="body">The
+coefficients are summarized in table 2.</p>
 
-<div align=center>
-
+<center>
 <div class="widetable">
-<caption>Table 2. Constants in the RNG k-&#949; model.</caption>
+<p class="body">Table 2. Constants in the RNG k-&#949; model.</p>
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:0pt;border-collapse:collapse;border:none'>
+ <thead>
  <tr>
   <td width=77 valign=top style='width:40pt;border:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
@@ -487,12 +463,12 @@ coefficients are summarized in table 2.</span></p>
   <td width=68 style='width:40pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
-  0cm'>C<sub>1&#949;</sub></span></p>
+  0cm'>C<sub>1&#949;</sub></p>
   </td>
   <td width=66 style='width:40pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
-  0cm'>C<sub>2&#949;</sub></span></p>
+  0cm'>C<sub>2&#949;</sub></p>
   </td>
   <td width=66 style='width:40pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
@@ -502,62 +478,63 @@ coefficients are summarized in table 2.</span></p>
   <td width=69 style='width:40pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
-  0cm'><span lang=EN-GB style='font-size:11.0pt;font-family:Symbol'>b</span></p>
+  0cm'><span lang=EN-GB style='font-size:11.0pt;font-family:Symbol'>b</p>
   </td>
  </tr>
+</thead>
  <tr style='height:14.25pt'>
   <td width=77 valign=top style='width:40pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:14.25pt'>
   <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
-  0cm'>0.0845</span></p>
+  0cm'>0.0845</p>
   </td>
   <td width=68 style='width:40pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:14.25pt'>
   <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
-  0cm'>1.42</span></p>
+  0cm'>1.42</p>
   </td>
   <td width=66 style='width:40pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:14.25pt'>
   <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
-  0cm'>1.68</span></p>
+  0cm'>1.68</p>
   </td>
   <td width=66 style='width:40pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:14.25pt'>
   <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
-  0cm'>4.38</span></p>
+  0cm'>4.38</p>
   </td>
   <td width=69 style='width:40pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:14.25pt'>
   <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
-  0cm'>0.012</span></p>
+  0cm'>0.012</p>
   </td>
  </tr>
 </table>
 </div>
-</div>
-<br>
+</center>
 
-<p align="justify" style="text-indent:19.85pt;">Bearing in mind the flow pattern is dominated by
+<p class="body">Bearing in mind the flow pattern is dominated by
 recirculation zones and fluid separation of the boundaries, the turbulence wall
 treatment was that of non equilibrium, hence it is not necessary to control the
-y+ range of variation.</span></p>
+y+ range of variation.</p>
 
-<h2>5. Swirl Generator</h2>
+<h4>5. Swirl Generator</h4>
 
-<p align="justify" style="text-indent:19.85pt;">Swirl generator is characterized by eight- fixed
+<p class="body">Swirl generator is characterized by eight- fixed
 vanes in the annular nozzle with a fix angle in the trailing edge, Parra et al.
 [15].
 The definition assumed for the swirl number is the relation between the
 flow-averaged-azimuthal velocity and the corresponding axial velocity, see
-equation 5. </span></p>
+equation 5. </p>
 
+<center>
 <div class="widetable">
+  <p class="body">Table 3. Details of different set up of swirl injectors.</p>
 <table>
-<caption>Table 3. Details of different set up of swirl injectors.</caption>
 <thead>
  <tr>
   <td width=108 valign=top style='width:81.25pt;border:solid windowtext 1.0pt;
@@ -577,6 +554,7 @@ equation 5. </span></p>
   <p class=MsoNormalCxSpMiddle style='text-indent:0cm'>Flat plate</p>
   </td>
  </tr>
+</thead>
  <tr>
   <td width=108 valign=top style='width:81.25pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
@@ -641,18 +619,15 @@ equation 5. </span></p>
   </td>
  </tr>
 </table>
-</thead>
 </div>
-<br>
+</center>
 
-<div class="eqn">
-<img src="001_files/image008.gif" class="img">
-</div>
+<div class="equation">
+<img src="001_files/image008.gif" class="eqn">
 <div class="eqn-number">(5)</div>
-<br>
-<br>
+</div>
 
-<p align="justify" style="text-indent:19.85pt;">Hence different swirl numbers request different
+<p class="body">Hence different swirl numbers request different
 orientation for the vanes. Previous studies have verified the lack of
 influence of the swirler's chord on the swirl number as well as the weak
 influence of the design (flat plates or curved blades) on the final flow
@@ -660,66 +635,65 @@ pattern. Table
 3 shows the different swirler configurations presented in this paper to provide
 different swirl numbers.</p>
 
-<h2>6. Influence of Swirl Number</h2>
+<h4>6. Influence of Swirl Number</h4>
 
-<p align="justify" style="text-indent:19.85pt;">This section is devoted to the analysis of the
-flow pattern associated to low and high swirl numbers.</span></p>
+<p class="body">This section is devoted to the analysis of the
+flow pattern associated to low and high swirl numbers.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Figure 2 shows, for non-reactive case and swirl
+<p class="body">Figure 2 shows, for non-reactive case and swirl
 numbers of 0.14, 0.74 and 0.95, the contours of temperature in a longitudinal
 plane and the volumes of iso-value null for axial velocity. Annular jet has a
 temperature of 900 K whereas central jet has 300 K; hence temperature gradient
-suggests the mixing. </span></p>
+suggests the mixing. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Besides, the zero axial velocity surfaces
+<p class="body">Besides, the zero axial velocity surfaces
 identify the position, shape and size of recirculation zones. Bearing in mind
 the ORZ that is formed due to the sudden expansion in the discharge of the
 annular nozzle [16], it has a diminishing in size while increasing the swirl
-number. This statement agrees with other research works [17].</span></p>
+number. This statement agrees with other research works [17].</p>
 
-<p align="justify" style="text-indent:19.85pt;">Swirl number 0.74 shows an incipient IRZ while
+<p class="body">Swirl number 0.74 shows an incipient IRZ while
 Swirl number 0.95 shows a larger IRZ. The IRZ forces the mixing; hence
 temperature is homogenized very close to the nozzle's discharge. This means
 that temperature is homogenized in more remote sections of the nozzle's
-discharge in the cases with low azimuthal velocity. </span></p>
+discharge in the cases with low azimuthal velocity. </p>
 
 <figure>
-<img src="001_files/image009.jpg" class="img"/>
+<img src="001_files/image009.jpg" class="article-img">
 
 <figcaption>
 Figure 2. Contours of temperature in the plane x = 0 and iso-surfaces of null axial velocity to locate recirculation zones. Left) Swirl no. 0.14, Center) Swirl no. 0.74 and Right) Swirl no. 0.95.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Furthermore, the shape of the IRZ in the
+<p class="body">Furthermore, the shape of the IRZ in the
 upstream stagnation point is convex for swirl number 0.74 and concave for swirl
 number 0.95 increasing significant effect on heat transfer for larger swirls
-such it was showed in [18].</span></p>
+such it was showed in [18].</p>
 
-<p align="justify" style="text-indent:19.85pt;">IRZ plays an essential role in homogenizing
+<p class="body">IRZ plays an essential role in homogenizing
 temperature. Because of the IRZ, the shear layer is deflected. The bigger the
 IRZ is, the thinner the shear layer is. Hence higher gradient appears. Another
 aspect is that the upwind stagnation point of the IRZ is approaching the discharge
 of the central nozzle while increasing the swirl number; hence the mixing
-region is small.</span></p>
+region is small.</p>
 
 <figure>
-<img src="001_files/image010.gif" class="img"/>
+<img src="001_files/image010.gif" class="article-img">
 
 <figcaption>
 Figure 3. Radial profiles of axial velocities for different sections. Upper Left) Z = 5mm, Lower Left) Z = 25mm, Upper Right) Z = 50mm and Lower Right) Z = 100mm Experimental values of Palm et al. [10].</figcaption>
 </figure>
-<br>
+
 
 <figure>
-<img src="001_files/image011.gif" class="img"/>
+<img src="001_files/image011.gif" class="article-img">
 
 <figcaption>
 Figure 4. Radial profiles of Temperature for different sections. Upper Left) Z = 5mm, Lower Left) Z = 50mm, Upper Right) Z = 100mm and Lower Right) Z = 300mm.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Figure 3 shows the radial profiles of axial
+
+<p class="body">Figure 3 shows the radial profiles of axial
 velocity for Swirl numbers 0.14, 0.64 and 0.74 in different cross sections
 located at Z = 5, 25, 50 and 100 mm from the discharge of the nozzles as well
 as the experimental results from Palm et al. [10]. These experimental results
@@ -729,43 +703,36 @@ numerical results are less dissipative than experimental results but section Z
 = 100 mm section shows a good agreement with the experimental results. Negative
 values of the axial velocity evidence the existence of recirculation zones. It
 is clear the presence of ORZ in sections 25 and 50 mm for any swirl. As for the
-IRZ, it only appears for Swirl 0.74.</span></p>
+IRZ, it only appears for Swirl 0.74.</p>
 
 <figure>
-<img src="001_files/image012.gif" class="img"/>
-
-<figure>
-<img src="001_files/image013.gif" class="img"/>
-
-<figure>
-<img src="001_files/image014.gif" class="img"/>
+<img src="001_files/image012.gif" class="article-img">
+<img src="001_files/image013.gif" class="article-img">
+<img src="001_files/image014.gif" class="article-img">
 
 <figcaption>
 Fig. 5. Contours in the plane x = 0 and stream lines to locate recirculation zones. Top) Passive scalar, Centre) Turbulent Kinetic Energy and Bottom) Axial Vorticity for different Swirl numbers Left) S = 0.14, Middle) S = 0.74, Right) S = 0.95.</figcaption>
 </figure>
-</figure>
-</figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Figure 4 shows the radial profiles of temperature for Swirl numbers 0.14 and 0.74 in different cross sections located at Z = 5, 50, 100 and 300 mm from the discharge of the nozzles. Every section affected by the IRZ, Z &gt; 5 mm and Swirl &gt; 0.6, evidences the increase of heat transfer while increasing the swirl. Mass fraction shows similar results
-in the same sections. It is clear the homogenization role played by the IRZ for high swirl numbers.</span></p>
+<p class="body">Figure 4 shows the radial profiles of temperature for Swirl numbers 0.14 and 0.74 in different cross sections located at Z = 5, 50, 100 and 300 mm from the discharge of the nozzles. Every section affected by the IRZ, Z &gt; 5 mm and Swirl &gt; 0.6, evidences the increase of heat transfer while increasing the swirl. Mass fraction shows similar results
+in the same sections. It is clear the homogenization role played by the IRZ for high swirl numbers.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Figure 5 show longitudinal contours of the
+<p class="body">Figure 5 show longitudinal contours of the
 passive scalar, turbulent kinetic energy and axial vorticity. The first one let
 identify mass mixing. Steam lines let identify the IRZ concluding the important
 role played in homogenizing species. Turbulent kinetic energy show maximum
 values on the shear layer but there is not relevant production of energy inside
 the IRZ. Finally, the axial vorticity is located on the annular jet because of
 the swirler and in the IRZ, where fluid spin as a rigid solid, with minimum
-deformation.</span></p>
+deformation.</p>
 
-<h2>7. Conclusion</h2>
+<h4>7. Conclusion</h4>
 
-<p align="justify" style="text-indent:19.85pt;">This paper studies the mixing of different
+<p class="body">This paper studies the mixing of different
 swirling jets ranging from low to intermediate and high swirling numbers. Validation
-was provided for high swirl number. </span></p>
+was provided for high swirl number. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Low swirling injectors does not promote the
+<p class="body">Low swirling injectors does not promote the
 fluid to turn over near the centre of the chamber, resulting larger mixing
 zones with weak gradients. Pressure distribution for intermediate and larger
 swirls promote the formation of a vortex bulb near the axis of the chamber. This
@@ -773,116 +740,209 @@ inner recirculation zone is responsible of deflecting the shear layer and
 increases the gradients near the upstream of its lead stagnation point. As a
 result, mixing occurs at short distance of the nozzle's discharge. Therefore it
 is justified the common use of swirling to burn lean mixtures that would show
-instable behaviour without any swirl.</span></p>
+instable behaviour without any swirl.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Also the convex or concave shape of the
+<p class="body">Also the convex or concave shape of the
 recirculation point near this stagnation point is significant on the mass and
 heat transfer. The former appears for Swirl number 0.74 whereas the latest appears
-for Swirl = 0.95. Future works involve the study of reactive cases.</span></p>
+for Swirl = 0.95. Future works involve the study of reactive cases.</p>
 
-<h2>8. Acknowledgements</h2>
+<h4>8. Acknowledgements</h4>
 
-<p align="justify" style="text-indent:19.85pt;">The authors thankfully acknowledge the Spanish
+<p class="body">The authors thankfully acknowledge the Spanish
 Ministry of Science and Innovation for the financial resources in the
-framework of the project reference ENE2011-25468.</span></p>
+framework of the project reference ENE2011-25468.</p>
 
-<p align="justify" style="text-indent:19.85pt;">We acknowledge PRACE for awarding us access to
+<p class="body">We acknowledge PRACE for awarding us access to
 resource Curie-Genci based in France at CEA and MareNostrum based in Spain at
-BSC. Ref. 2010PA1766.</span></p>
+BSC. Ref. 2010PA1766.</p>
 
-<h2>References</h2>
+<h4 id="references">References</h4>
+<div class="ref">
+<p class="body">[1] T. Parra, R. Z. Szasz, C. Duwig, R. Pérez, V. Mendoza and F. Castro, “Acoustic Instabilities on Swirling Flames,” International Journal of Mechanical Engineering, vol. 7, no. 9, pp. 742-745, 2013. <a href="http://www.waset.org/publications/16734" target="_blank">View Article</a></p>
 
-<p align="justify">[1] T. Parra, R. Z. Szasz, C. Duwig, R. Pérez, V. Mendoza and F. Castro, “Acoustic Instabilities on Swirling Flames,” International Journal of Mechanical Engineering, vol. 7, no. 9, pp. 742-745, 2013. <a href="http://www.waset.org/publications/16734" target="_blank">View Article</a></p>
-
-<p align="justify">[2] H. S. Zhen, C. S. Cheung, C.W. Leung and H.B. Li, &quot;Thermal and heat transfer behaviors of an inverse diffusion flame with induced swirl,&quot; <i>Fuel, </i>vol. 103, pp.
+<p class="body">[2] H. S. Zhen, C. S. Cheung, C.W. Leung and H.B. Li, &quot;Thermal and heat transfer behaviors of an inverse diffusion flame with induced swirl,&quot; <i>Fuel, </i>vol. 103, pp.
 212–219, 2013. <a href="http://dx.doi.org/10.1016/j.fuel.2012.05.026" target="_blank">View Article</a></p>
 
-<p align="justify">[3] J. Guo, Y. Yan, W. Liu, F. Jiang and A. Fan, &quot;Enhancement of laminar convective heat transfer relying on excitation of transverse secondary swirl flow,&quot; <i>International
+<p class="body">[3] J. Guo, Y. Yan, W. Liu, F. Jiang and A. Fan, &quot;Enhancement of laminar convective heat transfer relying on excitation of transverse secondary swirl flow,&quot; <i>International
 Journal of Thermal Sciences, </i>vol. 87, pp. 199-206, 2015. <a href="http://dx.doi.org/10.1016/j.ijthermalsci.2014.08.023" target="_blank">View Article</a></p>
 
-<p align="justify">[4] K. M. Saqr and M. A. Wahid, &quot;Effects of swirl intensity on heat transfer and entropy generation in turbulent decaying swirl flow,&quot; <i>Applied Thermal Engineering,</i> vol.
+<p class="body">[4] K. M. Saqr and M. A. Wahid, &quot;Effects of swirl intensity on heat transfer and entropy generation in turbulent decaying swirl flow,&quot; <i>Applied Thermal Engineering,</i> vol.
 70, pp. 486-493, 2014. <a href="http://dx.doi.org/10.1016/j.applthermaleng.2014.05.059" target="_blank">View Article</a></p>
 
-<p align="justify">[5] H. Gül and D. Evin, &quot;Heat transfer enhancement in circular tubes using helical swirl generator insert at
+<p class="body">[5] H. Gül and D. Evin, &quot;Heat transfer enhancement in circular tubes using helical swirl generator insert at
 the entrance,&quot; <i>International Journal of Thermal Sciences, </i>vol.<i> </i>46, pp. 1297–1303, 2007. <a href="http://dx.doi.org/10.1016/j.ijthermalsci.2006.12.010" target="_blank">View Article</a></p>
 
-<p align="justify">[6] C. Nuntadusit, M. Wae-hayee, A. Bunyajitradulya and S. Eiamsa-ard, &quot;Heat transfer enhancement by multiple swirling impinging jets with twisted-tape swirl
+<p class="body">[6] C. Nuntadusit, M. Wae-hayee, A. Bunyajitradulya and S. Eiamsa-ard, &quot;Heat transfer enhancement by multiple swirling impinging jets with twisted-tape swirl
 generators,&quot; <i>International Communications in Heat and Mass Transfer, </i>vol. 39, pp. 102–107, 2012. <a href="http://dx.doi.org/10.1016/j.icheatmasstransfer.2011.10.003" target="_blank">View Article</a></p>
 
-<p align="justify">[7] A.E. Zohir and A.G. Gomaa, &quot;Heat transfer enhancement through sudden expansion pipe airflow
+<p class="body">[7] A.E. Zohir and A.G. Gomaa, &quot;Heat transfer enhancement through sudden expansion pipe airflow
 using swirl generator with different angles,&quot; <i>Experimental Thermal and Fluid Science, </i>vol. 45, pp. 146-154, 2013. <a href="http://dx.doi.org/10.1016/j.expthermflusci.2012.10.018" target="_blank">View Article</a></p>
 
-<p align="justify">[8] A.E. Zohir, A.A. Abdel Aziz and M.A. Habib, &quot;Heat transfer characteristics in a sudden expansion pipe equipped with swirl generators,&quot; <i>International Journal
+<p class="body">[8] A.E. Zohir, A.A. Abdel Aziz and M.A. Habib, &quot;Heat transfer characteristics in a sudden expansion pipe equipped with swirl generators,&quot; <i>International Journal
 of Heat and Fluid Flow, </i>vol.<i> </i>32, pp. 352–361, 2011. <a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2010.06.009" target="_blank">View Article</a></p>
 
-<p align="justify">[9] R. Roback and B.V. Johnson, &quot;Mass and momentum turbulent transport experiments with confined swirling coaxial jets,&quot; <i>Interim Report,</i> 1983. <a href="http://adsabs.harvard.edu/abs/1983utrc.rept.....R" target="_blank">View Article</a></p>
+<p class="body">[9] R. Roback and B.V. Johnson, &quot;Mass and momentum turbulent transport experiments with confined swirling coaxial jets,&quot; <i>Interim Report,</i> 1983. <a href="http://adsabs.harvard.edu/abs/1983utrc.rept.....R" target="_blank">View Article</a></p>
 
-<p align="justify">[10] R. Palm, S. Grundmann, M. Weismuller, S. Saric, S. Jakirlic and C. Tropea, &quot;Experimental characterization and modelling of inflow conditions for a gas turbine swirl combustor,&quot; <i>International Journal of Heat and Fluid Flow, </i>vol.<i> </i>27, pp. 924–936, 2006. <a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2006.03.016" target="_blank">View Article</a></p>
+<p class="body">[10] R. Palm, S. Grundmann, M. Weismuller, S. Saric, S. Jakirlic and C. Tropea, &quot;Experimental characterization and modelling of inflow conditions for a gas turbine swirl combustor,&quot; <i>International Journal of Heat and Fluid Flow, </i>vol.<i> </i>27, pp. 924–936, 2006. <a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2006.03.016" target="_blank">View Article</a></p>
 
-<p align="justify">[11] T. Parra-Santos, J. R. Perez-Dominguez, R. Z. Szasz and F. Castro, <i>Engineering Computations</i>. Accepted
+<p class="body">[11] T. Parra-Santos, J. R. Perez-Dominguez, R. Z. Szasz and F. Castro, <i>Engineering Computations</i>. Accepted
 23.07.2014. </p>
 
-<p align="justify">[12] T. Parra-Santos, J. R. Perez-Dominguez, R.Z. Szasz and F. Castro, “An isothermal analysis of curved-vane and flat-vane swirlers for burners,” <i>Engineering Computations,</i>&nbsp;vol.&nbsp;32,&nbsp;no.&nbsp;3,&nbsp;pp.&nbsp;668-686, 2015. <a href="http://dx.doi.org/10.1108/EC-06-2013-0149" target="_blank">View Article</a></p>
+<p class="body">[12] T. Parra-Santos, J. R. Perez-Dominguez, R.Z. Szasz and F. Castro, “An isothermal analysis of curved-vane and flat-vane swirlers for burners,” <i>Engineering Computations,</i>&nbsp;vol.&nbsp;32,&nbsp;no.&nbsp;3,&nbsp;pp.&nbsp;668-686, 2015. <a href="http://dx.doi.org/10.1108/EC-06-2013-0149" target="_blank">View Article</a></p>
 
-<p align="justify">[13] J. H. Ferziger and M. Peric, <i>Computational Methods for Fluid Dynamics</i>, 3<sup>rd</sup> edition, Springer, 2002. <a href="http://dx.doi.org/10.1007/978-3-642-56026-2" target="_blank">View Book</a></p>
+<p class="body">[13] J. H. Ferziger and M. Peric, <i>Computational Methods for Fluid Dynamics</i>, 3<sup>rd</sup> edition, Springer, 2002. <a href="http://dx.doi.org/10.1007/978-3-642-56026-2" target="_blank">View Book</a></p>
 
-<p align="justify">[14] H. K. Versteeg and W. Malalasekera, <i>An Introduction to Computational Fluid Dynamics, The Finite Volume Method, </i>Longman Group Ltd, 1995.</p>
+<p class="body">[14] H. K. Versteeg and W. Malalasekera, <i>An Introduction to Computational Fluid Dynamics, The Finite Volume Method, </i>Longman Group Ltd, 1995.</p>
 
-<p align="justify">[15] T. Parra, V. Vuorinen, R. Perez, R. Szasz and F. Castro, &quot;Aerodynamic characterization of isothermal swirling
+<p class="body">[15] T. Parra, V. Vuorinen, R. Perez, R. Szasz and F. Castro, &quot;Aerodynamic characterization of isothermal swirling
 flows in combustors,&quot; <i>International Journal of Energy and Environmental Engineering, </i>vol. 5, no. 2, pp. 1-6, 2014. <a href="http://dx.doi.org/10.1007/s40095-014-0085-5" target="_blank">View Article</a></p>
 
-<p align="justify">[16] V. Yakhot, S. A. Orszag, S. Thangam, T.
+<p class="body">[16] V. Yakhot, S. A. Orszag, S. Thangam, T.
 B. Gatski and C. G. Speziale, &quot;Development of turbulence models for shear flows by a double expansion technique,&quot; <i>Physics of Fluids A</i>, vol.4, no. 7, pp. 1510-1520, 1992. <a href="http://dx.doi.org/10.1063/1.858424" target="_blank">View Article</a></p>
 
-<p align="justify">[17] M.García-Villalba and J.Fröhlich, &quot;LES of a free annular swirling jet–Dependence of coherent structures on a pilot jet and the level of swirl,&quot;<i> International journal of heat and fluid flow, </i>vol. 27, no. 5, pp. 911-923, 2006. <a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2006.03.015" target="_blank">View Article</a></p>
+<p class="body">[17] M.García-Villalba and J.Fröhlich, &quot;LES of a free annular swirling jet–Dependence of coherent structures on a pilot jet and the level of swirl,&quot;<i> International journal of heat and fluid flow, </i>vol. 27, no. 5, pp. 911-923, 2006. <a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2006.03.015" target="_blank">View Article</a></p>
 
-<p align="justify">[18] T. Parra, R. Perez, G. Lorenzo, R.
+<p class="body">[18] T. Parra, R. Perez, G. Lorenzo, R.
 Szasz, A. Gutkowski and F. Castro, &quot;Diffuser influence on the mixing of coaxial swirling jets,&quot; <i>ASME</i> <i>FEDSM2014&#8208;21354,</i> 2014. <a href="http://dx.doi.org/10.1115/FEDSM2014-21354" target="_blank">View Article</a></p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
 
+  </div> <!--Main Content -->
+</div>
 </div>
 
-</body>
-
-</html>
-
-<div class="clearfix"></div>
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
-<div class="clearfix"></div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
-<div class="clearfix"></div>
-  </div>
 
-  </div>
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-        <p><a href="/">Avestia Publishing</a></p>
-        <p><a href="../register/">Subscribe to our Mailing List</a></p>
-        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></p>
-        <p><a href="../terms/">Terms of Use</a></p>
-    <p><a href="../sitemap/">Sitemap</a></p>
-
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
       </div>
-      <div class="col-sm-5 footer-txt">
-        <p>Avestia Publishing, International ASET Inc. </p>
-        <p>Unit No. 417, 1376 Bank St. </p>
-        <p>Ottawa, Ontario, Canada </p>
-        <p>Postal Code: K1H 7Y3</p>
-        <p>Phone Number: 1-613-695-3040</p>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
 
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
-</body>
+</footer>
+</div>
 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+</body>
 </html>
