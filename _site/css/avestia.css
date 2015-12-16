@@ -1328,9 +1328,17 @@ figure {
     display: inline-block;
 }
 
-.eqn-number {
-    float: right;
+.eqn-img {
+    width: 49%;
     display: inline-block;
+    vertical-align: middle;
+}
+.eqn-number {
+     float: none!important; 
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
 }
 
 .indent .subhead {
