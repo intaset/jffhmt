@@ -1327,13 +1327,16 @@ figure {
 .eqn {
     display: inline-block;
 }
-
+.eqn-number {
+  display: inline-block;
+  float: right;
+}
 .eqn-img {
     width: 49%;
     display: inline-block;
     vertical-align: middle;
 }
-.eqn-number {
+.img .eqn-number {
      float: none!important; 
     display: inline-block;
     width: 50%;
